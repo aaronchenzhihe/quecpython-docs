@@ -20,8 +20,6 @@ QuecPython Development Board is an embedded iot development platform launched by
 ## Directory structure
 
 - [BG95 EVB Introduction](./bg95-evb.md)
-- [EC200X EVB Introduction](./ec200x-evb.md)
-- [EG91X EVB Introduction](./eg91x-evb.md)
 - [BG95/EG915U/EG912U Core EVB Introduction](./bg-eg-core-evb.md)
 - [EC600X EVB Introduction](./ec600x-evb.md)
 - [EC800GCN Hua Series DTU](./ec800g_hua_dtu.md)

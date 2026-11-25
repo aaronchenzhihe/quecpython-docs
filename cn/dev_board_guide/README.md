@@ -23,8 +23,6 @@ QuecPython 开发板是由移远通信（Quectel）推出的嵌入式物联网�
 - [EC600X/EC800X 核心板介绍](./ec600x-ec800x-core-evb.md)
 - [EC800X_pico 开发板介绍](./ec800x-pico-evb.md)
 - [BG95 开发板介绍](./bg95-evb.md)
-- [EC200X 开发板介绍](./ec200x-evb.md)
-- [EG91X 开发板介绍](./eg91x-evb.md)
 - [BG95/EG915U/EG912U 核心板介绍](./bg-eg-core-evb.md)
 - [EC800G 华 DTU 开发板介绍](./ec800g_hua_dtu.md)
 - [EC800X Duino 开发板介绍](./ec800x-duino-evb.md)
