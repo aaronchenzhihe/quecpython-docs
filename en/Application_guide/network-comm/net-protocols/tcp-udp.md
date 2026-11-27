@@ -98,7 +98,7 @@ The five-tuple that determines a TCP connection: protocol type (TCP), local IP, 
 
 ## Socket Programming
 
-QuecPython provides the `usocket` feature for socket programming for network communication. For the usage of the `usocket` , [click here](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/usocket.html).
+QuecPython provides the `usocket` feature for socket programming for network communication. For the usage of the `usocket` , [click here](../../../api_reference/stdlib/usocket.md).
 
 This section is divided into three parts: TCP network programming, UDP network programming, and multi-NIC network programming.
 
@@ -516,7 +516,7 @@ The above code calls  `dataCall.getInfo()` to get the IP address of the module. 
  `server_addr = dataCall.getInfo(1, 0)[2][2]`  in the code means to get the IPv4 address of connection 1 as the local server IP address.
 
 > - QuecPython-supported cellular communication modules will automatically establish the first cellular data connection after power-on.
-> - [Click here](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html) for more information about cellular data connection-related interface usage.
+> - [Click here](../../../api_reference/iotlib/dataCall.md) for more information about cellular data connection-related interface usage.
 > - [Click here to download the complete code in github](https://github.com/QuecPython/examples/blob/main/network-comm/net-protocols/tcp-udp/example_tcp_server_and_client.py)
 
 The running result of this sample code is as follows:
@@ -665,7 +665,7 @@ How to achieve the two methods above in practical applications where sometimes m
 
 As mentioned earlier, after the module is powered on, it will automatically establish the first cellular data connection and set that NIC as the default NIC.
 
-If multiple connections are established through `dataCall` interfaces, the IP address of the cellular data connection can be obtained through [`dataCall.getInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#net.getCellInfo).
+If multiple connections are established through `dataCall` interfaces, the IP address of the cellular data connection can be obtained through [`dataCall.getInfo()`](../../../api_reference/iotlib/net.md#net.getCellInfo).
 
 > Currently, there is no interface to set the NIC connected to the cellular data as the default NIC.
 
@@ -768,7 +768,7 @@ eth.set_up()
 print('Ethernet nic enabled.')
 ```
 
-> - [Click here](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.html) to view the usage of Ethernet-related interfaces.
+> - [Click here](../../../api_reference/peripherals/ethernet.md) to view the usage of Ethernet-related interfaces.
 > - For more NIC programming application notes, please refer to the relevant documentation.
 
 

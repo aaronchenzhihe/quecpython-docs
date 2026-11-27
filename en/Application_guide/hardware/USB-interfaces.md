@@ -80,7 +80,7 @@ The USB electrical properties for the Type-A interface are as follows:
 
 A device driver is a special program that enables communication between a computer and a device. The operating system can only control the operation of hardware devices through this interface.
 
-For detailed installation instructions, please refer to the [Quick Start Guide](https://developer.quectel.com/doc/quecpython/Getting_started/en/index.html).
+For detailed installation instructions, please refer to the [Quick Start Guide](../../Getting_started/README.md).
 
 **Currently, QuecPython generates the following types of serial ports and device types (taking the EC600M series module as an example).**
 
@@ -166,7 +166,7 @@ In cellular communication modules, the principle of USB-REPL is to provide an in
 
 In general, the principle of USB-simulated REPL is to provide a real-time interactive programming and debugging environment through the USB interface. Its main applications are real-time programming and testing, device configuration and management, and troubleshooting and debugging.
 
-> Note: For some QuecPython modules, the REPL port can also be used as a regular serial port by initializing UART3 through *machine.UART()* in [machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E). When UART3 is enabled, the REPL port functions as a regular serial port, and when UART3 is disabled, the port automatically reverts to REPL.
+> Note: For some QuecPython modules, the REPL port can also be used as a regular serial port by initializing UART3 through *machine.UART()* in [machine.UART](../../api_reference/peripherals/machine.UART.md#machine.UART). When UART3 is enabled, the REPL port functions as a regular serial port, and when UART3 is disabled, the port automatically reverts to REPL.
 
 ### Modem
 
@@ -202,7 +202,7 @@ Please refer to **[Network Application Guide - USB NIC](https://lvgl.100ask.net/
 
 ## Firmware Download
 
-For firmware download examples, please refer to [QPYcom Instructions]([QuecPython (quectel.com)](https://developer.quectel.com/en/)) or [Quick Start Guide](https://developer.quectel.com/doc/quecpython/Getting_started/en/index.html). 
+For firmware download examples, please refer to [QPYcom Instructions](../dev-tools/QPYcom/README.md) or [Quick Start Guide](../../Getting_started/README.md). 
 
 The USB firmware download for modules includes the following steps:
 
@@ -220,7 +220,7 @@ The USB firmware download for modules includes the following steps:
 
 ### Plug-in/out Detection
 
-For the USB plug-in/out detection interface, please refer to [misc.USB](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USB.html).
+For the USB plug-in/out detection interface, please refer to [misc.USB](../../api_reference/peripherals/misc.USB.md).
 
 As a USB device (also known as a slave device), the cellular communication module can be connected to the host (such as a PC or embedded control panel) via the USB interface. In this case, plug-in/out detection is usually performed by the host, but the module itself should also be able to identify these connection and disconnection events.
 

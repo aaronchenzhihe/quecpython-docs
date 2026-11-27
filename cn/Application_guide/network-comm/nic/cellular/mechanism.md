@@ -130,7 +130,7 @@ dataCall.setPDPContext(profileID, ipType, apn, username, password, authType)
 
 ## checkNet机制
 
-`checkNet`是QuecPython提供的一个功能模块。该模块主要用于检查网络是否已经就绪。关于该`checkNet`模块API的使用说明，请参考QuecPython官网API参考手册内[checkNet](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/checkNet.html)部分。
+`checkNet`是QuecPython提供的一个功能模块。该模块主要用于检查网络是否已经就绪。关于该`checkNet`模块API的使用说明，请参考QuecPython官网API参考手册内[checkNet](../../../../api_reference/iotlib/checkNet.md)部分。
 
 **`checkNet`使用场景**
 
@@ -178,7 +178,7 @@ checkNet.waitNetworkReady(timeout)
 dataCall.setCallback(fun)
 ```
 
-关于该方法的详细说明，请参考QuecPython官网API参考手册内`dataCall`模块的[回调注册功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%E5%9B%9E%E8%B0%83%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD)部分，这里主要说明如何使用。
+关于该方法的详细说明，请参考QuecPython官网API参考手册内`dataCall`模块的[回调注册功能](../../../../api_reference/iotlib/dataCall.md#回调注册功能)部分，这里主要说明如何使用。
 
 回调函数的示例如下：
 
@@ -236,7 +236,7 @@ if __name__ == '__main__':
     main()
 ```
 
-上面的示例仅仅是为了让用户直观的感受一下QuecPython的网络事件监控功能。如果用户需要在实际项目中使用，请参考后续《网络异常处理》章节中[网络异常事件处理示例](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%A4%BA%E4%BE%8B)部分。
+上面的示例仅仅是为了让用户直观的感受一下QuecPython的网络事件监控功能。如果用户需要在实际项目中使用，请参考后续《网络异常处理》章节中[网络异常事件处理示例](exception-handling.md#网络异常事件处理示例)部分。
 
 
 

@@ -526,5 +526,5 @@ If you are unable to access the internet after successfully downloading and inst
 
 ### "eSIM card not inserted" error message
 
-Please refer to the QuecPtyhon official website wiki for cellular wireless card [Handle Network Exceptions](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Handle-Network-Exceptions-at-Startup).
+Please refer to the QuecPython official website wiki for cellular wireless card [Handle Network Exceptions](../nic/cellular/exception-handling.md#Handle-Network-Exceptions-at-Startup).
 

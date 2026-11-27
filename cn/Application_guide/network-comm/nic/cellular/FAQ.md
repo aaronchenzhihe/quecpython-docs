@@ -62,7 +62,7 @@ APN是终端入网时必须配置的一个参数，因为他决定了设备如�
 
 * 如何配置注网APN
 
-  通过`dataCall.setPDPContext`接口配置，并且`profileID`参数必须为1。具体的接口使用说明请参考QuecPython官网WIKI说明部分的[APN配置与获取功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#APN%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%8E%B7%E5%8F%96%E5%8A%9F%E8%83%BD)。
+  通过`dataCall.setPDPContext`接口配置，并且`profileID`参数必须为1。具体的接口使用说明请参考QuecPythonWIKI说明部分的[APN配置与获取功能](../../../../api_reference/iotlib/dataCall.md#APN配置与获取功能)。
 
 * 配置后是否需要重启
 
@@ -84,7 +84,7 @@ APN是终端入网时必须配置的一个参数，因为他决定了设备如�
 
 **9、SIM卡可以识别，但是无法注网是什么原因？**
 
-这种情况相对比较复杂，参考前面一个章节《网络异常处理》中的[模组网络注册失败](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#%E6%A8%A1%E7%BB%84%E7%BD%91%E7%BB%9C%E6%B3%A8%E5%86%8C%E5%A4%B1%E8%B4%A5)部分，这里仅列出比较常见的几种原因：
+这种情况相对比较复杂，参考前面一个章节《网络异常处理》中的[模组网络注册失败](exception-handling.md#模组网络注册失败)部分，这里仅列出比较常见的几种原因：
 
 * 没接射频天线或者射频天线性能差。
 * 该SIM卡需要配置APN才能注册到网络，但是用户没有配置APN。

@@ -43,7 +43,7 @@
 
 ### **How does the module output raw NMEA data?**
 
-The built-in GNSS calls quecgnss.read(size), and the log output by the QPYcom is the raw NMEA data. For details, see [quecgnss](https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/quecgnss.html).
+The built-in GNSS calls quecgnss.read(size), and the log output by the QPYcom is the raw NMEA data. For details, see [quecgnss](../../api_reference/gnsslib/quecgnss.md).
 
 ### **How to interpret the meaning of each field in NMEA messages?**
 

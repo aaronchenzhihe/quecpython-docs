@@ -15,13 +15,13 @@ GPIO输出电流能力：4mA
 
 具体哪些引脚可以用作GPIO，需要参考wiki上面machine.Pin这一节。
 
-> 具体详情链接：[GPIO引脚说明]([class Pin - 控制I/O引脚 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html))
+> 具体详情链接：[GPIO引脚说明](../../api_reference/peripherals/machine.Pin.md)
 
 ### 哪些引脚可以用作外部中断
 
 有多少个GPIO引脚就能用作多少个外部中断，具体可以参考GPIO引脚wiki上面machine.Pin和machine.Extlnt。
 
-> 具体详情链接：[GPIO引脚说明]([class Pin - 控制I/O引脚 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html))；[Extlnt外部中断说明]([class ExtInt - 外部中断 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html))
+> 具体详情链接：[GPIO引脚说明](../../api_reference/peripherals/machine.Pin.md)；[Extlnt外部中断说明](../../api_reference/peripherals/machine.ExtInt.md)
 
 ### 哪些引脚可以用作唤醒中断
 
@@ -36,7 +36,7 @@ GPIO输出电流能力：4mA
 
 ### **如何查询模组BSP外设资源数量**
 
-查看官网文档中心wiki的的[machine](../../../API_reference/zh/peripherals/machine.md)章节，包含引脚，该章节包含中断串口等外设资源介绍。
+查看官网文档中心wiki的的[machine](../../api_reference/peripherals/machine.md)章节，包含引脚，该章节包含中断串口等外设资源介绍。
 
 ### **当前LCD外设支持的最大驱动像素是多少？**
 

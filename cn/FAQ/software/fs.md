@@ -2,21 +2,21 @@
 
 ### **ql_fs模块的作用是什么**
 
-- 提供[`path_exists`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_exists%3C/code%3E)方法，判断文件是否存在。
+- 提供[`path_exists`](../../api_reference/syslib/ql_fs.md#ql_fs.path_exists)方法，判断文件是否存在。
 
-- 提供[`file_copy`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.file_copy%3C/code%3E)方法，快速拷贝文件。
+- 提供[`file_copy`](../../api_reference/syslib/ql_fs.md#ql_fs.file_copy)方法，快速拷贝文件。
 
-- 提供[`path_dirname`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_dirname%3C/code%3E)方法，获取最后一级路径的前缀路径名。
+- 提供[`path_dirname`](../../api_reference/syslib/ql_fs.md#ql_fs.path_dirname)方法，获取最后一级路径的前缀路径名。
 
-- 提供[`path_getsize`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_getsize%3C/code%3E)方法，获取文件大小。
+- 提供[`path_getsize`](../../api_reference/syslib/ql_fs.md#ql_fs.path_getsize)方法，获取文件大小。
 
-- 提供[`mkdirs`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.mkdirs%3C/code%3E)方法，创建嵌套文件夹。
+- 提供[`mkdirs`](../../api_reference/syslib/ql_fs.md#ql_fs.mkdirs)方法，创建嵌套文件夹。
 
-- 提供[`rmdirs`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.rmdirs%3C/code%3E)方法，删除嵌套文件夹。
+- 提供[`rmdirs`](../../api_reference/syslib/ql_fs.md#ql_fs.rmdirs)方法，删除嵌套文件夹。
 
-- 提供[`touch`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html#%3Ccode%3Eql_fs.touch%3C/code%3E)方法，快速创建文件。
+- 提供[`touch`](../../api_reference/syslib/ql_fs.md#ql_fs.touch)方法，快速创建文件。
 
-- 提供`write_json`和[`read_json`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html?highlight=read_json#%3Ccode%3Eql_fs.read_json%3C/code%3E)方法，快速读写json文件。
+- 提供`write_json`和[`read_json`](../../api_reference/syslib/ql_fs.md#ql_fs.read_json)方法，快速读写json文件。
 
 ### **为什么用uos.remove()删除不了文件？**
 

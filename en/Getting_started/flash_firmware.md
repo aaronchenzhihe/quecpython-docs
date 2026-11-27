@@ -6,7 +6,7 @@ Standard AT firmware or QuecOpen firmware is usually downloaded into a module wh
 
 The official firmware download URL is https://www.quectel.com.cn/download-zone.
 
-![](media/readme/Firmware.png)
+![](./media/readme/Firmware.png)
 
 When faced with a wide variety of firmware options on the official website, how to choose the appropriate firmware package? First, you need to know the model of the module you are using. You can obtain the module model by checking the module's engraving or by sending AT commands.
 

@@ -22,7 +22,7 @@ QuecPython 提供了两种网卡配置方式：
 
 ### 蜂窝无线网卡
 
-[蜂窝无线网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/index.html)依赖于运营商，需要模组连接运营商的SIM卡，并且在运营商基站信号覆盖范围内，方可进行网络连接。支持 QuecPython 的蜂窝通信模组在开机后会自动进行蜂窝数据网络连接。 
+[蜂窝无线网卡](cellular/README.md)依赖于运营商，需要模组连接运营商的SIM卡，并且在运营商基站信号覆盖范围内，方可进行网络连接。支持 QuecPython 的蜂窝通信模组在开机后会自动进行蜂窝数据网络连接。 
 
 ![](../../media/network-comm/nic/network_4g_single.png)
 
@@ -44,7 +44,7 @@ QuecPython 提供了两种网卡配置方式：
 
 ### Wi-Fi 无线网卡
 
-[Wi-Fi 无线网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/index.html)不同的工作模式下具有不同的应用场景，对于 [station](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-station-example.html) 模式下，需要连接Wi-Fi 热点（比如路由器），通过 Wi-Fi 热点给模块提供网络。对于 [ap](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-ap-example.html) 工作模式下，Wi-Fi 无线网卡作为热点，接受其它 Wi-Fi 站点设备连接，并为其提供网络服务。 
+[Wi-Fi 无线网卡](wifi/README.md)不同的工作模式下具有不同的应用场景，对于 [station](wifi/wifi-station-example.md) 模式下，需要连接Wi-Fi 热点（比如路由器），通过 Wi-Fi 热点给模块提供网络。对于 [ap](wifi/wifi-ap-example.md) 工作模式下，Wi-Fi 无线网卡作为热点，接受其它 Wi-Fi 站点设备连接，并为其提供网络服务。 
 
 Wi-Fi 无线网卡的网络配置有多种方式，如直接输入热点名称和密码、一键配网、AP 配网、web 页面配置等，但最终的目的就是为了成功获取热点名称和密码。本文着重说明 Wi-Fi 网卡的加载，并通过直接访问热点的方式进行网络连接。其余的配网方式请参考 [Wi-Fi 网卡](wifi/README.md) 章节。
 
@@ -95,7 +95,7 @@ Wi-Fi 无线网卡的网络配置有多种方式，如直接输入热点名称�
 
 ### 以太网卡
 
-在不同的应用场景下，[以太网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/index.html)有不同的工作模式：[终端模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-wan-example.html)（WAN）、[网关模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-lan-example.html)（LAN）。
+在不同的应用场景下，[以太网卡](ethernet/README.md)有不同的工作模式：[终端模式](ethernet/ethernet-wan-example.md)（WAN）、[网关模式](ethernet/ethernet-lan-example.md)（LAN）。
 
 **终端模式**  
 
@@ -164,7 +164,7 @@ Wi-Fi 无线网卡的网络配置有多种方式，如直接输入热点名称�
 
 ### USB 网卡
 
-当前 [USB 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/index.html)主要应用是使用USB网口作为 LAN 口，通过 4G 网卡进行数据转发进行网络访问。USB 网卡协议支持 ECM/RNDIS 协议，请根据需要进行选择，在 PC 下 RNDIS 可以直接加载，在 Linux/Android/IOS 系统中 ECM 可以直接加载。
+当前 [USB 网卡](usbnet/README.md)主要应用是使用USB网口作为 LAN 口，通过 4G 网卡进行数据转发进行网络访问。USB 网卡协议支持 ECM/RNDIS 协议，请根据需要进行选择，在 PC 下 RNDIS 可以直接加载，在 Linux/Android/IOS 系统中 ECM 可以直接加载。
 
 支持 USB 网卡的蜂窝通信模组通过 USB 口连接至支持 ECM 或 RNDIS 协议的主机设备，借助 4G 网络为其提供外网访问能力。模型如下图所示:  
 
@@ -173,8 +173,8 @@ Wi-Fi 无线网卡的网络配置有多种方式，如直接输入热点名称�
 QuecPython 模组通过 set_worktype(USBNET_Type) 方法设置 USB 网卡的协议类型后，调用 open()方法即可使能 USB 网卡功能。
 
 USBNET_Type 参数取值说明:
-- USBNET.Type_RNDIS : 指定 RNDIS 协议; [Windows](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-windows-example.html) 操作系统默认支持 RNDIS 协议。
-- USBNET.Type_ECM: 指定 ECM 协议; [Linux](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-linux-example.html)、[Android](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-android-example.html)、[IOS](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-linux-example.html)、[MACOS](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-linux-example.html)等操作系统默认支持 ECM 协议。
+- USBNET.Type_RNDIS : 指定 RNDIS 协议; [Windows](usbnet/usbnet-windows-example.md) 操作系统默认支持 RNDIS 协议。
+- USBNET.Type_ECM: 指定 ECM 协议; [Linux](usbnet/usbnet-linux-example.md)、[Android](usbnet/usbnet-android-example.md)、[IOS](usbnet/usbnet-linux-example.md)、[MACOS](usbnet/usbnet-linux-example.md)等操作系统默认支持 ECM 协议。
 
 示例代码如下:
 
@@ -194,7 +194,7 @@ USBNET_Type 参数取值说明:
 
 ## 简单场景  
 
-主要介绍如何在各种网卡状态下进行网络通信。以下场景数据通信将使用 [socket tcp](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/net-protocols/tcp-udp.html) 通信为例进行说明。
+主要介绍如何在各种网卡状态下进行网络通信。以下场景数据通信将使用 [socket tcp](../net-protocols/tcp-udp.md) 通信为例进行说明。
 
 <a id="click_jump_6.7.2.1"></a>
 
@@ -443,7 +443,7 @@ if __name__ == '__main__':
 
 ## 多网卡下网络配置
 
-如下图所示，模块集成了多种网卡设备，不同的网卡配置不同的工作模式，提供了不同的网络服务。 其中可以通过 [4G 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/index.html)、[Wi-Fi 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/index.html) [AP 模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-ap-example.html)、[以太网](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/index.html)[终端模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-wan-example.html)（ WAN ）访问外部网络，Wi-Fi 网卡 [STATION 模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-station-example.html)、以太网[网关模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-lan-example.html)（ LAN ）、[USB 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/index.html)均提供了局域网络，那么该如何选择网卡使用，以及如何配置网络转发，按照自己想要的方式进行网络通信？
+如下图所示，模块集成了多种网卡设备，不同的网卡配置不同的工作模式，提供了不同的网络服务。 其中可以通过 [4G 网卡](cellular/README.md)、[Wi-Fi 网卡](wifi/README.md) [AP 模式](wifi/wifi-ap-example.md)、[以太网](ethernet/README.md)[终端模式](ethernet/ethernet-wan-example.md)（ WAN ）访问外部网络，Wi-Fi 网卡 [STATION 模式](wifi/wifi-station-example.md)、以太网[网关模式](ethernet/ethernet-lan-example.md)（ LAN ）、[USB 网卡](usbnet/README.md)均提供了局域网络，那么该如何选择网卡使用，以及如何配置网络转发，按照自己想要的方式进行网络通信？
 
 ![](../../media/network-comm/nic/network_multi_nic_connection.png)
 

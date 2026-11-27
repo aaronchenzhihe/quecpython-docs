@@ -42,7 +42,7 @@ All modules support hardware IIC with both 100k and 400k frequency.
 Software Simulated IIC simulates IIC protocol by controlling GPIO pin levels in software.
 If the hardware IIC are not enough or are multiplexed as other functions, it is available to use simulated IIC to implement IIC communication.
 
-<!--Some of our modules support simulated IIC with customizable 1~100k frequency. Visit [WIKI-I2C_simulation](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.I2C_simulation.html) for more information on setting customized frequency.(https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C_simulation.html)。
+<!--Some of our modules support simulated IIC with customizable 1~100k frequency. Visit [WIKI-I2C_simulation](../../../api_reference/peripherals/machine.I2C_simulation.md) for more information on setting customized frequency.(https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C_simulation.html)。
 Below are modules that support IIC simulation. -->
 
 - EC600M-CN Series
@@ -67,7 +67,7 @@ This chapter will introduce how we can use IIC driver's functionalities and data
 3. <a href="#label_receivedata">Receive data</a>
 
 
-For specific introduction on API, please refer to [machine.IIC](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.I2C.html) in detail. 
+For specific introduction on API, please refer to [machine.IIC](../../../api_reference/peripherals/machine.I2C.md) in detail. 
 
 
 ### <span id="label_creatobject">Create an Object</span>
@@ -78,7 +78,7 @@ It is mandatory to specify IIC channel and working mode when creating an IIC obj
 class machine.I2C(I2Cn, MODE)
 ```
 
-For the parameters introduction and pin relationships, please refer to [machine.IIC](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.I2C.html)
+For the parameters introduction and pin relationships, please refer to [machine.IIC](../../../api_reference/peripherals/machine.I2C.md)
 
 When creating an object, please note following aspects. 
 
@@ -98,7 +98,7 @@ When sending data over IIC, a couple of points should be noted:
 - The `addr_len` refers to the address length of the register. You can get this information from the peripheral's datasheet. Commonly used IIC peripherals usually have an register address length of 1 byte such as QMA7981 3-Axis Accelerometer. 
 <img src="../../media/hardware/peripheral-interfaces/IIC/IIC_reg_lenth.png" style="border-style: solid; border-radius: 10px; color:  #f1f1f1;" border=3 alt="">
 
-For API introduction, please refer to [machine.UART.write](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.write%3C/code%3E).
+For API introduction, please refer to [machine.UART.write](../../../api_reference/peripherals/machine.UART.md#uart.write).
 
 
 ### <span id="label_receivedata">Receive Data</span>
@@ -116,7 +116,7 @@ When receiving data over IIC, a couple of points should be noted:
 
 <img src="../../media/hardware/peripheral-interfaces/IIC/IIC_read_delay.png" style="border-style: solid; border-radius: 10px; color:  #f1f1f1;" border=3 alt="">
 
-For API and parameter introductions, please refer to [machine.UART.read](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.read%3C/code%3E)
+For API and parameter introductions, please refer to [machine.UART.read](../../../api_reference/peripherals/machine.UART.md#uart.read)
 
 
 ## Application Examples							

@@ -99,7 +99,7 @@ total_sen_num = 3, total_sat_num = 12  # 输出一组完整GPGSV语句总条数�
 gnss.getOriginalData()
 ```
 
-该接口用于返回从串口读取的原始GNSS数据，如果用户希望拿到原始GNSS数据，自己进行处理或者进行一些数据确认，可以通过该接口来获取。该接口在每次调用 [`gnss.read_gnss_data(max_retry=1, debug=0)`](https://developer.quectel.com/doc/quecpython/API_reference/zh/gnsslib/gnss.html#%3Ccode%3Egnss.read_gnss_data%3C/code%3E)接口后，返回的即本次读取的原始数据。
+该接口用于返回从串口读取的原始GNSS数据，如果用户希望拿到原始GNSS数据，自己进行处理或者进行一些数据确认，可以通过该接口来获取。该接口在每次调用 [`gnss.read_gnss_data(max_retry=1, debug=0)`](gnss.md#gnss.read_gnss_data)接口后，返回的即本次读取的原始数据。
 
 **返回值描述**
 

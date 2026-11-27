@@ -62,7 +62,7 @@ You can confirm the APN information by contacting your carrier.
 
 - **How to Configure the Network Attach APN**
 
-  The APN can be configured using the `dataCall.setPDPContext` interface, with the `profileID` parameter set to 1. For detailed instructions on using this interface, please refer to the [APN Configuration and Retrieval Functionality](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#APN-Configuration-and-Retrieval) section of the QuecPython official WIKI.
+  The APN can be configured using the `dataCall.setPDPContext` interface, with the `profileID` parameter set to 1. For detailed instructions on using this interface, please refer to the [APN Configuration and Retrieval Functionality](../../../../api_reference/iotlib/dataCall.md#APN-Configuration-and-Retrieval) section of the QuecPython official WIKI.
 
 - **Is a Reboot Required After Configuration?**
 

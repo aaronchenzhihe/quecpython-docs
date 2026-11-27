@@ -2,13 +2,13 @@
 
 Wi-Fi 网卡通过建立热点，为其他设备提供 4G 网络服务。
 
-开发环境搭建请参考[快速入门章节](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)，本章节主要是以 ESP8266/ESP8285 为例，进行使用介绍。
+开发环境搭建请参考[快速入门章节](../../../../Getting_started/README.md)，本章节主要是以 ESP8266/ESP8285 为例，进行使用介绍。
 
 ## 硬件准备工作
 
 使用外挂  Wi-Fi  网卡功能，需要额外准备外挂的 Wi-Fi 网卡、路由器、杜邦线。
 
-通过杜邦线将模块与 Wi-Fi 网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考 Wiki 下[ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/zh/wifilib/WLAN.ESP8266.html)章节。
+通过杜邦线将模块与 Wi-Fi 网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考 Wiki 下[ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md)章节。
 
 [ESP8266硬件连接实物图](../../../media/network-comm/nic/network_wifi_esp8266_connection.png)
 [ASR5803硬件连接实物图](../../../media/network-comm/nic/network_wifi_asr5803_connection.png)

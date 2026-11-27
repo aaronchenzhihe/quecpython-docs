@@ -18,7 +18,7 @@
 
 ### 固件下载
 
-请前往[Quecpython官网下载中心](https://developer.quectel.com/resource-download?cid=15)下载EC600U-EU_AB的公版固件。
+请前往[Quecpython官网下载中心](https://www.quectel.com.cn/download-zone)下载EC600U-EU_AB的公版固件。
 
 ![LVGL_demo1](../../media/multi-media/lvgl/LVGL_demo1.png)
 
@@ -30,7 +30,7 @@
 
 ### 固件烧录
 
-使用QPYcom工具（[下载地址](https://developer.quectel.com/resource-download?cid=8)），进行固件烧录，
+使用QPYcom工具（[下载地址](https://www.quectel.com.cn/download-zone?cid=8)），进行固件烧录，
 
 ![lvgl_demo3](../../media/multi-media/lvgl/lvgl_demo3.jpg)
 
@@ -38,7 +38,7 @@
 
 ### LCD初始化
 
-LCD的初始化部分参见wiki：[machine LCD](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)
+LCD的初始化部分参见wiki：[machine LCD](../../../api_reference/peripherals/machine.LCD.md)
 
 本示例使用的是分辨率240*320的ST7789屏。以下为LCD初始化部分代码：
 

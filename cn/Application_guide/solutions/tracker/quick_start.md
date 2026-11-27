@@ -194,7 +194,7 @@ ota_status = {
    ![](../../media/solutions/tracker/code.png)
 
 2. 参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件 `_main.py`。
-3. 参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行。
+3. 参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行。
 
 ## 业务调试
 
@@ -202,7 +202,7 @@ ota_status = {
 
 执行 `_main.py` 脚本后，程序开始运行，在交互页面即可查看项目运行状态：
 
-> 程序要运行一段时间后才能获取到 GNSS 定位信息，具体可参考相关[文档说明](https://developer.quectel.com/doc/quecpython/FAQ/zh/hardware/gnss.html#%3Cstrong%3E%E4%BB%80%E4%B9%88%E6%98%AFGNSS%E7%9A%84%E5%86%B7%E5%90%AF%E5%8A%A8%E3%80%81%E6%B8%A9%E5%90%AF%E5%8A%A8%E5%92%8C%E7%83%AD%E5%90%AF%E5%8A%A8%3C/strong%3E)。
+> 程序要运行一段时间后才能获取到 GNSS 定位信息，具体可参考相关[文档说明](../../../FAQ/hardware/gnss.md#什么是GNSS的冷启动、温启动和热启动)。
 
 ![tracker_running](../../media/solutions/tracker/tracker_running.png)
 

@@ -356,7 +356,7 @@ GPIO 引脚与地 (VSS) 之间连接有下拉电阻。 当 GPIO 引脚未被设�
 
 QuecPython系列模组支持情况如下：
 
-详细可参考每个模组对应的[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)
+详细可参考每个模组对应的[GPIO复用表](https://www.quectel.com.cn/download-zone)
 
 | 模组    | 浮空输入 | 上拉输入 | 下拉输入 | 开漏输出 | 推挽输出 | 支持数量 |
 | ------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -396,7 +396,7 @@ QuecPython系列模组支持情况如下：
 
 主要介绍QuecPython GPIO使用以及注意事项。
 
-QuecPython具体GPIO相关API使用介绍:[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+QuecPython具体GPIO相关API使用介绍:[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 #### 创建对象
 
@@ -406,7 +406,7 @@ GPIO的输入输出，上下拉，默认电平等均可在这一步骤种实现�
 class machine.Pin(GPIOn, [dir], [pull], [value])
 ```
 
-参数介绍以及GPIO引脚编号与物理映射关系请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+参数介绍以及GPIO引脚编号与物理映射关系请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 
 
@@ -432,7 +432,7 @@ class machine.Pin(GPIOn, [dir], [pull], [value])
 Pin.read()
 ```
 
-方法详细使用请参考[Pin.read](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3EPin.read%3C/code%3E)
+方法详细使用请参考[Pin.read](../../../api_reference/peripherals/machine.Pin.md#Pin.read)
 
 当GPIO被配置为输入时，其内部结构允许它检测并反应于施加于其上的电压。你可以查询微控制器的内部寄存器或使用提供的Pin.read方法来读取该状态。
 
@@ -458,7 +458,7 @@ Pin.read()
 Pin.write(value)
 ```
 
-方法详细使用请参考[Pin.write](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3EPin.write%3C/code%3E)
+方法详细使用请参考[Pin.write](../../../api_reference/peripherals/machine.Pin.md#Pin.write)
 
 当GPIO被配置为输出模式时，它可以输出高电平或低电平
 
@@ -486,7 +486,7 @@ Pin.write(value)
 Pin.set_dir(value)
 ```
 
-方法详细使用请参考[Pin.set_dir](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3EPin.set_dir%3C/code%3E)
+方法详细使用请参考[Pin.set_dir](../../../api_reference/peripherals/machine.Pin.md#Pin.set_dir)
 
 方向选择：
 
@@ -513,7 +513,7 @@ Pin.set_dir(value)
 class machine.ExtInt(GPIOn, mode, pull, callback)
 ```
 
-方法详细使用请参考[machine.ExtInt](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html)
+方法详细使用请参考[machine.ExtInt](../../../api_reference/peripherals/machine.ExtInt.md)
 
 中断触发类型：
 
@@ -548,7 +548,7 @@ extint.enable()
 extint.disable()
 ```
 
-方法详细使用请参考[Eextint.enable](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html#%3Ccode%3Eextint.enable%3C/code%3E)和[Extint.disable](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html#%3Ccode%3Eextint.disable%3C/code%3E)
+方法详细使用请参考[Eextint.enable](../../../api_reference/peripherals/machine.ExtInt.md#extint.enable)和[Extint.disable](../../../api_reference/peripherals/machine.ExtInt.md#extint.disable)
 
 使能：
 
@@ -568,7 +568,7 @@ extint.disable()
 2. **全局与局部**：在一些系统中，你可以选择失能所有中断（全局失能）或仅失能特定的中断源（局部失能）。
 3. **安全性**：在失能中断后，务必记得在适当的时候再次使能它，否则可能会导致系统无法响应某些关键事件。
 
-其它方法使用请详细参考WiKi [machine.ExtInt](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html)
+其它方法使用请详细参考WiKi [machine.ExtInt](../../../api_reference/peripherals/machine.ExtInt.md)
 
 
 
@@ -651,9 +651,9 @@ extint.disable()
 
 GPIO复用表通常是一种表格或文档，用于描述特定的芯片、微控制器或系统中的GPIO引脚的不同功能和复用选项。在许多芯片和微控制器中，GPIO引脚通常具有多个功能和复用选项。这意味着每个GPIO引脚可以被配置为不同的输入或输出功能，如数字输入、数字输出、模拟输入、模拟输出或特定的外设功能（如SPI、UART、I2C等）。
 
-QuecPython的[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)提供了每个GPIO引脚的功能和复用选项的详细说明以及引脚在开机过程的状态变化。该表列出了每个引脚的编号、默认功能以及可用的复用选项。以便于用户正确配置和使用GPIO引脚。这对于连接外部设备、驱动显示器、控制通信接口等应用非常重要。
+QuecPython的[GPIO复用表](https://www.quectel.com.cn/download-zone)提供了每个GPIO引脚的功能和复用选项的详细说明以及引脚在开机过程的状态变化。该表列出了每个引脚的编号、默认功能以及可用的复用选项。以便于用户正确配置和使用GPIO引脚。这对于连接外部设备、驱动显示器、控制通信接口等应用非常重要。
 
-> 具体的GPIO复用表的格式和内容会因模组而有所不同。因此，对于特定的模组，你需要参考相关的[硬件设计手册](https://developer.quectel.com/resource-download?cid=20)或[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)，以获得详细的GPIO的配置信息。
+> 具体的GPIO复用表的格式和内容会因模组而有所不同。因此，对于特定的模组，你需要参考相关的[硬件设计手册](https://www.quectel.com.cn/download-zone)或[GPIO复用表](https://www.quectel.com.cn/download-zone)，以获得详细的GPIO的配置信息。
 >
 
 基于QuecPython EC600U介绍GPIO复用表的使用。其它模组复用表类似。
@@ -677,9 +677,9 @@ QuecPython的[GPIO复用表](https://developer.quectel.com/resource-download?cid
 
 引脚的开机状态在不同的硬件平台和开发环境中可能会有所不同。一般情况下，当系统上电或重启时，GPIO引脚的初始状态是未定义的，软件无法控制。因此，对于一些控制LED灯或者使能外设开关需要特定开机状态的引脚，在设计硬件电路之前，请查阅我们相关的文档或参考资料，以了解特定平台和环境下GPIO引脚的开机状态。
 
-各个平台的GPIO引脚开机状态可通过查看[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)获取。
+各个平台的GPIO引脚开机状态可通过查看[GPIO复用表](https://www.quectel.com.cn/download-zone)获取。
 
-大部分的GPIO引脚开机时状态稳定，少部分GPIO引脚系统开机之后被软件改变电平状态。QuecPython [GPIO复用表](https://developer.quectel.com/resource-download?cid=19)中有详细的描述。
+大部分的GPIO引脚开机时状态稳定，少部分GPIO引脚系统开机之后被软件改变电平状态。QuecPython GPIO复用表中有详细的描述。
 
 ![pin_satus_at_reset](../../media/hardware/peripheral-interfaces/GPIO/GPIO_pin_satus_at_reset.png)
 
@@ -691,13 +691,13 @@ QuecPython的[GPIO复用表](https://developer.quectel.com/resource-download?cid
 
 QuecPython除了BG95的模组外，所有的GPIO都支持中断功能。
 
-BG95系列可通过查看[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)获取支持中断功能的GPIO。
+BG95系列可通过查看GPIO复用表获取支持中断功能的GPIO。
 
-除了EC600E/EC800E外，其他平台支持触发中断的GPIO都支持双边沿触发中断。EC600E/EC800E平台仅支持单边沿触发中断，且设置中断时，上拉和下拉状态仅支持其中一种，具体情况可以参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)模块。
+除了EC600E/EC800E外，其他平台支持触发中断的GPIO都支持双边沿触发中断。EC600E/EC800E平台仅支持单边沿触发中断，且设置中断时，上拉和下拉状态仅支持其中一种，具体情况可以参考[machine.Pin](../../../api_reference/peripherals//machine.Pin.md)模块。
 
 ### 唤醒中断
 
-EC200U/EC600U/EG912U/EG915U平台模组的GPIO全部支持在休眠状态下唤醒模组。其他平台的GPIO大部分支持唤醒模组，具体可以通过查看[GPIO复用表](https://developer.quectel.com/resource-download?cid=19)确认。
+EC200U/EC600U/EG912U/EG915U平台模组的GPIO全部支持在休眠状态下唤醒模组。其他平台的GPIO大部分支持唤醒模组，具体可以通过查看GPIO复用表确认。
 
 ![1692429975477](../../media/hardware/peripheral-interfaces/GPIO/GPIO_wake-up_interrupt.png)
 
@@ -708,7 +708,6 @@ EC200U/EC600U/EG912U/EG915U平台模组的GPIO全部支持在休眠状态下唤�
 介绍模组进入休眠后，GPIO引脚的状态变化。
 
 QuecPython除了EC600E/EC800E的模组外，其他平台的模组在进入休眠后，GPIO状态保持不变。EC600E/EC800E模组为了控制功耗，除了特定的AGPIO之外，其他的GPIO引脚在进入休眠时会全部下电。EC600E/EC800E模组在休眠状态被唤醒之后，GPIO会恢复到休眠之前的状态。
-
 
 
 

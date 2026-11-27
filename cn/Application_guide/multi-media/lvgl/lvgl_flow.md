@@ -20,7 +20,7 @@ LVGL通过注册的LCD显示驱动对象，将绘制的图形数据刷新到LCD�
 
 LVGL初始化流程如下：
 
-1. 正确初始化LCD显示屏，参照[class LCD - LCD显示屏](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)。
+1. 正确初始化LCD显示屏，参照[class LCD - LCD显示屏](../../../api_reference/peripherals/machine.LCD.md)。
 2. 初始化显示负载。
 3. 初始化显示驱动，指定刷新接口为LCD对象的写屏接口
 4. 如果有TP等输入设备，初始化TP对象。
@@ -94,7 +94,7 @@ lv.task_handler()
 
 > **注意：**
 >
-> - LCD初始化部分参照[class LCD - LCD显示屏](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)。
+> - LCD初始化部分参照[class LCD - LCD显示屏](../../../api_reference/peripherals/machine.LCD.md)。
 >
 > - LVGL需要LCD对象提供lcd_write接口来刷新屏幕。
 > - LVGL需要TP对象提供read接口来进行触摸输入。

@@ -396,7 +396,7 @@ It is mainly divided into two types: GPIO and Extlnt.
 
 In this chapter, it will introduce how to use QuecPython GPIO and relevant notes.
 
-For specific API on QuecPython GPIO, please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+For specific API on QuecPython GPIO, please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 #### Create object
 
@@ -406,7 +406,7 @@ Input/output, pull-up/down and default pin of GPIO can be implemented in this st
 class machine.Pin(GPIOn, [dir], [pull], [value]
 ```
 
-For parameter introduction and GPIO pin number & physical mapping, please see [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E).
+For parameter introduction and GPIO pin number & physical mapping, please see [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin).
 
 If the pin is to be available in relevant module, please import it first. Then, you can create one pin as following method.
 
@@ -428,7 +428,7 @@ It is available to take it as input pull-up/down via `PULL_PU` `PULL_PD` or  `PU
 Pin.read()
 ```
 
-For specific method, please refer to [Pin.read](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3EPin.read%3C/code%3E).
+For specific method, please refer to [Pin.read](../../../api_reference/peripherals/machine.Pin.md#Pin.read).
 
 When the GPIO is configured as input, its inner structure allows itself to detect and reflect the voltage imposed. It is available for you to read this status via querying internal register in micro-controller or `Pin.read`.
 
@@ -452,7 +452,7 @@ Note
 Pin.write(value)
 ```
 
-For specific method, please refer to [Pin.write](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3EPin.write%3C/code%3E).
+For specific method, please refer to [Pin.write](../../../api_reference/peripherals/machine.Pin.md#Pin.write).
 
 When the GPIO is configured as output mode, it is capable to output high or low level.
 
@@ -480,7 +480,7 @@ Note
 Pin.set_dir(value)
 ```
 
-For specific method, please refer to [Pin.set_dir](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3EPin.set_dir%3C/code%3E).
+For specific method, please refer to [Pin.set_dir](../../../api_reference/peripherals/machine.Pin.md#Pin.set_dir).
 
 Direction selection
 
@@ -509,7 +509,7 @@ This class is used to configure the I/O pin to trigger an interrupt when an exte
 class machine.ExtInt(GPIOn, mode, pull, callback)
 ```
 
-For specific method, please refer to [machine.ExtInt](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html).
+For specific method, please refer to [machine.ExtInt](../../../api_reference/peripherals/machine.ExtInt.md).
 
 Types to trigger interrupt
 
@@ -544,7 +544,7 @@ extint.enable()
 extint.disable()
 ```
 
-For specific method, please refer to [Eextint.enable](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html#%3Ccode%3Eextint.enable%3C/code%3E) and [Extint.disable](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html#%3Ccode%3Eextint.disable%3C/code%3E)
+For specific method, please refer to [Eextint.enable](../../../api_reference/peripherals/machine.ExtInt.md#extint.enable) and [Extint.disable](../../../api_reference/peripherals/machine.ExtInt.md#extint.disable)
 
 Enable
 
@@ -564,7 +564,7 @@ Note
 2. **Global and local**: In some systems, it is available to disable all interrupts (disable globally) or specialized interrupt (disable locally).
 3. **Security**: After disabling interrupt, it is mandatory to enable it again in appropriate situation. Otherwise, it will cause a failure to respond some vital events in system.
 
-For other method, please refer to wiki -[machine.ExtInt](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html) in detail. 
+For other method, please refer to wiki -[machine.ExtInt](../../../api_reference/peripherals/machine.ExtInt.md) in detail. 
 
 ## Application examples
 
@@ -607,7 +607,7 @@ It mainly introduces applications related to GPIO.
 
 - When reading mechanical switch or button via GPIO, it may occur bounce. In this situation, the HW or SW debounce can be applied to solve.
 
-For specific, please refer to [Debounce](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/GPIO.html#Debounce).
+For specific, please refer to [Debounce](GPIO.md#Debounce).
 
 ### **Interrupt**:
 

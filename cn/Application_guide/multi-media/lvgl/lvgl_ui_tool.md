@@ -101,7 +101,7 @@ GUI guider生成的脚本与实际应用的脚本还有些轻微差异。稍微�
 
 ### 添加LCD的初始化
 
-在gui guider生成的py文件开始添加LCD显示屏初始化代码，参照[wiki](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)。
+在gui guider生成的py文件开始添加LCD显示屏初始化代码，参照[wiki](../../../api_reference/peripherals/machine.LCD.md)。
 
 ### 修改生成的代码
 

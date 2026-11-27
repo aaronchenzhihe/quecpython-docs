@@ -12,7 +12,7 @@ class machine.ExtInt(GPIOn, mode, pull, callback, [filter_time])
 
 **参数描述：**
 
-- `GPIOn` - 需要控制的GPIO引脚号，int类型，参照[Pin模块](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)的引脚定义(除BG95M3外)，<a href="#BG95M3_label_pinmap">点此查看</a>BG95M3平台引脚对应关系
+- `GPIOn` - 需要控制的GPIO引脚号，int类型，参照[Pin模块](machine.Pin.md#machine.Pin)的引脚定义(除BG95M3外)，<a href="#BG95M3_label_pinmap">点此查看</a>BG95M3平台引脚对应关系
 
 - `mode` - 触发方式，int类型，说明如下：<br />`IRQ_RISING` – 上升沿触发<br />`IRQ_FALLING` – 下降沿触发<br />`IRQ_RISING_FALLING` – 上升和下降沿触发(EC600E/EC800E不支持)
 

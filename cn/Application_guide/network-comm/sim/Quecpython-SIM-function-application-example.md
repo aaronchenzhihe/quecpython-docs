@@ -405,11 +405,11 @@ sim.unblockPin("12345678", "0000")
 
 ## 电话薄功能
 
-用户在实际项目应用过程中，如需保存对端电话号码，需要用到电话薄功能。此接口可以提供保存电话号码信息的功能。此功能接口支持情况请参考QuecPython官网wiki[电话薄功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%E7%94%B5%E8%AF%9D%E7%B0%BF%E5%8A%9F%E8%83%BD)
+用户在实际项目应用过程中，如需保存对端电话号码，需要用到电话薄功能。此接口可以提供保存电话号码信息的功能。此功能接口支持情况请参考QuecPython wiki[电话薄功能](../../../api_reference/iotlib/sim.md#电话簿功能)
 
 ### 读取电话薄
 
-用户可通过如下接口读取电话薄。其中电话号码存储位置参考QuecPython官网wiki中`sim.readPhonebook()`[接口参数描述](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.readPhonebook%3C/code%3E)。需注意start-end差值需要小于等于20。
+用户可通过如下接口读取电话薄。其中电话号码存储位置参考QuecPython官网wiki中`sim.readPhonebook()`[接口参数描述](../../../api_reference/iotlib/sim.md#sim.readPhonebook)。需注意start-end差值需要小于等于20。
 
 接口如下：
 
@@ -501,7 +501,7 @@ if __name__ == '__main__':
 
 ##  SIM卡热插拔
 
-在项目中，用户如需监测SIM卡插拔情况，可以用如下接口注册回调函数。当SIM卡插入或者拔出时，系统将会调用如下接口注册的回调函数，回调函数会上送SIM卡插入或者拔出的事件给应用层。用户可以根据通知事件来判断SIM卡是插入还是拔出。QuecPython模组对此接口支持情况请参考QuecPython官网wiki[热插拔功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%E7%83%AD%E6%8F%92%E6%8B%94%E5%8A%9F%E8%83%BD)
+在项目中，用户如需监测SIM卡插拔情况，可以用如下接口注册回调函数。当SIM卡插入或者拔出时，系统将会调用如下接口注册的回调函数，回调函数会上送SIM卡插入或者拔出的事件给应用层。用户可以根据通知事件来判断SIM卡是插入还是拔出。QuecPython模组对此接口支持情况请参考QuecPython官网wiki[热插拔功能](../../../api_reference/iotlib/sim.md#热插拔功能)
 
 ### 注册热插拔回调
 
@@ -639,7 +639,7 @@ if __name__ == '__main__':
 
 ## 双卡切换
 
-用户在项目应用过程中，为了网络稳定，满足多种网络场景，需要两张不同SIM卡可以随时切换的功能，以应对各种网络异常情况。QuecPython模组对于此功能支持情况请参考QuecPython官网wiki中[SIM卡切卡功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#SIM%E5%8D%A1%E5%88%87%E5%8D%A1%E5%8A%9F%E8%83%BD)。
+用户在项目应用过程中，为了网络稳定，满足多种网络场景，需要两张不同SIM卡可以随时切换的功能，以应对各种网络异常情况。QuecPython模组对于此功能支持情况请参考QuecPython官网wiki中[SIM卡切卡功能](../../../api_reference/iotlib/sim.md#SIM卡切卡功能)。
 
 ### 注册切卡回调函数
 
@@ -823,5 +823,4 @@ if __name__ == '__main__':
             sim.switchCard(0)
 
 ```
-
 

@@ -2,18 +2,26 @@
 
 **Hardware:**
 
-- A [**QuecPython_EC2X_EVB**](../../../Dev_board_guide/en/ec2x-evb.md) (For detailed information about the EVB, see the EVB list below.)
+- **QuecPython_EC2X_EVB**(For detailed information about the EVB, see the EVB list below.)
 - **USB-A to USB-C cable** 
 - **PC** (Windows7 & Windows10 & Windows11)
 
 **EVB List:**
 
-- [EC2X_EVB](../../../Dev_board_guide/en/ec2x-evb.md)
-- [BG95_EVB](../../../Dev_board_guide/en/bg95-evb.md)
-- [EC200X_EVB](../../../Dev_board_guide/en/ec200x-evb.md)
-- [EG91X_EVB](../../../Dev_board_guide/en/eg91x-evb.md)
-- [EC600U_235_EVB](../../../Dev_board_guide/en/ec600u-235.md)
-- [BG95/EG915U/EG912U_Core_EVB](../../../Dev_board_guide/en/bg-eg-core-evb.md)
+- EC2X_EVB
+- EC600X_EVB
+- EC800X_EVB
+- EC600X/EC800X_CORE_EVB
+- BG95_EVB
+- EC200X_EVB
+- EG91X_EVB
+- EC600U_235_EVB
+- BG95/EG915U/EG912U_CORE_EVB
+- EC800G_HUA_EVB
+- EC800X_DUINO_EVB
+- EC800X_PICO_EVB
+
+**Official website module query entry：**[click to enter](https://www.quectel.com.cn/shop)
 
 
 **Software:**

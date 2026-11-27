@@ -114,10 +114,10 @@ PA(Power Amplifier)音频功率放大器的作用是把来自音源或前级放�
 - 音频播放需要创建一个Audio对象，指定输出通道，如aud = audio.Audio(0)表示使用听筒输出。
 - 音频播放可以使用aud.play(priority, breakin, filename)方法，指定播放优先级、打断模式和文件名称。支持mp3、amr和wav格式的文件播放。
 - 使用aud.playStream(format, buf)方法，指定音频流格式和内容。支持mp3、amr和wav格式的音频流播放。
-音频播放的更多接口和详细使用方法见[class Audio - 音频播放](https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.Audio.html)。
+音频播放的更多接口和详细使用方法见[class Audio - 音频播放](../../api_reference/medialib/audio.Audio.md)。
 ## 语音电话
 语音电话是指使用语音编解码器将语音信号转换为数字信号，通过网络传输到对方，再由对方的语音编解码器还原为语音信号的过程。
-语音电话的更多接口和详细使用方法见[voiceCall - 电话功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/voiceCall.html)。
+语音电话的更多接口和详细使用方法见[voiceCall - 电话功能](../../api_reference/iotlib/voiceCall.md)。
 
 ## 录音
 外部传入的声音通过麦克风的输入设备转化为电信号后，再通过Codec转化为数字信号传递给模组，模组将数字信号转化为不同格式（如AMR、WAV）的音频文件存储到Flash上。
@@ -125,7 +125,7 @@ PA(Power Amplifier)音频功率放大器的作用是把来自音源或前级放�
 
 - 录音需要创建一个Record对象，指定输入通道，如record = audio.Record(0)表示使用听筒输出。
 - 使用record.start(file_name,seconds)方法，指定录音文件名称和录音长度。
-语音电话的更多接口和详细使用方法见[class Record - 录音](https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.Record.html)。
+语音电话的更多接口和详细使用方法见[class Record - 录音](../../api_reference/medialib/audio.Record.md)。
 ## TTS
 TTS是Text To Speech的缩写，即文本转语音，是一种能把文字内容转换为语音输出的技术。当前TTS模块主要包含如下接口：
 - **初始化**：使用audio.TTS()创建一个TTS对象，指定输出通道。
@@ -134,7 +134,7 @@ TTS是Text To Speech的缩写，即文本转语音，是一种能把文字内容
 - **暂停**：使用TTS对象的pause()方法，可以暂停当前正在播放的语音。
 - **恢复**：使用TTS对象的resume()方法，可以恢复暂停的语音。
 - **设置**：使用TTS对象的set_volume()、set_speed()等方法，可以设置音量、语速等参数。
-语音电话的更多接口和详细使用方法见[class TTS - 文本到语音播放](https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.TTS.html)。
+语音电话的更多接口和详细使用方法见[class TTS - 文本到语音播放](../../api_reference/medialib/audio.TTS.md)。
 
 *使用注意事项：*
 - **数字和数值**：数字：数字之间添加空格。如“1 2 3”，会播报成 “一二三”； 数值：“123” 会 播报成 “一百二十三”

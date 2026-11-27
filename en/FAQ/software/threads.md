@@ -15,7 +15,7 @@ When programming multiple threads, it is recommended to monitor other sub-thread
 ### **When there is no semaphore related interface in the multi-thread function, how to implement the semaphore function?**
 The implementation of QuecPython's multi-thread module is originated from the thread of standard Python. As a result, the semaphore-related interfaces are not provided. 
 
-If is is needed to implement a semaphore-like function, the mutex  ([`_thread.allocate_lock`](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/_thread.html#Mutex) method) or message queue ([`queue.Queue`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/Queue.html) method) can be applied. 
+If is is needed to implement a semaphore-like function, the mutex  ([`_thread.allocate_lock`](../../api_reference/stdlib/_thread.md#Mutex) method) or message queue ([`queue.Queue`](../../api_reference/syslib/Queue.md) method) can be applied. 
 
 If the maximum value of the semaphore is only 1, the mutex or message queue can be applied to implement the semaphore function; if the value of the semaphore is greater than 1, the message queue will be valid to implement the semaphore function.
 

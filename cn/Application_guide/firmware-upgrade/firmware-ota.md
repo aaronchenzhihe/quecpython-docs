@@ -81,7 +81,7 @@ OTA云平台的作用是：
 
 ​   c. 升级状态管理，如升级成功或者失败。
 
-借助于OTA云平台可实现网页控制OTA自动升级。使用前需要先初始化云平台相关的功能。API细节参考[QuecPython IoT 平台](https://developer.quectel.com/doc/quecpython/API_reference/zh/cloudlib/index.html)。
+借助于OTA云平台可实现网页控制OTA自动升级。使用前需要先初始化云平台相关的功能。API细节参考[QuecPython IoT 平台](../../api_reference/cloudlib/README.md)。
 
 ###### 2. 接收云平台升级消息
 
@@ -89,7 +89,7 @@ OTA云平台的作用是：
 
 ###### 3. 下载升级包
 
-获取到升级包URL后，设备则调用固件升级相关API进行升级包下载、写入及校验。API细节参考[fota - 固件升级相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/fota.html)。
+获取到升级包URL后，设备则调用固件升级相关API进行升级包下载、写入及校验。API细节参考[fota - 固件升级相关功能](../../api_reference/syslib/fota.md)。
 
 ###### 4. 重启
 
@@ -103,7 +103,7 @@ OTA云平台的作用是：
 
 ##### 阿里云
 
-如果使用阿里云平台的OTA功能，首先需要接入阿里云，设备如何接入阿里云可以参考[aLiYun - 阿里 IoT 平台](https://developer.quectel.com/doc/quecpython/API_reference/zh/cloudlib/aLiYun.html)。接入阿里云之后如何使用云平台OTA功能可以参见[阿里云物联网平台OTA升级操作相关文档](https://help.aliyun.com/document_detail/130990.html?spm=a2c4g.130990.0.0.28722110xYe5Td)。
+如果使用阿里云平台的OTA功能，首先需要接入阿里云，设备如何接入阿里云可以参考[aLiYun - 阿里 IoT 平台](../../api_reference/cloudlib/aLiYun.md)。接入阿里云之后如何使用云平台OTA功能可以参见[阿里云物联网平台OTA升级操作相关文档](https://help.aliyun.com/document_detail/130990.html?spm=a2c4g.130990.0.0.28722110xYe5Td)。
 
 这里以阿里云为例展示OTA平台使用操作步骤：
 
@@ -125,7 +125,7 @@ OTA云平台的作用是：
 
 ##### 腾讯云
 
-如果使用腾讯云平台的OTA功能，首先需要接入腾讯云，设备如何接入腾讯云可以参考[TenCentYun- 腾讯 IoT 平台](https://developer.quectel.com/doc/quecpython/API_reference/zh/cloudlib/TenCentYun.html)。接入腾讯云之后如何使用云平台OTA功能可以参见[腾讯云物联网开发平台固件升级协议](https://cloud.tencent.com/document/product/1081/39359)、[腾讯云物联网开发平台固件升级操作](https://cloud.tencent.com/document/product/1081/40296)。
+如果使用腾讯云平台的OTA功能，首先需要接入腾讯云，设备如何接入腾讯云可以参考[TenCentYun- 腾讯 IoT 平台](../../api_reference/cloudlib/TenCentYun.md)。接入腾讯云之后如何使用云平台OTA功能可以参见[腾讯云物联网开发平台固件升级协议](https://cloud.tencent.com/document/product/1081/39359)、[腾讯云物联网开发平台固件升级操作](https://cloud.tencent.com/document/product/1081/40296)。
 
 ### APP升级使用步骤
 
@@ -141,7 +141,7 @@ OTA云平台的作用是：
 
 ###### 1. 初始化云平台功能
 
-借助于OTA云平台可实现网页控制OTA自动升级。使用前需要先初始化云平台相关的功能。API细节参考 [QuecPython IoT 平台](https://developer.quectel.com/doc/quecpython/API_reference/zh/cloudlib/index.html)。
+借助于OTA云平台可实现网页控制OTA自动升级。使用前需要先初始化云平台相关的功能。API细节参考 [QuecPython IoT 平台](../../api_reference/cloudlib/README.md)。
 
 ###### 2. 接收云平台升级消息
 
@@ -149,7 +149,7 @@ OTA云平台的作用是：
 
 ###### 3. 下载升级包
 
-获取到升级包URL后，设备根据URL下载待升级的目标文件到文件系统中。支持单文件下载和多文件批量下载方式。API细节参考[app_fota - 用户文件升级相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/app_fota.html)。
+获取到升级包URL后，设备根据URL下载待升级的目标文件到文件系统中。支持单文件下载和多文件批量下载方式。API细节参考[app_fota - 用户文件升级相关功能](../../api_reference/syslib/app_fota.md)。
 
 ###### 4. 设置升级标志
 

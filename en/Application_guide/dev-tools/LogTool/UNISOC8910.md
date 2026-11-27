@@ -300,7 +300,7 @@ Go to the directory to save the dump file, compress all the dump files, and send
 
 ### Export Pcap Files
 
-*coolwatcher* supports the automatic saving of pcap files, but this function is not enabled by default. The method to enable the automatic saving of pcap files has been mentioned in "Step 3" of the [Capture AP Logs](./UNISOC8910.html#Capture AP Logs). That is, click the "Set" icon in the "Trace tool" window toolbar, and the following settings window will pop up. Tick "**Save Pcap**" at position ⑤ in the figure, and click "**OK**".
+*coolwatcher* supports the automatic saving of pcap files, but this function is not enabled by default. The method to enable the automatic saving of pcap files has been mentioned in "Step 3" of the [Capture AP Logs](./UNISOC8910.md#Capture AP Logs). That is, click the "Set" icon in the "Trace tool" window toolbar, and the following settings window will pop up. Tick "**Save Pcap**" at position ⑤ in the figure, and click "**OK**".
 
 ![](../../media/dev-tools/LogTool/UNISOC8910-cooltools-config.png)
 

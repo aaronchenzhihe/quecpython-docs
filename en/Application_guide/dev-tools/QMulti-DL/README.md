@@ -7,7 +7,7 @@
 
 [Download](https://developer.quectel.com/en/resource-download?cid=261)
 
-![](../../media/dev-tools/QMulti-DL/1.png)
+![](../../media/dev-tools/QMulti-DL/2.png)
 
 ## User Guide
 

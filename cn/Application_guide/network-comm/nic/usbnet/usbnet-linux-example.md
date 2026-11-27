@@ -6,7 +6,7 @@
 
 1. 开发环境准备  
 
-   请参考[快速入门章节](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)（如已熟悉请跳过此步骤），搭建开发使用环境。 
+   请参考[快速入门章节](../../../../Getting_started/README.md)（如已熟悉请跳过此步骤），搭建开发使用环境。 
    此处 Linux 系统使用的是 Ubuntu 版本，在电脑下搭建 Linux 环境测试。
 
 2. 打开 QPYCOM 工具连接设备
@@ -16,7 +16,7 @@
 
 3. 编写 USB 网卡开机启动脚本
 
-    具体 USB 网卡功能接口请参考 Wiki上对应的 [USBNET章节](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USBNET.html)。  
+    具体 USB 网卡功能接口请参考 Wiki上对应的 [USBNET章节](../../../../api_reference/peripherals/misc.USBNET.md)。  
     新建一个 main.py 文件，输入以下内容：
 
     ```python

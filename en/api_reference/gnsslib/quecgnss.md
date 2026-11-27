@@ -16,27 +16,28 @@ This feature provides the APIs of the built-in GNSS feature.
 
 ```python
 import quecgnss
-
+import utime 
 
 def main():
-    quecgnss.configSet(0,1)#Set the positioning constellation to GPS + Beidou.
-    quecgnss.configSet(2,1)#Turn on AGPS
-    quecgnss.configSet(4,1)#Turn on the backup power supply
+    quecgnss.configSet(0,1)#Set the location galaxy toGPS+Beidou
+    quecgnss.configSet(2,1)#open AGPS
+    quecgnss.configSet(4,1)#Turn on the backup power
     ret = quecgnss.init()
     if ret == 0:
         print('GNSS init ok.')
     else:
         print('GNSS init failed.')
         return -1
-    data = quecgnss.read(4096)
-    print(data[1].decode())
+    for i in range(1000):
+        data = quecgnss.read(4096)
+        print(data[1].decode())
+        utime.sleep(3)
 
     quecgnss.gnssEnable(0)
 
 
 if __name__ == '__main__':
     main()
-
 
 #===================================================================================================
 #Execution Result

@@ -2,13 +2,13 @@
 
 The Wi-Fi NIC connects to the hotspot to provide network access to the module.
 
-Please refer to the [Getting Started](https://developer.quectel.com/doc/quecpython/Getting_started/en/index.html) section for development environment setup. This section introduces the usage of ESP8266/ESP8285.
+Please refer to the [Getting Started](../../../../Getting_started/README.md) section for development environment setup. This section introduces the usage of ESP8266/ESP8285.
 
 ## Hardware Preparation
 
 To use the external Wi-Fi NIC functionality, you need to prepare an external Wi-Fi NIC, a router, and DuPont wires.
 
-Connect the module to the Wi-Fi NIC with DuPont wires. The wiring between the module and the NIC can be configured according to actual requirements. For specific interface configuration parameters, please refer to the [ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/WLAN.ESP8266.html) section on Wiki.
+Connect the module to the Wi-Fi NIC with DuPont wires. The wiring between the module and the NIC can be configured according to actual requirements. For specific interface configuration parameters, please refer to the [ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md) section on Wiki.
 
 [ESP8266 Hardware Connection Photo](../../../media/network-comm/nic/network_wifi_esp8266_connection.png)  
 [ASR5803 Hardware Connection Photo](../../../media/network-comm/nic/network_wifi_asr5803_connection.png)  
@@ -120,7 +120,7 @@ ESP8266/ESP8285 is a standalone device that includes independent network configu
 
 ```
 
-## TCP ([socket](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/usocket.html)) Application Example
+## TCP ([socket](../../../../api_reference/stdlib/usocket.md)) Application Example
 
 The following examples demonstrate two methods of TCP communication over Wi-Fi network.
 
@@ -128,7 +128,7 @@ The following examples demonstrate two methods of TCP communication over Wi-Fi n
 
 In this example, TCP communication is performed with a Wi-Fi NIC. The `bind` interface of the socket module is used to specify sending through the Wi-Fi interface.
 
->In the example below, the `bind` interface binds to 172.16.1.2, which is the IP address of the Wi-Fi NIC. The IP address of the NIC can be queried through the `ipconfig` interface of the NIC object. For details, refer to the [Wi-Fi](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/index.html) chapter in the Wiki.
+>In the example below, the `bind` interface binds to 172.16.1.2, which is the IP address of the Wi-Fi NIC. The IP address of the NIC can be queried through the `ipconfig` interface of the NIC object. For details, refer to the [Wi-Fi](../../../../api_reference/wifilib/README.md) chapter in the Wiki.
 
 ```python
 # Import the usocket module
@@ -187,4 +187,4 @@ if __name__ == '__main__':
 
 ## Application of MQTT/HTTP and Other Application Protocols
 
-Note that the MQTT/HTTP application protocol is used over a Wi-Fi NIC. Because the built-in MQTT/HTTP communication module does not apply the binding NIC operation interface, you need to configure an Ethernet NIC as the default NIC. For specific MQTT/HTTP usage, refer to the [umqtt](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html) and [reqeust](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/request.html) sections in the Application Layer Protocol Wiki.
+Note that the MQTT/HTTP application protocol is used over a Wi-Fi NIC. Because the built-in MQTT/HTTP communication module does not apply the binding NIC operation interface, you need to configure an Ethernet NIC as the default NIC. For specific MQTT/HTTP usage, refer to the [umqtt](../../../../api_reference/networklib/umqtt.md) and [reqeust](../../../../api_reference/networklib/request.md) sections in the Application Layer Protocol Wiki.

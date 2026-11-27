@@ -140,7 +140,7 @@ QuecPython_BG95_EVB 开发板是一款专门针对QuecPython设计的、小巧�
 
 ### 驱动安装
 
-- 打开[QuecPython官网驱动下载链接](https://developer.quectel.com/resource-download?cid=5)
+- 打开[QuecPython官网驱动下载链接](https://www.quectel.com.cn/download-zone)
 
 - 选择与模组型号匹配的驱动，该开发板搭载的模组有BG95，在下载页面搜索该型号的USB驱动[QuecPython_USB Driver Win10_BG](https://developer.quectel.com/wp-content/uploads/2024/09/Quectel_Windows_USB_DriverQ_NDIS_V2.7.14.zip)点击下载，如果开发板搭载的是其他型号同样按照以上操作即可。
 
@@ -443,7 +443,7 @@ BG95模组支持多种工作模式，每种模式的功耗各不相同，常见�
 
 模组处于空闲状态时，若autosleep被使能，则模组会进入休眠状态。此时，模组会关闭部分IP核（如外设控制器和中断控制器等）并且降低时钟频率，从而实现功耗的降低。
 
-完成空闲耗流测量后，打开USB_VBus，电脑端打开[QPYcom工具](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V3.8.0.zip)，导入`pm`模块，调用`autosleep`方法打开模组的自动休眠，在没有任务执行时，模组会自动进入休眠状态，调用方法后记得断开USB_VBus(USB开关拨至off)，否则模组不会进入休眠状态。[API参考](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#%3Ccode%3Epm.autosleep%3C/code%3E)。关于休眠耗流的详细介绍[参考](https://developer.quectel.com/doc/quecpython/Application_guide/zh/system/power-consumption.html)。
+完成空闲耗流测量后，打开USB_VBus，电脑端打开[QPYcom工具](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V3.8.0.zip)，导入`pm`模块，调用`autosleep`方法打开模组的自动休眠，在没有任务执行时，模组会自动进入休眠状态，调用方法后记得断开USB_VBus(USB开关拨至off)，否则模组不会进入休眠状态。[API参考](../api_reference/syslib/pm.md#pm.autosleep)。关于休眠耗流的详细介绍[参考](../Application_guide/system/power-consumption.md)。
 
 <img src="./media/bg95/open_auto_sleep.png" alt="image-20250709194047484"  />
 
@@ -455,7 +455,7 @@ BG95模组支持多种工作模式，每种模式的功耗各不相同，常见�
 
 启用PSM时，需要先向基站发送请求（通过ATTACH或TA_UPDATER携带定时器信息）。基站若支持进入PSM，则会在对应的REQUEST中下发定时器信息，需要注意的是，实际PSM的参数会使用基站下发的值，并不一定和我们请求的值相同。模组会以基站下发的值来配置定时器时间，当模组进入IDLE且ACT定时器超时，模组会关闭CPU和一切射频，此时相当于部分关机，只是保留了比关机更多的唤醒源，一般包括ACT、TAU定时器和PSM_INT。功耗一般下降到微安级别。
 
-打开USB_VBus，电脑端打开[QPYcom工具](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V3.8.0.zip)，启用PSM，开启后记得断开USB_VBus(USB开关拨至off)。关于PSM详细介绍[参考](https://developer.quectel.com/doc/quecpython/Application_guide/zh/system/power-consumption.html#PSM-%E6%A8%A1%E5%BC%8F)。启用PSM模式的[API参考](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#%3Ccode%3Epm.set_psm_time%3C/code%3E)。
+打开USB_VBus，电脑端打开[QPYcom工具](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V3.8.0.zip)，启用PSM，开启后记得断开USB_VBus(USB开关拨至off)。关于PSM详细介绍[参考](../Application_guide/system/power-consumption.md#PSM-模式)。启用PSM模式的[API参考](../api_reference/syslib/pm.md#pm.set_psm_time)。
 
 <img src="./media/bg95/set_psmmode.png" alt="image-20250709194047484"  />
 
@@ -467,4 +467,4 @@ BG95模组支持多种工作模式，每种模式的功耗各不相同，常见�
 >
 > 进入PSM模式需要确认运营商是否支持，还需配置支持的网络制式 ! ! !
 >
-> 更多耗流测试指导请[参考这里](https://developer.quectel.com/doc/quecpython/Application_guide/zh/system/power-consumption.html)。
+> 更多耗流测试指导请[参考这里](../Application_guide/system/power-consumption.md)。

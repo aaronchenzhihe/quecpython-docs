@@ -164,11 +164,11 @@ USBNET.close()
 
 **2. When using the USB network adapter functionality on Unisoc 8910 modules, the computer cannot connect to the network after the first open in default ECM mode.**
 
-> The USBNET of Unisoc 8910 modules requires NAT support. NAT is not enabled by default at boot and needs to be enabled before the USBNET can be used normally. Please refer to the corresponding [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html) section on the Wiki. For specific Unisoc 8910 modules, see  [The Correspondence Between Platforms and Modules](https://developer.quectel.com/doc/quecpython/Application_guide/en/background/hardware-platform.html#Unisoc-Platform).
+> The USBNET of Unisoc 8910 modules requires NAT support. NAT is not enabled by default at boot and needs to be enabled before the USBNET can be used normally. Please refer to the corresponding [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) section on the Wiki. For specific Unisoc 8910 modules, see  [The Correspondence Between Platforms and Modules](../../../background/hardware-platform.md#Unisoc-Platform).
 
 **3. For Unisoc 8850 modules, the module opens normally after the USB network adapter is set to RNDIS, but returns -1 when reopened.**
 
-> NAT mode needs to be set. Please refer to the corresponding [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html) section on the Wiki for specific usage. For specific Unisoc 8850 modules, see  [The Correspondence Between Platforms and Modules](https://developer.quectel.com/doc/quecpython/Application_guide/en/background/hardware-platform.html#Unisoc-Platform).
+> NAT mode needs to be set. Please refer to the corresponding [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) section on the Wiki for specific usage. For specific Unisoc 8850 modules, see  [The Correspondence Between Platforms and Modules](../../../background/hardware-platform.md#Unisoc-Platform).
 
 **4. Why doesn't my phone's status bar have the `<···>` icon, but the network can still be used?**
 

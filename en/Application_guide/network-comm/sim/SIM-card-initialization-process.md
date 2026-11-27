@@ -20,7 +20,7 @@ SIM card reset can be categorized into cold reset and warm reset.
 
 ### Activation and Cold Reset
 
-The timing for activation and cold reset is as follows:
+The sequence of activation and cold reset is as follows:
 
 ![](../../media/network-comm/sim/SIM卡激活和冷复位时序.png)
 

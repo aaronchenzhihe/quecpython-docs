@@ -1,6 +1,6 @@
 # Handle Common Exception
 
-For SIM card status exceptions and network registration and dialing exceptions, please refer to the [Handle Network Exceptions](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html) section of the QuecPython official website wiki for cellular wireless network cards.
+For SIM card status exceptions and network registration and dialing exceptions, please refer to the [Handle Network Exceptions](../nic/cellular/exception-handling.md) section of the QuecPython official website wiki for cellular wireless network cards.
 
 ## Unable to send SMS
 * Check if the SIM card status is abnormal.
@@ -20,8 +20,8 @@ For SIM card status exceptions and network registration and dialing exceptions, 
 
 ## Successful network registration and dialing, but unable to access the URL
 * Check if the SIM card is overdue, causing the operator does not forward the response data or request message to the other end. If overdue, please recharge.
-* For other exceptional cases, please refer to the [Handle Network Exceptions](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html) section of the QuecPython official website wiki.
+* For other exceptional cases, please refer to the [Handle Network Exceptions](../nic/cellular/exception-handling.md) section of the QuecPython official website wiki.
 
 ## Some protocol data cannot be exchanged properly
 * For SIM cards of this type, check if the operator has restricted certain protocols. For example, for the NTP protocol, some operators restrict it to be sent only to specific NTP service addresses, otherwise it cannot be exchanged. Verify with the operator and activate this type of service.
-* For other exceptional cases, please refer to the [Handle Network Exceptions](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html) section of the QuecPython official website wiki.
+* For other exceptional cases, please refer to the [Handle Network Exceptions](../nic/cellular/exception-handling.md) section of the QuecPython official website wiki.

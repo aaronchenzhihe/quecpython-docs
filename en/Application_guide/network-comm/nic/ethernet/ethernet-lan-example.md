@@ -6,7 +6,7 @@ When the W5500 NIC is configured as a gateway, it enables network forwarding to 
 
 To use the external Ethernet feature, you need to prepare an external Ethernet NIC, cable, router, and DuPont wires.
 
-Connect the module to the Ethernet NIC with DuPont wires according to your actual needs (Refer to [ethernet - Ethernet Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.html) for specific interface configuration parameters), and then connect the Ethernet NIC to the router with a cable.
+Connect the module to the Ethernet NIC with DuPont wires according to your actual needs (Refer to [ethernet - Ethernet Driver](../../../../api_reference/peripherals/ethernet.md) for specific interface configuration parameters), and then connect the Ethernet NIC to the router with a cable.
 
 | Ethernet Chip Model | Ethernet Module Picture | Hardware Connection Picture | Chip Manual | Code Example |
 | ---- | ---- | ---- | ---- | ---- |

@@ -14,7 +14,7 @@ umqtt模块提供创建MQTT客户端的基础连接与发布订阅功能，并�
 
 ### **如何使用MQTT协议连接阿里 IoT 平台、腾讯 IoT 平台等？**
 
-使用MQTT协议连接阿里 IoT 平台、腾讯 IoT 平台的步骤可以详细参见官网上的[wiki社区](https://developer.quectel.com/doc/quecpython/API_reference/zh/index.html)的QuecPython IoT 平台。
+使用MQTT协议连接阿里 IoT 平台、腾讯 IoT 平台的步骤可以详细参见官网上的[wiki社区](../../api_reference/README.md)的QuecPython IoT 平台。
 
 ### **IoT 平台运行demo出现未订阅等信息**
 

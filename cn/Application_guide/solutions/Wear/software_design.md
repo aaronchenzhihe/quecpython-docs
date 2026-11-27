@@ -337,7 +337,7 @@ class UI(Abstract):
 
 ### 图形化界面设计
 
-上文提到，QuecPython 使用 NXP 公司的 [GUI Guider]([GUI Guider | NXP 半导体](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER)) 作为图形化界面设计工具，该工具不仅能够进行界面布局设计，还能自动生成 QuecPython 代码。[点此查看 GUI Guider 工具的使用教程](https://developer.quectel.com/doc/quecpython/Application_guide/zh/multi-media/lvgl/lvgl_ui_tool.html)。
+上文提到，QuecPython 使用 NXP 公司的 [GUI Guider](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER) 作为图形化界面设计工具，该工具不仅能够进行界面布局设计，还能自动生成 QuecPython 代码。[点此查看 GUI Guider 工具的使用教程](../../multi-media/lvgl/lvgl_ui_tool.md)。
 
 下文以穿戴方案的应用为例，来介绍图形化界面的设计过程。
 

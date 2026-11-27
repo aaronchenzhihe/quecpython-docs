@@ -27,7 +27,7 @@
 - QuecPython debug tool - QPYcom
   - version：V4.1.0
   - download [QPYcom](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V4.1.0.zip)
-  - [User Guidance](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/index.html)
+  - [User Guidance](../../dev-tools/QPYcom/README.md)
 - Editor - VSCode
   - download [VSCode](https://code.visualstudio.com/)
 

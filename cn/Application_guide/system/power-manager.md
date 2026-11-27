@@ -138,7 +138,7 @@ Powerkey，即电源键，用来控制模组开关机。该按键连接至 PMIC�
 
 自定义Powerkey的短按长按功能实际上就是按键检测，实现方法是在按下时的中断里启动一个定时器，在抬起的中断里关闭这个定时器。如果定时器尚未到期，就被powerkey抬起的中断关闭，则判定为短按。如果直到超时都没有抬起的中断触发，则判定为长按。定时器的超时时间就是界定短按和长按的阈值。
 
-配置powerkey自定义功能用法：[class PowerKey - power key按键回调注册功能 ](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.PowerKey.html)
+配置powerkey自定义功能用法：[class PowerKey - power key按键回调注册功能 ](../../api_reference/peripherals/misc.PowerKey.md)
 
 配置powerkey自定义短按/长按示例代码：
 
@@ -256,7 +256,7 @@ RTC单元上除了存储实时时间的寄存器，还有一组（部分型号�
 
 RTC单元时间刷新的时候，会和alarm中所设的时间进行比较。一旦实时时间与alarm值相等，就会触发RTC alarm超时中断。当CPU处于关机状态时，该中断能指令PMIC触发CPU开机。而CPU处于开机状态时，能够触发CPU的中断（类似硬件定时器）。
 
-应用方法参考：[class RTC – 实时时钟 ](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.RTC.html)
+应用方法参考：[class RTC – 实时时钟 ](../../api_reference/peripherals/machine.RTC.md)
 
 **关机闹钟示例代码：**
 
@@ -318,12 +318,12 @@ if __name__ == '__main__':
 #### 典型应用-ADC
 
 **1.检测模组VBAT电压**
-**使用方法：**[获取电池电压](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.Power.html#%E8%8E%B7%E5%8F%96%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8B)
+**使用方法：**[获取电池电压](../../api_reference/peripherals/misc.Power.md#获取电池电压)
 这一路ADC固定连接在模组的VBAT上，我们可以在应用层监控模组VBAT的电压，在使用电池给模组供电时，此接口可以实现对电池的管理。
 除了获取电压之外，当此路ADC探测到VBAT电压过高或过低时，会在PMIC上触发超压/低压的中断。此时为了保护模组硬件，PMIC会主动改变电源状态，指令整个模组下电关机。
 
 **2.ADC的使用**
-**使用方法：**[class ADC - 模数转换](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.ADC.html)
+**使用方法：**[class ADC - 模数转换](../../api_reference/peripherals/misc.ADC.md)
 将输出模拟量的设备连接到ADC上，可以读取到设备输出的电压幅值。此时我们在业务中利用这个设备的电压幅值来计算传感数据。
 
 > 不同的PMIC，搭载ADC的有效检测范围也是不同的，需要根据硬件手册来确定。如果模拟设备的输出范围和ADC的检测范围不符，就需要在硬件上设计分压，将输出电压和ADC的有效范围做匹配。业务里再通过检测到的电压来反推模拟设备的真实输出值。

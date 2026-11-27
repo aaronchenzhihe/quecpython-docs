@@ -3,7 +3,7 @@
 ## Hardware preparation
 
 - A Windows computer, Win10 system is recommended
-- One set [EG912U Core Board](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/bg-eg-core-evb.html)
+- One set [EG912U Core Board](../../../dev_board_guide/bg-eg-core-evb.md)
 - One usable Nano Sim card
 - An antenna
 - A Mini USB cable
@@ -14,7 +14,7 @@
 - Download and install the EC912U series module driver：[QuecPython_USB_Driver_Win10_U_G](https://www.quectel.com.cn/wp-content/uploads/2026/03/Quectel_Windows_USB_DriverU_V1.0.19.zip)。
 - Download and install [VSCode](https://code.visualstudio.com/)。
 - Download and extract the [QPYCom](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V4.1.0.zip) tool to a suitable location on your computer.
-- Download and install the firmware package[QPY_OCPU_BETA0002_EG912U_GLAA_FW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EG912U_GLAA_FW.zip)。（For firmware package burning, please refer to [Using QPYcom for Firmware Burning](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/qpycom-dw.html)）
+- Download and install the firmware package[QPY_OCPU_BETA0002_EG912U_GLAA_FW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EG912U_GLAA_FW.zip)。（For firmware package burning, please refer to [Using QPYcom for Firmware Burning](../../../../cn/Application_guide/dev-tools/QPYcom/qpycom-dw.md)）
 - [Download experimental source code](https://github.com/QuecPython/solution-simple-DTU)。
 
 ## Hardware connection

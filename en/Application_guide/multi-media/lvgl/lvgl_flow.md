@@ -20,7 +20,7 @@ LVGL refreshes the drawn graphics data to the LCD through the registered LCD dri
 
 The LVGL initialization process is as follows:
 
-1. Properly initialize the LCD. Please refer to [LCD - LCD Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html) for details.
+1. Properly initialize the LCD. Please refer to [LCD - LCD Driver](../../../api_reference/peripherals/machine.LCD.md) for details.
 2. Initialize the display buffer.
 3. Initialize the display driver and bind the refresh API as the write interface of the LCD.
 4. If there are input devices such as TP, initialize the TP.
@@ -94,7 +94,7 @@ lv.task_handler()
 
 > **Note:**
 >
-> - Please refer to [LCD - LCD Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html) for the details about LCD initialization.
+> - Please refer to [LCD - LCD Driver](../../../api_reference/peripherals/machine.LCD.md) for the details about LCD initialization.
 >
 > - LVGL requires *lcd_write* of the LCD  to refresh the interface.
 > - LVGL requires reading API of the TP  for touch input.

@@ -124,7 +124,7 @@ dataCall.setPDPContext(profileID, ipType, apn, username, password, authType)
 
 ## checkNet Mechanism
 
-`checkNet` is a feature provided by QuecPython. This feature is mainly used to check whether the network is ready. Please refer to [checkNet - Network Detection](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/checkNet.html) in the "API Reference" on the QuecPython official website for details.
+`checkNet` is a feature provided by QuecPython. This feature is mainly used to check whether the network is ready. Please refer to [checkNet - Network Detection](../../../../api_reference/iotlib/checkNet.md) in the "API Reference" on the QuecPython official website for details.
 
 **Scenarios for Using `checkNet`**
 
@@ -166,7 +166,7 @@ Call the following method to register the network status callback function.
 dataCall.setCallback(fun)
 ```
 
-Please refer to [Register Callback Function](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Register-Callback-Function) in the "API Reference" on the QuecPython official website for details.
+Please refer to [Register Callback Function](../../../../api_reference/iotlib/dataCall.md#Register-Callback-Function) in the "API Reference" on the QuecPython official website for details.
 
 Example of the callback function:
 
@@ -224,7 +224,7 @@ if __name__ == '__main__':
     main()
 ```
 
-The above example aims to give you an intuitive understanding of QuecPython's network event listening feature. If you need to use this feature in actual projects, please refer to the [*Example of Handling Network Exception Events*](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Example-of-Handling-Network-Exception-Events).
+The above example aims to give you an intuitive understanding of QuecPython's network event listening feature. If you need to use this feature in actual projects, please refer to the [*Example of Handling Network Exception Events*](exception-handling.md#Example-of-Handling-Network-Exception-Events).
 
 
 

@@ -47,7 +47,7 @@ After completing the hardware connection work, long press the button labeled 'PW
 
 ### Burn firmware package
 
-Refer to [this chapter](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/qpycom-dw.html#%E4%B8%8B%E8%BD%BD%E5%9B%BA%E4%BB%B6) Burn the corresponding firmware package to the development board.
+Refer to [this chapter](../../dev-tools/QPYcom/qpycom-dw.md#Download Firmware Script) Burn the corresponding firmware package to the development board.
 
 ### Script import and execution
 

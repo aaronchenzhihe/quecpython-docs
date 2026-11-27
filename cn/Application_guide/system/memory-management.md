@@ -188,7 +188,7 @@ typedef struct A_BLOCK_LINK
 
 #### 堆安全剩余量
 
-虽然堆空间是动态分配释放的，但是需要保证堆空间有足够的剩余以保证复杂业务时的申请需求。堆空间的总量是由底层决定的，固件生成后该值就确定了。调用接口`_thread.get_heap_size`可以查看当前堆空间剩余量，具体接口用法参考[wiki描述](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/_thread.html#%3Ccode%3E_thread.get_heap_size%3C/code%3E)。
+虽然堆空间是动态分配释放的，但是需要保证堆空间有足够的剩余以保证复杂业务时的申请需求。堆空间的总量是由底层决定的，固件生成后该值就确定了。调用接口`_thread.get_heap_size`可以查看当前堆空间剩余量，具体接口用法参考[wiki描述](../../api_reference/stdlib/_thread.md#_thread.get_heap_size)。
 
 #### 内存泄露
 
@@ -350,13 +350,13 @@ GC: total: 320128, used: 13136, free: 306992
 
 #### 如何主动触发GC回收
 
-调用接口`gc.collect()`，具体接口用法参考[wiki描述](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/gc.html#%3Ccode%3Egc.collect%3C/code%3E)。
+调用接口`gc.collect()`，具体接口用法参考[wiki描述](../../api_reference/stdlib/gc.md#gc.collect)。
 
 ## Python 编程注意项
 
 ### 栈溢出，线程栈太小
 
-如果栈空间大小小于业务实际运行需要的空间，可能导致业务运行过程的数据操作越界到其他内存空间，将其他内存空间的数据破坏导致系统程序异常。所以需要根据业务复杂度适当分配线程栈空间大小，可以在创建线程之前调用接口`_thread.stack_size()`设置栈大小。具体接口用法参考[wiki描述](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/_thread.html#%3Ccode%3E_thread.stack_size%3C/code%3E)。
+如果栈空间大小小于业务实际运行需要的空间，可能导致业务运行过程的数据操作越界到其他内存空间，将其他内存空间的数据破坏导致系统程序异常。所以需要根据业务复杂度适当分配线程栈空间大小，可以在创建线程之前调用接口`_thread.stack_size()`设置栈大小。具体接口用法参考[wiki描述](../../api_reference/stdlib/_thread.md#_thread.stack_size)。
 
 ### 变量被GC回收后继续使用
 

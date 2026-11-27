@@ -6,7 +6,7 @@ This section takes the QuecPython EC200UEU_AB EVB as an example to demonstrate t
 
 1. Prepare the development environment
 
-   Please refer to the [Getting Started](https://developer.quectel.com/doc/quecpython/Getting_started/en/) section (skip if you are already familiar) to set up the development environment.
+   Please refer to the [Getting Started](../../../../Getting_started/README.md) section (skip if you are already familiar) to set up the development environment.
 
 2. Open the QPYCOM tool and connect the device
 
@@ -15,7 +15,7 @@ This section takes the QuecPython EC200UEU_AB EVB as an example to demonstrate t
 
 3. Enable the USB network adapter by entering interactive commands through the QPYCOM tool.
 
-   Please refer to the corresponding [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html) section on the Wiki for specific USBNET interfaces.
+   Please refer to the corresponding [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) section on the Wiki for specific USBNET interfaces.
 
    In the interactive interface, enter the following commands:
    ```python

@@ -25,7 +25,7 @@ Beacause in the development process, you may encounter some problems and need to
 # (sysname='EC600U-CNLB', nodename='EC600U', release='1.13.0', version='v1.12 on Sat_Nov_19_2022_5:29:48_PM', machine='EC600U with QUECTEL', qpyver='V0002')
 ```
 
-As shown above, this interface returns the same information as *uos.uname()*, but the return value is compatible with the usage of microPython, making it more convenient for users to access the information on the right side of "="  in the return value in the script. For specific usage, please refer to [uos - Basic System Services](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/uos.html).
+As shown above, this interface returns the same information as *uos.uname()*, but the return value is compatible with the usage of microPython, making it more convenient for users to access the information on the right side of "="  in the return value in the script. For specific usage, please refer to [uos - Basic System Services](../../api_reference/stdlib/uos.md).
 
 In addition, we can also use the following methods to obtain the firmware version information:
 
@@ -76,9 +76,9 @@ mem = gc.mem_free()
 print('Remaining available RAM space: {} KB'.format(mem / 1024))
 ```
 
-As shown above, use the *uos.statvfs* function to query the status information of the *usr* and *bak* folders in the root directory, and obtain the remaining space size of the folders. Here is a brief introduction to the root directory and these two folders. Root directory: It is not allowed for users to operate, so any operation on the root directory will result in an OSerror exception. The *usr* directory: This directory allows customers to read and write files. Usually, customer code and other files are mainly stored here. For expansion, please refer to [External Storage](./memory-device.html#External-Storage). The *bak* directory: This directory is used to store key files that customers need to back up during mass production. It is readable but not writable. For storing key files, please refer to [Use of Backup Partition and Data Security Area](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/securedata.html).
+As shown above, use the *uos.statvfs* function to query the status information of the *usr* and *bak* folders in the root directory, and obtain the remaining space size of the folders. Here is a brief introduction to the root directory and these two folders. Root directory: It is not allowed for users to operate, so any operation on the root directory will result in an OSerror exception. The *usr* directory: This directory allows customers to read and write files. Usually, customer code and other files are mainly stored here. For expansion, please refer to [External Storage](./memory-device.md#External-Storage). The *bak* directory: This directory is used to store key files that customers need to back up during mass production. It is readable but not writable. For storing key files, please refer to [Use of Backup Partition and Data Security Area](../../api_reference/syslib/securedata.md).
 
-For other uos-related usage, please refer to [uos - Basic System Services](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/uos.html).
+For other uos-related usage, please refer to [uos - Basic System Services](../../api_reference/stdlib/uos.md).
 
 ## Query MicroPython Virtual Machine Version
 ```python
@@ -126,7 +126,7 @@ The IMEI of an IoT module stands for International Mobile Equipment Identity. It
 
 In summary, IMEI is a very important identifier for IoT devices, which can be used for device management, security, remote management, and data analysis.
 
-The details of querying other device information with the modem library is not repeated here. Please refer to [modem](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/modem.html).
+The details of querying other device information with the modem library is not repeated here. Please refer to [modem](../../api_reference/syslib/modem.md).
 
 ## Conclusion
 

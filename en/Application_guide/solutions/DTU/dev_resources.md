@@ -4,7 +4,7 @@ This document collects and lists the required hardware resource list and related
 
 ## Development board
 
-- model：[EC800GCN Hua serial DTU EVB](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/ec800g_hua_dtu.html)
+- model：[EC800GCN Hua serial DTU EVB](../../../dev_board_guide/ec800g_hua_dtu.md)
 - Purchase link：[click](https://www.quecmall.com/goods-detail/2c90800b987f06090198cfd64f9a0111)
 - EVB docs：[user guidance](https://developer.quectel.com/en/wp-content/uploads/sites/2/2026/03/QuecPython_EP-D200_DTU_Specification_and_User_Guide_V1.0.0_Preliminary.pdf) 
 

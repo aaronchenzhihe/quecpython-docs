@@ -2,7 +2,7 @@
 
 ### 驱动下载地址
 
-https://developer.quectel.com/resource-download?cid=5
+https://www.quectel.com.cn/download-zone
 
 ### 各平台驱动详情
 

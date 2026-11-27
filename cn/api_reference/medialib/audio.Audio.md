@@ -183,7 +183,7 @@ Audio.stop()
 Audio.stopAll()
 ```
 
-该方法用于停止整个队列的播放。即当前如果正在播放Audio或者音频，并且队列中还有其他待播放内容，调用该方法后，不仅会停止当前播放的内容，还会清除这个队列的内容，不再播放任何内容。如果当前正在播放，且播放队列为空，那么调用该方法效果等同与[stop()](https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.Audio.html#%3Ccode%3EAudio.stop%3C/code%3E)接口。
+该方法用于停止整个队列的播放。即当前如果正在播放Audio或者音频，并且队列中还有其他待播放内容，调用该方法后，不仅会停止当前播放的内容，还会清除这个队列的内容，不再播放任何内容。如果当前正在播放，且播放队列为空，那么调用该方法效果等同与[stop()](audio.Audio.md#Audio.stop)接口。
 
 **返回值描述：**
 

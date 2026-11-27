@@ -51,6 +51,6 @@ What you get is not just a box of learning tools — it's a **software-hardware 
 ## Related Resources
 
 - Sensor Driver Example Repository
-- [EG800Z Duion Development Board Introduction](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec800x-duino-evb.html)
-- [EG800Z Pin Query](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html)
-- [QuecPython Development Guide](https://developer.quectel.com/doc/quecpython/Getting_started/zh/)
+- [EG800Z Duion Development Board Introduction](../../../../cn/dev_board_guide/ec800x-duino-evb.md)
+- [EG800Z Pin Query](../../../../cn/api_reference/peripherals/machine.Pin.md)
+- [QuecPython Development Guide](../../../../cn/Getting_started/README.md)

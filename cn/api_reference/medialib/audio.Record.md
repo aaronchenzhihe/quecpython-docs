@@ -326,7 +326,7 @@ Record.stream_start(format, samplerate, time)
 
 **参数描述：**
 
-- `format` - 音频格式，int型，[见常量](https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.Record.html#%E5%B8%B8%E9%87%8F)。不同的模组项目所能支持录制的音频格式不同，支持情况需咨询移远技术人员。
+- `format` - 音频格式，int型，[见常量](audio.Record.md#常量)。不同的模组项目所能支持录制的音频格式不同，支持情况需咨询移远技术人员。
 - `samplerate` - 采样率，int型，除MP3格式外，目前支持8000 和 16000，MP3格式下只支持22050 。
 - `time` - 录音时长，int型，单位 S (秒)，设置为0表示持续录音，直到使用`Record.stream_stop`接口停止。
 

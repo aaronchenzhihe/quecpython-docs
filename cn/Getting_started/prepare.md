@@ -2,24 +2,26 @@
 
 **硬件：**
 
-- 一块 [**QuecPython_EC2X_EVB**](../../../Dev_board_guide/zh/ec2x-evb.md) 开发板 (以该开发板为例，更多开发板介绍参见下文开发板列表)
+- 一块 **QuecPython_EC2X_EVB**开发板 (以该开发板为例，更多开发板介绍参见下文开发板列表)
 - **USB 数据线** (USB-A TO USB-C)
 - **PC** (Windows10)
 
 **蜂窝模组开发板列表:**
 
-- [EC2X_EVB](../../../Dev_board_guide/zh/ec2x-evb.md)
-- [EC600X_EVB](../../../Dev_board_guide/zh/ec600x-evb.md)
-- [EC800X_EVB](../../../Dev_board_guide/zh/ec800x-evb.md)
-- [EC600X/EC800X_CORE_EVB](../../../Dev_board_guide/zh/ec600x-ec800x-core-evb.md)
-- [BG95_EVB](../../../Dev_board_guide/zh/bg95-evb.md)
-- [EC200X_EVB](../../../Dev_board_guide/zh/ec200x-evb.md)
-- [EG91X_EVB](../../../Dev_board_guide/zh/eg91x-evb.md)
-- [EC600U_235_EVB](../../../Dev_board_guide/zh/ec600u-235.md)
-- [BG95/EG915U/EG912U_CORE_EVB](../../../Dev_board_guide/zh/bg-eg-core-evb.md)
-- [EC800G_HUA_EVB](../../../Dev_board_guide/zh/ec800g_hua_dtu.md)
-- [EC800X_DUINO_EVB](../../../Dev_board_guide/zh/ec800x-duino-evb.md)
-- [EC800X_PICO_EVB](../../../Dev_board_guide/zh/ec800x-pico-evb.md)
+- EC2X_EVB
+- EC600X_EVB
+- EC800X_EVB
+- EC600X/EC800X_CORE_EVB
+- BG95_EVB
+- EC200X_EVB
+- EG91X_EVB
+- EC600U_235_EVB
+- BG95/EG915U/EG912U_CORE_EVB
+- EC800G_HUA_EVB
+- EC800X_DUINO_EVB
+- EC800X_PICO_EVB
+
+**官网模组查询入口**：[点击进入](https://www.quectel.com.cn/shop)
 
 
 

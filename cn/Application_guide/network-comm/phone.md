@@ -217,7 +217,7 @@ VoLTE 最主要的功能就是实现基于 IMS 架构的高清晰度语音通话
 >* EC600M/EC800M/EG810M系列模组需要支持VOLTE功能固件才支持voiceCall功能。
 >* 其他系列模组需要定制版本才能支持voiceCall功能。
 
-请注意，以上信息可能会随着模组的更新和新版本的发布而变化。建议在使用这些功能之前，仔细查看[官网wiki文档](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/voiceCall.html)并与FAE进行确认。
+请注意，以上信息可能会随着模组的更新和新版本的发布而变化。建议在使用这些功能之前，仔细查看[官网wiki文档](../../api_reference/iotlib/voiceCall.md)并与FAE进行确认。
 
 ## voiceCall功能应用
 
@@ -708,7 +708,7 @@ if __name__ == '__main__':
 | 15   | 8        | 呼出中，对方未响铃（volte通话） | `args[1] ~ args[7]`：具体说明同上                            |
 | 16   | 8        | 等待（volte通话）               | `args[1] ~ args[7]`：具体说明同上                            |
 
-关于`args[0]`的值为10-16时，`args[1]`-`args[8]`的[详细说明见WiKI](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/voiceCall.html#%3Ccode%3EvoiceCall.setCallback%3C/code%3E)：
+关于`args[0]`的值为10-16时，`args[1]`-`args[8]`的[详细说明见WiKI](../../api_reference/iotlib/voiceCall.md#voiceCall.setCallback)：
 
 ## 常见问题解答
 

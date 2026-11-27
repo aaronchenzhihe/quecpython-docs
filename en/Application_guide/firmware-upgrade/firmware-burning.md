@@ -8,7 +8,7 @@ If you want to run Python scripts on Quectel modules, the module firmware must s
 
 Before downloading the firmware into the module, you need to set a trigger condition for the module to execute a special program. This program is used to receive firmware data sent by the host and write the firmware data into the module's flash. This process is called entering the downloading mode.
 
-Different series of modules ( [click here to view The Correspondence Between Platforms and Modules](https://developer.quectel.com/doc/quecpython/Application_guide/en/background/hardware-platform.html#The-Correspondence-Between-Platforms-and-Modules) ) have different methods to enter the downloading mode. In general, there are three methods:
+Different series of modules ( [click here to view The Correspondence Between Platforms and Modules](../background/hardware-platform.md#The-Correspondence-Between-Platforms-and-Modules) ) have different methods to enter the downloading mode. In general, there are three methods:
 
 ### Ground the module's boot pin
 

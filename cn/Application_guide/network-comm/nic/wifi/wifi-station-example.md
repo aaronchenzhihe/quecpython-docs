@@ -2,13 +2,13 @@
 
 Wi-Fi 网卡通过连接热点，为模块提供网络。
 
-开发环境搭建请参考[快速入门章节](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)，本章节主要是以 ESP8266/ESP8285 为例，进行使用介绍。
+开发环境搭建请参考[快速入门章节](../../../../Getting_started/README.md)，本章节主要是以 ESP8266/ESP8285 为例，进行使用介绍。
 
 ## 硬件准备工作
 
 使用外挂 Wi-Fi 网卡功能，需要额外准备外挂的 Wi-Fi 网卡、路由器、杜邦线。
 
-通过杜邦线将模块与 Wi-Fi 网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考 WIKI 下 [ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/zh/wifilib/WLAN.ESP8266.html) 章节。
+通过杜邦线将模块与 Wi-Fi 网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考 WIKI 下 [ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md) 章节。
 
 [ESP8266硬件连接实物图](../../../media/network-comm/nic/network_wifi_esp8266_connection.png)  
 [ASR5803硬件连接实物图](../../../media/network-comm/nic/network_wifi_asr5803_connection.png)  
@@ -121,7 +121,7 @@ ESP8266/ESP8285 是一个独立完整的设备，内部包括独立的配网方�
 
 ```
 
-## TCP（[socket](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/usocket.html)）应用示例
+## TCP（[socket](../../../../api_reference/stdlib/usocket.md)）应用示例
 
 以下示例展示 TCP 通信时，通过 Wi-Fi 网络进行通信时的两种方法。
 
@@ -129,7 +129,7 @@ ESP8266/ESP8285 是一个独立完整的设备，内部包括独立的配网方�
 
 此例中通过 Wi-Fi 网卡进行 TCP 通信，通过 socket 模块内 bind 接口，指定通过 Wi-Fi 网口进行发送。
 
-> 下例中 bind 绑定网卡接口参数 172.16.1.2 指 Wi-Fi 网卡的 ip 地址。网卡 ip 地址通过网卡对象下 ipconfig 接口进行查询，详细见 [Wi-Fi](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/index.html)  接口 WIKI。
+> 下例中 bind 绑定网卡接口参数 172.16.1.2 指 Wi-Fi 网卡的 ip 地址。网卡 ip 地址通过网卡对象下 ipconfig 接口进行查询，详细见 [Wi-Fi](../../../../../en/api_reference/wifilib/README.md)  接口 WIKI。
 
 ```python
 # 导入usocket模块
@@ -188,4 +188,4 @@ if __name__ == '__main__':
 
 ## MQTT/HTTP 等应用协议应用
 
-使用 Wi-Fi 网卡进行 MQTT/HTTP 应用协议通信，需要注意由于内置的 MQTT/HTTP 通信模块没有使用绑定网卡操作接口，需要配置以太网卡作为默认网卡即可。具体 MQTT/HTTP 使用请参考应用层协议 WIKI 下 [umqtt](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html) 以及 [reqeust](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/request.html) 章节。
+使用 Wi-Fi 网卡进行 MQTT/HTTP 应用协议通信，需要注意由于内置的 MQTT/HTTP 通信模块没有使用绑定网卡操作接口，需要配置以太网卡作为默认网卡即可。具体 MQTT/HTTP 使用请参考应用层协议 WIKI 下 [umqtt](../../../../api_reference/networklib/umqtt.md) 以及 [reqeust](../../../../api_reference/networklib/request.md) 章节。

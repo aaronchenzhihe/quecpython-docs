@@ -10,7 +10,7 @@
 
 ### **SIM卡是否支持热插拔**
 
-- 官网WIKI热插拔API支持情况：
+- WIKI热插拔API支持情况：
 
   BC25/EG810M系列不支持此方法；
 
@@ -24,7 +24,7 @@
 
 ### **找不到SIM卡如何排查和解决**
 
-- 用API检测SIM卡状态，sim.getStatus()，返回1正常，返回其他详情见[sim](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%E6%9F%A5%E8%AF%A2SIM%E5%8D%A1%E7%8A%B6%E6%80%81)这一章节说明
+- 用API检测SIM卡状态，sim.getStatus()，返回1正常，返回其他详情见[sim](../../api_reference/iotlib/sim.md#查询SIM卡状态)这一章节说明
 - 检查SIM卡是否插反、是否有损坏、是否接触不良
 - 去掉SIM卡电路的电容和ESD器件，防止焊接电容容值不对或者ESD器件焊接错误导致模组SIM卡不识别
 - 用万用表二极管挡位测试引脚阻抗，红表笔接地，黑表笔接引脚

@@ -14,7 +14,7 @@
 4. 升级包校验后需要重启模块，系统在设备重启之后自动进行OTA升级。
 5. 升级完成后，可通过modem.getDevFwVersion()查看固件版本。
 
-> 更多详情请参考链接：[fota]([fota - 固件升级相关功能 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/fota.html))
+> 更多详情请参考链接：[fota](../../api_reference/syslib/fota.md)
 >
 
 ### 如何进行业务升级
@@ -25,7 +25,7 @@
 4. 重启模块，重启后即可启动升级工作，同时清除升级标志。
 5. 升级完成后，可在文件系统分区查看升级后的目标文件。
 
-> 更多详情请参考链接：[app_fota]([app_fota - 用户文件升级相关功能 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/app_fota.html))
+> 更多详情请参考链接：[app_fota](../../api_reference/syslib/app_fota.md)
 
 ### fota升级的机制是怎样的，能否保证升级失败后不会变砖，能否断电再上电后继续升级
 

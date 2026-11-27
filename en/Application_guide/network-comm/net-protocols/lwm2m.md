@@ -124,7 +124,7 @@ Different platforms may have different requirements for Endpoint Name, PSK Key e
 
 ### Check Firmware and Network
 
-Use [QPYcom](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/qpycom-repl.html) to import modules in the interactive interface. If no exception is raised, the current firmware includes the `lwm2m` module.
+Use [QPYcom](../../dev-tools/QPYcom/qpycom-repl.md) to import modules in the interactive interface. If no exception is raised, the current firmware includes the `lwm2m` module.
 
 ```python
 import lwm2m
@@ -527,7 +527,7 @@ The URCs received in the callback reflect the stage the client is in. Different 
 | `+QLWURC: "deregister",ssid,code` or `+QLWURC: "deregister",code` | Deregistration result | Some platforms may omit `ssid` |
 | `+QLWURC: "fota/pkgurl",url` | Firmware URL delivered by the server | `url` |
 
-The server may also deliver change events such as APN, user name, password, authentication type, registration lifetime, and current time. For the complete event list, refer to the [`lwm2m` API documentation](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/Lwm2m.html).
+The server may also deliver change events such as APN, user name, password, authentication type, registration lifetime, and current time. For the complete event list, refer to the [`lwm2m` API documentation](../../../api_reference/networklib/Lwm2m.md).
 
 ## Frequently Asked Questions
 
@@ -565,5 +565,5 @@ A: It means the current firmware does not support this configuration item. Check
 
 ## Reference Links
 
-- [`lwm2m` API documentation](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/Lwm2m.html)
+- [`lwm2m` API documentation](../../../api_reference/networklib/Lwm2m.md)
 - [QuecPython LwM2M official example](https://github.com/QuecPython/examples/tree/main/network-comm/net-protocols/lwm2m/example_lwm2m.py)

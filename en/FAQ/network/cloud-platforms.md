@@ -12,7 +12,7 @@ The module with umqtt provides basic connection and publication and subscription
 
 ### **How to connect to Alibaba IoT platform, Tencent IoT platform, etc. via MQTT?**
 
-For details to connect to the Alibaba IoT platform and Tencent IoT platform via MQTT, please refer to the QuecPython IoT platform in [wiki community](https://developer.quectel.com/doc/quecpython/API_reference/en/index.html) on the official website. 
+For details to connect to the Alibaba IoT platform and Tencent IoT platform via MQTT, please refer to the QuecPython IoT platform in [wiki community](../../api_reference/README.md) on the official website. 
 
 ### **When the IoT platform runs the demo, it occurs "Not subscribed"**
 

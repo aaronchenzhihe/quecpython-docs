@@ -202,7 +202,7 @@ AT+QDBGCFG="DUMPCFG",0
 
 ### Pcap文件导出
 
-ArmLogel工具会自动抓取并保存pcap文件，并将pcap文件保存在用户设置的Log保存路径下，用户只需要按照前面[AP和CP日志抓取](./UNISOC8850.html#AP和CP日志抓取)章节的步骤设置即可，无需单独设置其他参数。
+ArmLogel工具会自动抓取并保存pcap文件，并将pcap文件保存在用户设置的Log保存路径下，用户只需要按照前面[AP和CP日志抓取](./UNISOC8850.md#AP和CP日志抓取)章节的步骤设置即可，无需单独设置其他参数。
 
 模组开机后，如果没有进行过任何网络数据业务，则Log保存路径下不会有pcap文件存在；只有当模组进行进行socket、mqtt以及http等业务时，ArmLogel工具才会抓取并保存pacp文件。
 

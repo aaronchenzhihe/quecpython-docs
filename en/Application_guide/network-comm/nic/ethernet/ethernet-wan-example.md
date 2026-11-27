@@ -2,13 +2,13 @@
 
 To connect the module to the network via the Ethernet NIC, you need to configure the Ethernet NIC working mode to WAN mode. For example, when the Ethernet NIC is connected to a router, the NIC can obtain IP information through DHCP and connect to the external network, enabling the module to connect to the network properly.
 
-Please refer to [Getting Started](https://developer.quectel.com/doc/quecpython/Getting_started/en/) for setting up the development environment. This document introduces the use of Ethernet NIC.
+Please refer to [Getting Started](../../../../Getting_started/README.md) for setting up the development environment. This document introduces the use of Ethernet NIC.
 
 ## Hardware Preparation
 
 To use the external Ethernet feature, you need to prepare an external Ethernet NIC, cable, router, and DuPont wires.
 
-Connect the module to the Ethernet NIC with DuPont wires according to your actual needs (Refer to [ethernet - Ethernet Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.html) for specific interface configuration parameters), and then connect the Ethernet NIC to the router with a cable.
+Connect the module to the Ethernet NIC with DuPont wires according to your actual needs (Refer to [ethernet - Ethernet Driver](../../../../api_reference/peripherals/ethernet.md) for specific interface configuration parameters), and then connect the Ethernet NIC to the router with a cable.
 
 | Ethernet Chip Model | Ethernet Module Picture | Hardware Connection Picture | Chip Manual | Code Example |
 | ---- | ---- | ---- | ---- | ---- |
@@ -26,7 +26,7 @@ Connect the module to the Ethernet NIC with DuPont wires according to your actua
 
 Ethernet NIC is not enabled by default and needs to be manually enabled. The following is the process of initializing the Ethernet NIC and obtaining IP information through DHCP for external communication.
 
-The following example demonstrates the initialization process for the W5500 Ethernet NIC. For other Ethernet NICs, you can call the corresponding class in the [ethernet - Ethernet Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.html). Please refer to the specific model class for parameter configuration.
+The following example demonstrates the initialization process for the W5500 Ethernet NIC. For other Ethernet NICs, you can call the corresponding class in the [ethernet - Ethernet Driver](../../../../api_reference/peripherals/ethernet.md). Please refer to the specific model class for parameter configuration.
 
 ```python
 # First, import the ethernet package.
@@ -181,4 +181,4 @@ if __name__ == '__main__':
 
 ## MQTT/HTTP Applications
 
-To use an Ethernet NIC for MQTT/HTTP communication, it is necessary to configure the Ethernet NIC as the default NIC, as the built-in MQTT/HTTP module does not have the API for NIC binding. For specific MQTT/HTTP usage, please refer to [umqtt - MQTT Protocol](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html) and [request - HTTP Client](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/request.html) in the "API Reference" on the official website of QuecPython.
+To use an Ethernet NIC for MQTT/HTTP communication, it is necessary to configure the Ethernet NIC as the default NIC, as the built-in MQTT/HTTP module does not have the API for NIC binding. For specific MQTT/HTTP usage, please refer to [umqtt - MQTT Protocol](../../../../api_reference/networklib/umqtt.md) and [request - HTTP Client](../../../../api_reference/networklib/request.md) in the "API Reference" on the official website of QuecPython.

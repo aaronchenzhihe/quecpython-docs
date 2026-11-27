@@ -6,7 +6,7 @@
 
 1. 开发环境准备  
    
-   请参考[快速入门章节](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)（如已熟悉请跳过此步骤），搭建开发使用环境。 
+   请参考[快速入门章节](../../../../Getting_started/README.md)（如已熟悉请跳过此步骤），搭建开发使用环境。 
 
 2. 打开 QPYCOM 工具连接设备
 
@@ -15,7 +15,7 @@
 
 3. 通过 QPYCOM 工具输入交互命令开启 USB 网卡
 
-   具体USBNET功能接口请参考 Wiki 上对应的 [USBNET章节](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USBNET.html)。  
+   具体USBNET功能接口请参考 Wiki 上对应的 [USBNET章节](../../../../api_reference/peripherals/misc.USBNET.md)。  
 
    交互口输入以下命令。  
     ```python

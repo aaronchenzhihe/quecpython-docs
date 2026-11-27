@@ -370,7 +370,7 @@ This method starts recording audio streams. Note that when recording an audio st
 
 **Parameter:**
 
-- `format` - Integer type. Audio format. [See constant](https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/audio.Record.html#Constant). Different module projects can support different audio formats for recording, and the support situation needs to be consulted with Quectel technical personnel.
+- `format` - Integer type. Audio format. [See constant](audio.Record.md#Constant). Different module projects can support different audio formats for recording, and the support situation needs to be consulted with Quectel technical personnel.
 - `samplerate` - Integer type. Sample rate. Except for MP3 format, it currently supports 8000 sps and 16000 sps, and only supports 22050 sps in MP3 format
 - `time` - Integer type. Recording duration. Unit: second. Setting to 0 means continuous recording until stopped using the `Record.stream_stop` interface.
 

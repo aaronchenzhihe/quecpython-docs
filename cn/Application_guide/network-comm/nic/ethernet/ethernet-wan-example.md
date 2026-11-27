@@ -2,13 +2,13 @@
 
 模块通过以太网卡上外网，需要将以太网卡配置到终端模式（WAN）。比如以太网卡连接路由器，通过DHCP协议获取 IP信息，从而通过以太网卡连接外部网络，使得模块能够正常连接网络。
 
-开发环境搭建请参考[快速入门](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)，本章节主要是对以太网卡使用介绍。
+开发环境搭建请参考[快速入门](../../../../Getting_started/README.md)，本章节主要是对以太网卡使用介绍。
 
 ## 硬件准备工作
 
 使用外挂以太网功能，需要额外准备外挂的以太网卡、网线、路由器、杜邦线。
 
-通过杜邦线将模块与以太网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考[ethernet - 以太网相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/ethernet.html)章节，然后通过网线将网卡与路由器连接。
+通过杜邦线将模块与以太网卡连接，模块与网卡接线可以根据实际需求配置，具体接口配置参数请参考[ethernet - 以太网相关功能](../../../../api_reference/peripherals/ethernet.md)章节，然后通过网线将网卡与路由器连接。
 
 | 以太网芯片型号 | 以太网模块实物图  | 硬件连接实物图  | 芯片手册 | 代码示例 |
 | ---- | ---- | ---- | ---- | ---- |
@@ -25,7 +25,7 @@
 **网卡初始化**
 
 默认以太网卡不开启，需要手动进行打开，以下是加载以太网卡的过程，通过DHCP的方式获取IP信息与外部通信。  
-以下示例介绍针对 W5500 以太网卡进行介绍，其他网卡在初始化时，调用该型号类即可，具体参数配置请参考 [ethernet - 以太网相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/ethernet.html)下具体型号类。
+以下示例介绍针对 W5500 以太网卡进行介绍，其他网卡在初始化时，调用该型号类即可，具体参数配置请参考 [ethernet - 以太网相关功能](../../../../api_reference/peripherals/ethernet.md)下具体型号类。
 
 ```python
 # 首先导入ethernet包
@@ -111,7 +111,7 @@
 
 ```
 
-## TCP（[socket](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/net-protocols/tcp-udp.html)）应用示例
+## TCP（[socket](../../net-protocols/tcp-udp.md)）应用示例
 
 以下示例展示 TCP 通信时，通过以太网卡进行通信时的两种方法。
 
@@ -178,4 +178,4 @@ if __name__ == '__main__':
 
 ## MQTT/HTTP 等应用协议应用
 
-使用以太网卡进行 MQTT/HTTP 应用协议通信，需要注意由于内置的 MQTT/HTTP 通信模块没有使用绑定网卡操作接口，需要配置以太网卡作为默认网卡即可。具体 MQTT/HTTP 使用，请参考QuecPython官网文档中心API参考手册下 [umqtt - MQTT客户端](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html) 以及 [request - HTTP客户端](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/request.html) 章节。
+使用以太网卡进行 MQTT/HTTP 应用协议通信，需要注意由于内置的 MQTT/HTTP 通信模块没有使用绑定网卡操作接口，需要配置以太网卡作为默认网卡即可。具体 MQTT/HTTP 使用，请参考QuecPython官网文档中心API参考手册下 [umqtt - MQTT客户端](../../../../api_reference/networklib/umqtt.md) 以及 [request - HTTP客户端](../../../../api_reference/networklib/request.md) 章节。

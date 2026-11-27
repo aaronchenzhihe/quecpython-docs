@@ -170,4 +170,4 @@ The execution result is shown in the following image:
 
 Now, we have developed our first simple application with QuecPython.
 
-For further exploration of QuecPython features and API usage, please visit  [QuecPython API Reference Manual](https://developer.quectel.com/doc/quecpython/API_reference/en/index.html).
+For further exploration of QuecPython features and API usage, please visit  [QuecPython API Reference Manual](../../api_reference/README.md).

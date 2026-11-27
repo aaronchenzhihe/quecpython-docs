@@ -56,7 +56,7 @@ Windows电脑一台，建议 `Win10` 系统。
 
 2.参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件_main.py
 
-3.参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行。
+3.参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行。
 
 ## 业务调试
 

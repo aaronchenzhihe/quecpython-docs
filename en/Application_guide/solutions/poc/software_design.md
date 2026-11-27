@@ -29,7 +29,7 @@
 
 ### Core Business Module (POC)
 
-> For API functions related to the POC library, please refer to [POC Public Network Radio](https://developer.quectel.com/doc/quecpython/API_reference/zh/industry/poc.html) Explanation document.
+> For API functions related to the POC library, please refer to [POC Public Network Radio](../../../../cn/api_reference/industry/poc.md) Explanation document.
 
 - #### Login
 

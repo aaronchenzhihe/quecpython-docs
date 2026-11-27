@@ -170,5 +170,5 @@ print ('Hello, QuecPython!')
 
 此时，我们已经使用QuecPython做了第一个最简单的应用开发。
 
-QuecPython更多的功能探索和接口使用，请访问 [API 参考手册](https://developer.quectel.com/doc/quecpython/API_reference/zh/index.html)。
+QuecPython更多的功能探索和接口使用，请访问 [API 参考手册](../../api_reference/README.md)。
 

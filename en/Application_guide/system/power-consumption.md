@@ -65,14 +65,14 @@ The reason is that some peripherals need to be continuously refreshed (such as L
 
 Autosleep is essentially a flag that operates in the sleep detection mechanism of RTOS. When autosleep is not enabled, the detection mechanism instructs the module to remain in IDLE state. When autosleep is enabled, the detection mechanism considers that the module is allowed to be in sleep state, and enter sleep.
 
-Please refer to [Set Automatic Sleep Mode](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html#Set-Automatic-Sleep-Mode)
+Please refer to [Set Automatic Sleep Mode](../../api_reference/syslib/pm.md#Set-Automatic-Sleep-Mode)
 
 #### Wakelock Mechanism
 In certain scenarios, we need the module to enter a sleep mode while also ensuring the normal operation of specific peripherals within certain code segments. In such cases, we introduce a sleep lock mechanism.
 
 The wakelock is essentially a flag and allows for the creation of multiple wakelocks. The operating principle is as follows: as long as any wakelock is in locked state, the module will not enter sleep mode.
 
-Please refer to [Create Wakelock](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html#Create-Wakelock).
+Please refer to [Create Wakelock](../../api_reference/syslib/pm.md#Create-Wakelock).
 
 #### Factors Affecting Cellular Communication Module Sleep
 
@@ -442,7 +442,7 @@ PSM_INT is the pin that wakes up PSM, which is generally led out from the PMIC. 
 
 The RTC alarm can wake up the module from PSM. Its usage is the same as that of the shutdown RTC alarm when module shutdown .
 
-Refer to: [RTC API Reference Manual](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.RTC.html#Constructor)
+Refer to: [RTC API Reference Manual](../../api_reference/peripherals/machine.RTC.md#Constructor)
 
 #### Powerkey
 
@@ -538,7 +538,7 @@ psm_failed_handle(psm_failed_delay_time) # Run error handling. If the module can
 
 PSM can be used when the module is connected to the network and the operator supports PSM. The ACT and TAU periods can be set through API according to the business requirements:
 
-Please refer to [PSM API Documentation](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html#Set-PSM-Time)
+Please refer to [PSM API Documentation](../../api_reference/syslib/pm.md#Set-PSM-Time)
 
 #### PSM_INT Application
 
@@ -647,7 +647,7 @@ After the hardware connection of the device under test is completed, do not powe
 
 ### Measuring Module Sleep Current
 
-After measuring the shutdown current value, press and hold the power key to power on the module. The default power consumption mode of the module when it is powered on is IDLE. Please call the interface related to sleep to make the module enter sleep when it is idle. The operation method can be found in the [Autosleep API](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html#Set-Automatic-Sleep-Mode). After setting to sleep, disconnect the USB. The module cannot enter sleep when the USB is connected.
+After measuring the shutdown current value, press and hold the power key to power on the module. The default power consumption mode of the module when it is powered on is IDLE. Please call the interface related to sleep to make the module enter sleep when it is idle. The operation method can be found in the [Autosleep API](../../api_reference/syslib/pm.md#Set-Automatic-Sleep-Mode). After setting to sleep, disconnect the USB. The module cannot enter sleep when the USB is connected.
 
 After entering sleep mode, the module should have a periodic and stable current consumption waveform, which is the DRX period mentioned above, as shown in the following figure:
 
@@ -657,7 +657,7 @@ Because the power consumption of a single DRX period has a certain randomness, t
 
 ### Measuring the Idle Current of the Module When It Is Powered On
 
-After completing the current consumption test under network connection, reconnect the USB. Give command to the module to disable the RF, the interfaces can be found at [net - Work Mode Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Work-Mode-Configuration). After the configuration is completed, disconnect the USB and observe the current consumption. At this time, the module is idle and the RF is disabled, and the current consumed is the lowest level that the module can achieve when it is in sleep mode. The current consumption at this time is generally referred to as the idle current:
+After completing the current consumption test under network connection, reconnect the USB. Give command to the module to disable the RF, the interfaces can be found at [net - Work Mode Configuration](../../api_reference/iotlib/net.md#Work-Mode-Configuration). After the configuration is completed, disconnect the USB and observe the current consumption. At this time, the module is idle and the RF is disabled, and the current consumed is the lowest level that the module can achieve when it is in sleep mode. The current consumption at this time is generally referred to as the idle current:
 
 ![](../media/system/power-consumption/Current_test_CFUN0_sleep.png)
 

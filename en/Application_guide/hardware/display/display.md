@@ -174,7 +174,7 @@ The screen driver IC contains multiple registers that control various functions 
 
 ### API Documentation
 
-For detailed API, please refer to [LCD - LCD Driver](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html).
+For detailed API, please refer to [LCD - LCD Driver](../../../api_reference/peripherals/machine.LCD.md).
 
 <font color='red'>**Note:**</font> This section provides information about the QuecPython LCD driver's related APIs. Before driving the screen, please read it carefully.
 
@@ -188,7 +188,7 @@ In SPI LCD, data and commands are sent to the display via the MOSI line, while t
 
 Normally, the controller (such as a microcontroller) sends appropriate commands and data through SPI based on the specifications of the display (such as resolution and color depth) and the content to be displayed. This may include setting display parameters, writing pixel data, etc.
 
-This section will introduce the debugging of SPI LCD based on the QuecPython EVB driving the [st7789 (240*320)](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#Methods) screen.
+This section will introduce the debugging of SPI LCD based on the QuecPython EVB driving the [st7789 (240*320)](../../../api_reference/peripherals/machine.LCD.md#Methods) screen.
 
 ##### Preparations
 
@@ -196,9 +196,9 @@ Before implementing the LCD driver, we need some preparations. This part introdu
 
 <font color='red'>**Note:**</font> The initialization parameters provided by the manufacture are very important because they are replaced with the format required by *lcd.lcd_init* when the SPI LCD is initialized.
 
-Understanding the [QuecPython LCD interface](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_init%3C/code%3E) is essential for better utilizing it to light up the screen.
+Understanding the [QuecPython LCD interface](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_init) is essential for better utilizing it to light up the screen.
 
-<font color='red'>**Note:**</font> Currently, QuecPython SPI drivers are divided into two types: LCM (Liquid Crystal Module) and general SPI (Serial Peripheral Interface). The initialization interfaces of the two types are different. For specific details, please refer to the [QuecPython LCD interface](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_init%3C/code%3E) .
+<font color='red'>**Note:**</font> Currently, QuecPython SPI drivers are divided into two types: LCM (Liquid Crystal Module) and general SPI (Serial Peripheral Interface). The initialization interfaces of the two types are different. For specific details, please refer to the [QuecPython LCD interface](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_init) .
 
 <font color='red'>**Understanding the parameters in *LCD.lcd_init* is crucial for driving LCD with QuecPython. Please read the following content carefully.**</font>
 
@@ -347,7 +347,7 @@ mipi_lcd = LCD()
 
 ###### Introduction to SPI LCD Initialization Interfaces
 
-Please refer to [LCM Interface](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#Interface-1%3A-The-device-connects-to-LCM-interfaces-of-modules) and [SPI LCD Interface](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#Interface-2%3A-The-device-connects-to-module-SPI) for more information.
+Please refer to [LCM Interface](../../../api_reference/peripherals/machine.LCD.md#Interface-1:-The-device-connects-to-LCM-interfaces-of-modules) and [SPI LCD Interface](../../../api_reference/peripherals/machine.LCD.md#Interface-2:-The-device-connects-to-module-SPI) for more information.
 
 ###### Writing Initialization Parameters
 
@@ -484,7 +484,7 @@ The effect is as follows:
 
 This interface is <font color='red'>very important</font> as it is used to draw UI on the screen.
 
-[Prototype of *lcd.lcd_write*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_write%3C/code%3E)
+[Prototype of *lcd.lcd_write*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_write)
 
 Note:
 
@@ -503,7 +503,7 @@ The screen is displayed as follows:
 
 ###### Clear Screen
 
-[Prototype of *lcd.lcd_clear*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_clear%3C/code%3E)
+[Prototype of *lcd.lcd_clear*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_clear)
 
 **Example (ST7789V):**
 
@@ -517,7 +517,7 @@ The screen is displayed as follows:
 
 ###### Image Display
 
-[Prototype of *lcd.lcd_show_jpg*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_show_jpg%3C/code%3E)
+[Prototype of *lcd.lcd_show_jpg*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_show_jpg)
 
 <font color='red'>Note:</font> This interface is not supported by all modules. Please consult Quectel Technical Support for specific supporting status.
 
@@ -537,7 +537,7 @@ The MIPI protocol is actually a series of interface protocols, including LCD, ca
 
 This chapter will drive the ST7701S (480*854) screen on the QuecPython U-235 EVB and introduce the debugging of MIPI LCD.
 
-Since the relevant **[API](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E)** for LCD under QuecPython has been developed, users can directly write the MIPI screen driver according to the [API](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E) format.
+Since the relevant **[API](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init)** for LCD under QuecPython has been developed, users can directly write the MIPI screen driver according to the [API](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init) format.
 
 <font color='red'>**Note:** Currently QuecPython series modules that support MIPI only support the RGB565 format . </font>
 
@@ -564,7 +564,7 @@ mipi_lcd = LCD()
 
 ###### Introduction to MIPI Initialization Interface
 
-[Prototype of *lcd.mipi_init*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E)
+[Prototype of *lcd.mipi_init*](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init)
 
 ```python
 lcd.mipi_init(initbuf, **kwargs)
@@ -669,7 +669,7 @@ The screen is displayed as follows:
 
 This interface <font color='red'>is very important</font> as it is used to draw UI on the screen.
 
-[Prototype of *lcd.lcd_write*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_write%3C/code%3E)
+[Prototype of *lcd.lcd_write*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_write)
 
 Note:
 
@@ -708,7 +708,7 @@ mipilcd.lcd_write(test_buf1,10,10,20,20)
 
 ###### Clear LCD Screen
 
-[Prototype of *lcd.lcd_clear*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_clear%3C/code%3E)
+[Prototype of *lcd.lcd_clear*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_clear)
 
 **Example (st7701s):**
 
@@ -722,7 +722,7 @@ The screen is displayed as follows:
 
 ###### Image Displaying
 
-[Prototype of *lcd.lcd_show_jpg*](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_show_jpg%3C/code%3E)
+[Prototype of *lcd.lcd_show_jpg*](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_show_jpg)
 
 <font color='red'>Note: </font>This interface is not supported by all modules. Please refer to the WIKI for specific supporting status.
 

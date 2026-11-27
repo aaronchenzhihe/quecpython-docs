@@ -65,7 +65,7 @@ import sif
 sif.init(gpio, cb)	
 ```
 
-GPIO引脚编号与物理映射关系请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+GPIO引脚编号与物理映射关系请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 在通信模组系列中可用，因此请确保先导入它。然后您可以使用以下方法使用sif从机功能：
 
@@ -102,7 +102,7 @@ class SifProtocol(gpio)
 - 功能：创建SifProtocol对象
 - 返回：SifProtocol对象
 - SifProtocol：SifProtocol类
-- gpio：单总线的GPIO编号。 详细请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+- gpio：单总线的GPIO编号。 详细请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 
 

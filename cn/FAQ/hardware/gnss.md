@@ -36,7 +36,7 @@
 
 ### **模块如何输出原始NMEA数据**
 
-内置GNSS调用quecgnss.read(size)，QPYcom交互界面输出的日志为原始NMEA数据，详情见[quecgnss](https://developer.quectel.com/doc/quecpython/API_reference/zh/gnsslib/quecgnss.html)。
+内置GNSS调用quecgnss.read(size)，QPYcom交互界面输出的日志为原始NMEA数据，详情见[quecgnss](../../api_reference/gnsslib/quecgnss.md)。
 
 ### **如何解读NMEA报文每个字段的含义**
 

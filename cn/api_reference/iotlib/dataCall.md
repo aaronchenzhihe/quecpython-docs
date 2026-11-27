@@ -6,7 +6,7 @@
 
 
 
-> 用户使用不同运营商的SIM卡时，应配置对应运营商的APN信息；如果不配置或者配置错误，可能会导致模组注网失败或拨号失败，模组获取不到IP地址，无法上网。配置APN的方式，参考[`dataCall.setPDPContext`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setPDPContext%3C/code%3E)方法。
+> 用户使用不同运营商的SIM卡时，应配置对应运营商的APN信息；如果不配置或者配置错误，可能会导致模组注网失败或拨号失败，模组获取不到IP地址，无法上网。配置APN的方式，参考[`dataCall.setPDPContext`](dataCall.md#dataCall.setPDPContext)方法。
 
 
 
@@ -126,7 +126,7 @@ dataCall.getPDPContext(profileID)
 
 `(ipType, apn, username, password, authType)`
 
-元组参数描述见[`dataCall.setPDPContext`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setPDPContext%3C/code%3E)方法的参数描述。
+元组参数描述见[`dataCall.setPDPContext`](dataCall.md#dataCall.setPDPContext)方法的参数描述。
 
 
 
@@ -162,7 +162,7 @@ dataCall.setAutoActivate(profileID, enable)
 
 
 
->如果用户没有使用[`dataCall.setAutoActivate`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setAutoActivate%3C/code%3E)方法和[`dataCall.setAutoConnect`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setAutoConnect%3C/code%3E)配置过，则默认开机对profileID为1的那一路进行自动激活和使能重连；否则按照用户的配置执行。
+>如果用户没有使用[`dataCall.setAutoActivate`](dataCall.md#dataCall.setAutoActivate)方法和[`dataCall.setAutoConnect`](dataCall.md#dataCall.setAutoConnect)配置过，则默认开机对profileID为1的那一路进行自动激活和使能重连；否则按照用户的配置执行。
 >
 >BC32系列仅支持第一路，不支持多路拨号。
 >
@@ -198,7 +198,7 @@ dataCall.setAutoConnect(profileID, enable)
 
 
 
-> 如果用户没有使用[`dataCall.setAutoActivate`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setAutoActivate%3C/code%3E)方法和[`dataCall.setAutoConnect`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setAutoConnect%3C/code%3E)配置过，则默认开机对profileID为1的那一路进行自动激活和使能重连；否则按照用户的配置执行。
+> 如果用户没有使用[`dataCall.setAutoActivate`](dataCall.md#dataCall.setAutoActivate)方法和[`dataCall.setAutoConnect`](dataCall.md#dataCall.setAutoConnect)配置过，则默认开机对profileID为1的那一路进行自动激活和使能重连；否则按照用户的配置执行。
 >
 > BC32系列2G网络下不支持重连功能。
 >

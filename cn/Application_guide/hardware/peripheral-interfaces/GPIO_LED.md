@@ -21,7 +21,7 @@ LED(gpio)
 - 功能：创建LED对象
 - 返回：LED对象
 - LED：LED类
-- gpio：控制LED的GPIO编号。 详细请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+- gpio：控制LED的GPIO编号。 详细请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 ```python
 LED.on()
@@ -130,7 +130,7 @@ multi_led.all_on()  # 打开所有LED
 
 ![image-20230705163113093](../../media/hardware/peripheral-interfaces/GPIO/GPIO_EVB_1.png)
 
-> NET_STATUS 默认作为网络指示灯使用，我们需要先通过API关闭网络灯功能。禁止网络灯功能相关API介绍:[misc](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.html)
+> NET_STATUS 默认作为网络指示灯使用，我们需要先通过API关闭网络灯功能。禁止网络灯功能相关API介绍:[misc](../../../api_reference/peripherals/misc.md)
 >
 > 可以直接在EC600U模组上运行以下代码关闭网络灯
 >
@@ -143,8 +143,8 @@ multi_led.all_on()  # 打开所有LED
 
 网络灯功能关闭后，按照以下几个步骤执行。
 
-1. 通过的[硬件设计手册](https://developer.quectel.com/resource-download?cid=20)找到 EC600U 模组控制网络灯的引脚，查找后可以得知EC600U的 NET_STATUS 由引脚号54控制。
-2. 获取到引脚号之后，你可以通过 [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) 模块**GPIO引脚编号与物理引脚的映射关系**找到EC600U 模组引脚号54对应的GPIO号为GPIO14。
+1. 通过的硬件设计手册找到 EC600U 模组控制网络灯的引脚，查找后可以得知EC600U的 NET_STATUS 由引脚号54控制。
+2. 获取到引脚号之后，你可以通过 [machine.Pin](../../../api_reference/peripherals/machine.Pin.md) 模块**GPIO引脚编号与物理引脚的映射关系**找到EC600U 模组引脚号54对应的GPIO号为GPIO14。
 3. 编写控制LED灯脚本并运行。
 
 使用QPYcom运行以上代码后，我们就可以观察到 NET_STATUS 在以1秒的时间间隔不断闪烁。

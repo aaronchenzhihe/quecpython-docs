@@ -383,7 +383,7 @@ class lis2dh12(object):
 >
 > - 中断使能接口`int_enable`的参数需结合规格书和具体应用场景决定，比如希望中断不会经常误触发，则阈值参数`int_ths`和持续时间参数`duration`需要稍微设置较大，数值随具体测试效果而定。
 > - 三轴传感器在z轴竖直向上放置且没有外力作用的时候，`x`,`y`,`z`轴的加速度基本是(0,0,1)，单位`G`。据此可以判断传感器读取计算加速度是否正常。
-> - 开发的时候尽量用[外部中断](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html)的方式来处理中断，而非轮询传感器中断寄存器的方式，后者会导致进不了低功耗模式。
+> - 开发的时候尽量用[外部中断](../../../../api_reference/peripherals/machine.ExtInt.md)的方式来处理中断，而非轮询传感器中断寄存器的方式，后者会导致进不了低功耗模式。
 
 主程序代码设计如下：
 

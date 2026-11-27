@@ -15,7 +15,7 @@ Script upgrade: app_fota upgrade, whole package upgrade, full upgrade
 4. After verifying the upgrade package, please reboot the module. The system will automatically perform the OTA upgrade after the device restarts.
 5. After the upgrade is completed, you can check the firmware version through modem.getDevFwVersion().
 
-> For specific, please refer to [fota]([fota - Firmware upgrade related functions - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/fota.html) ): 
+> For specific, please refer to [fota](../../api_reference/syslib/fota.md): 
 >
 
 ###  **How to upgrade the business?**
@@ -26,7 +26,7 @@ Script upgrade: app_fota upgrade, whole package upgrade, full upgrade
 4. Reboot the module. After that, upgrade and delete relevant flag at the same time.
 5. After the upgrade is completed, it is available to view the upgraded target files in the file system partition.
 
-> For specific, please refer to [app_fota]([app_fota - User file upgrade related functions - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/app_fota.html)).
+> For specific, please refer to [app_fota](../../api_reference/syslib/app_fota.md).
 
 ###  **What is the mechanism of fota upgrade? Can it be guaranteed that it will not become bricked after the upgrade fails? Can the upgrade be continued after powering off and on again?**
 

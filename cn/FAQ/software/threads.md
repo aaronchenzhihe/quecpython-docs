@@ -16,7 +16,7 @@
 
 QuecPython 的多线程模块的实现继承于标准 Python 的_thread，没有提供信号量相关接口。
 
-如果想实现类似信号量的功能，可使用 互斥锁（[`_thread.allocate_lock`](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/_thread.html#%3Ccode%3E_thread.allocate_lock%3C/code%3E)方法）或消息队列（[`queue.Queue`](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/Queue.html#%3Ccode%3Equeue.Queue%3C/code%3E)方法）。
+如果想实现类似信号量的功能，可使用 互斥锁（[`_thread.allocate_lock`](../../api_reference/stdlib/_thread.md#_thread.allocate_lock)方法）或消息队列（[`queue.Queue`](../../api_reference/syslib/Queue.md#queue.Queue)方法）。
 
 如果信号量的最大值只有1，可使用互斥锁或消息队列实现信号量的功能；如果信号量的值大于1，可使用消息队列实现信号量的功能。
 

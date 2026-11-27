@@ -90,7 +90,7 @@ Type-A 接口的 USB 电气属性如下：
 
 驱动程序（device driver）是一种可以使计算机和设备通信的特殊程序，操作系统只能通过这个接口，才能控制硬件设备的工作。
 
-详细安装请参考[快速入门文档](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)
+详细安装请参考[快速入门文档](../../Getting_started/readme.md)
 
 **目前QuecPython主要生成如下类型的串口和设备类型（以EC600M为例，其它平台类似）：**
 
@@ -185,7 +185,7 @@ REPL，全称 Read-Eval-Print Loop（读取-评估-打印循环），是一种�
 
 总的来说，USB模拟REPL的原理是通过USB接口，提供一种实时的交互式编程和调试环境，它的主要应用是在实时编程和测试、设备配置和管理，以及故障排查和调试等方面。
 
-> 在QuecPython系列部分模组中REPL口也可以通过[machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E)初始化UART3来实现普通串口功能。当我们使用UART3时，该REPL口为普通串口功能，关闭UART3时，该口自动恢复为REPL。
+> 在QuecPython系列部分模组中REPL口也可以通过[machine.UART](../../api_reference/peripherals/machine.UART.md#machine.UART)初始化UART3来实现普通串口功能。当我们使用UART3时，该REPL口为普通串口功能，关闭UART3时，该口自动恢复为REPL。
 
 
 
@@ -221,19 +221,19 @@ Modem 是Modulator（调制器）与Demodulator（解调器）的简称，原本
 
 综上，蜂窝通信模组的USB模拟ECM和RNDIS接口，提供了一种高效的方式，实现设备间的网络通信和设备的远程管理。
 
-具体使用请参考 **[网络应用文档-USB网卡](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USBNET.html)**。
+具体使用请参考 **[网络应用文档-USB网卡](../../api_reference/peripherals/misc.USBNET.md)**。
 
 
 
 ## 固件下载
 
-固件下载示例请参考[QPYcom](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/qpycom-dw.html)工具使用,或参考[快速入门文档](https://developer.quectel.com/doc/quecpython/Getting_started/zh/index.html)
+固件下载示例请参考[QPYcom](../dev-tools/QPYcom/qpycom-dw.md)工具使用,或参考[快速入门文档](../../Getting_started/flash_firmware.md)
 
 模组的USB固件下载主要涉及以下几个步骤 :
 
 1. **驱动安装**：参考[驱动安装](#驱动安装)章节安装，若已安装则跳过。
 2. **模组识别**：连接模组到计算机的USB接口，你的操作系统应该能识别并成功加载驱动。在Windows上，你可以在设备管理器中查看模组的状态；在Linux上，你可以使用dmesg命令查看系统日志，确认模组已被系统识别。
-3. **进入下载模式**：你需要将模组置于固件下载模式。这通常需要发送特定的AT命令或通过某种特殊的操作。具体的方法应参考模组的[用户手册或开发指南](https://developer.quectel.com/doc/quecpython/Application_guide/zh/firmware-upgrade/firmware-burning.html#%E5%8F%91%E9%80%81-AT%2BQDOWNLOAD-%E6%8C%87%E4%BB%A4)。
+3. **进入下载模式**：你需要将模组置于固件下载模式。这通常需要发送特定的AT命令或通过某种特殊的操作。具体的方法应参考模组的[用户手册或开发指南](../firmware-upgrade/firmware-burning.md#发送-AT+QDOWNLOAD-指令)。
 4. **固件下载**：在模组进入固件下载模式后，你可以通过USB接口将新的固件数据发送给模组。在某些情况下，可能需要使用特殊的下载工具或者协议。完成下载后，通常需要重启模组以应用新的固件。
 
 
@@ -244,7 +244,7 @@ Modem 是Modulator（调制器）与Demodulator（解调器）的简称，原本
 
 ### 插拔检测
 
-USB拔插检测接口请参考[misc.USB](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USB.html)
+USB拔插检测接口请参考[misc.USB](../../api_reference/peripherals/misc.USB.md)
 
 蜂窝通信模组作为一个USB设备（或称为USB从设备，USB Device），可以通过USB接口连接到主机（比如PC或嵌入式主控板）。在这种情况下，插拔检测通常由主机端进行，但模组自身也应能够识别这些连接和断开事件。
 
@@ -315,7 +315,7 @@ usb.setCallback(usb_callback)
 
 ![1688389115895](../media/hardware/USB-interfaces/REPL.png)
 
-没有REPL口体现为图中红框中设备不存在。不同的模组REPL口名称可能不同，具体的参考 [QuecPython USB COM口说明](TODO 待添加)
+没有REPL口体现为图中红框中设备不存在。不同的模组REPL口名称可能不同，具体的参考 [QuecPython USB COM口说明](../../Getting_started/REPL_dev.md)
 
 若使用QuecPython系列模组时，发现PC端口管理器中没有REPL口时，请按照如下步骤确定问题：
 

@@ -201,9 +201,9 @@ class Screen(object):
         # Some code is omitted here
 ```
 
-`Screen`类中提供所有屏幕对象都需要的公共方法，如创建屏幕、状态栏信息显示（运营商名称、信号强度、系统时间、电池电量等）。QuecPython 使用 NXP 公司的 [GUI Guider]([GUI Guider | NXP 半导体](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER)) 作为图形化界面设计工具，该部分样式代码由该工具生成。
+`Screen`类中提供所有屏幕对象都需要的公共方法，如创建屏幕、状态栏信息显示（运营商名称、信号强度、系统时间、电池电量等）。QuecPython 使用 NXP 公司的 [GUI Guider](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER) 作为图形化界面设计工具，该部分样式代码由该工具生成。
 
-所有以 `_screen.py` 结尾的脚本文件，均实现了一个继承于 `class Screen()` 的类，是对应屏幕需要显示的画面的代码实现。界面代码的主体内容是由 [GUI Guider]([GUI Guider | NXP 半导体](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER)) 工具自动生成的，而后进行少许修改，主要是对象初始化方法 `__init__()` 和控件事件处理回调函数（`__xxx_event_cb()`）的修改。
+所有以 `_screen.py` 结尾的脚本文件，均实现了一个继承于 `class Screen()` 的类，是对应屏幕需要显示的画面的代码实现。界面代码的主体内容是由 [GUI Guider](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER) 工具自动生成的，而后进行少许修改，主要是对象初始化方法 `__init__()` 和控件事件处理回调函数（`__xxx_event_cb()`）的修改。
 
 
 
@@ -257,7 +257,7 @@ class AgriUi(object):
 
 ## 图形化界面设计
 
-上文提到，QuecPython 使用 NXP 公司的 [GUI Guider]([GUI Guider | NXP 半导体](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER)) 作为图形化界面设计工具，该工具不仅能够进行界面布局设计，还能自动生成 QuecPython 代码。[点此查看 GUI Guider 工具的使用教程](https://developer.quectel.com/doc/quecpython/Application_guide/zh/multi-media/lvgl/lvgl_ui_tool.html)。
+上文提到，QuecPython 使用 NXP 公司的 [GUI Guider](https://www.nxp.com.cn/design/design-center/software/development-software/gui-guider:GUI-GUIDER) 作为图形化界面设计工具，该工具不仅能够进行界面布局设计，还能自动生成 QuecPython 代码。[点此查看 GUI Guider 工具的使用教程](../../multi-media/lvgl/lvgl_ui_tool.md)。
 
 下文以智慧农业中控面板的首页为例，来介绍图形化界面的设计过程。
 

@@ -27,7 +27,7 @@
 - QuecPython 调试工具 - QPYcom
   - 版本：V4.1.0
   - 下载 [QPYcom](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V4.1.0.zip)
-  - [使用教程](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/index.html)
+  - [使用教程](../../dev-tools/QPYcom/README.md)
 - 代码编辑器 - VSCode
   - 下载 [VSCode](https://code.visualstudio.com/)
 

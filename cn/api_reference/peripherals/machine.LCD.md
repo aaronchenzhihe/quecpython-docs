@@ -35,7 +35,7 @@ class machine.lcd = LCD()
 
 该方法用于初始化LCD。
 
-#### **接口1：设备接模块LCM接口**
+#### **接口1：设备接模块LCD接口**
 
 ```python
 lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, lcd_type, lcd_invalid, lcd_display_on, lcd_display_off, lcd_set_brightness)
@@ -93,9 +93,9 @@ lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, 
 | lcd_interface      | int       | LCD接口类型，0 - LCM接口；1 - SPI接口                        |
 | spi_port           | int       | 通道选择[0,1]，参照SPI部分                                   |
 | spi_mode           | int       | SPI 的工作模式(通常使用工作模式0)：<br />时钟极性CPOL：即SPI空闲时，时钟信号SCLK的电平(0:空闲时低电平; 1:空闲时高电平)<br />0 : CPOL=0, CPHA=0<br />1 : CPOL=0, CPHA=1<br />2 : CPOL=1, CPHA=0<br />3 : CPOL=1, CPHA=1 |
-| cs_pin             | int       | CS引脚，见[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)中GPIO引脚编号说明    |
-| dc_pin             | int       | DC引脚，见[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)中GPIO引脚编号说明    |
-| rst_pin            | int       | RST引脚，见[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)中GPIO引脚编号说明   |
+| cs_pin             | int       | CS引脚，见[machine.Pin](machine.Pin.md#machine.Pin)中GPIO引脚编号说明    |
+| dc_pin             | int       | DC引脚，见[machine.Pin](machine.Pin.md#machine.Pin)中GPIO引脚编号说明    |
+| rst_pin            | int       | RST引脚，见[machine.Pin](machine.Pin.md#machine.Pin)中GPIO引脚编号说明   |
 
 **返回值描述：**
 

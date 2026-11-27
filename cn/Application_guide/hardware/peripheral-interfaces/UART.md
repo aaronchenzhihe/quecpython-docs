@@ -230,7 +230,7 @@ DMA传输本身并不会中断程序，但它会占用系统资源：比如IO或
 
 ## 支持情况
 
-QuecPython各模组支持情况见[machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E)
+QuecPython各模组支持情况见[machine.UART](../../../api_reference/peripherals/machine.UART.md#machine.UART)
 
 ## 数据流
 
@@ -270,7 +270,7 @@ RX通信：接收数据满64字节或超时->触发中断->触发回调函数发
 4. [中断](#中断)
 5. [RS485控制](#RS485控制)
 
-详细API介绍请参考[machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html)
+详细API介绍请参考[machine.UART](../../../api_reference/peripherals/machine.UART.md)
 
 ### 创建对象
 
@@ -280,7 +280,7 @@ UART通信参数在这一步骤中配置。包括波特率、数据位、奇偶�
 class machine.UART(UART.UARTn, baudrate, databits, parity, stopbits, flowctl)
 ```
 
-参数介绍以及引脚对应关系请参考[machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E)
+参数介绍以及引脚对应关系请参考[machine.UART](../../../api_reference/peripherals/machine.UART.md#machine.UART)
 
 创建对象时，需注意以下几点：
 
@@ -303,7 +303,7 @@ msg = "This is a test string"
 uart.write(msg)
 ```
 
-API介绍请参考[machine.UART.write](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.write%3C/code%3E)
+API介绍请参考[machine.UART.write](../../../api_reference/peripherals/machine.UART.md#uart.write)
 
 ### 接收数据
 
@@ -322,7 +322,7 @@ msg = uart.read(msg_len)
 
  **3. 数据格式：** 接收的数据格式必须符合发送端的设置。这包括数据的编码方式（例如ASCII、UTF-8、二进制等）、数据位的数量、起始位、停止位和奇偶校验位等。 
 
-API介绍请参考[machine.UART.read](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.read%3C/code%3E)
+API介绍请参考[machine.UART.read](../../../api_reference/peripherals/machine.UART.md#uart.read)
 
 ### 中断
 
@@ -339,7 +339,7 @@ def uart_call(para):
 uart1.set_callback(uart_call)
 ```
 
-API介绍请参考[machine.UART.setCallback](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.set_callback%3C/code%3E)
+API介绍请参考[machine.UART.setCallback](../../../api_reference/peripherals/machine.UART.md#uart.set_callback)
 
 > 未避免中断长时间执行，请在回调函数中以发送信号量等方式，告知其它线程读取串口数据
 
@@ -347,7 +347,7 @@ API介绍请参考[machine.UART.setCallback](https://developer.quectel.com/doc/q
 
  控制485通信方向，串口发送数据之前和之后进行拉高拉低指定GPIO，用来指示485通信的方向。 
 
-API介绍请参考[machine.UART.control_485](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.control_485%3C/code%3E)
+API介绍请参考[machine.UART.control_485](../../../api_reference/peripherals/machine.UART.md#uart.control_485)
 
 ## 应用示例
 
@@ -365,7 +365,7 @@ API介绍请参考[machine.UART.control_485](https://developer.quectel.com/doc/q
 
 QuecPython提供了简化的方法来在通信模组上使用 Python 进行 UART 通信。对于实时应用或需要高效处理 UART 信息的场景，使用回调函数（基于中断）进行 UART 读取是一种非常有效的方法。 
 
- 实验前需了解UART QuecPython接口，请参考[machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html)
+ 实验前需了解UART QuecPython接口，请参考[machine.UART](../../../api_reference/peripherals/machine.UART.md)
 
 实验步骤：
 
@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
 使用 UART 连接 GNSS (Global  Navigation Satellite System) 接收器是嵌入式系统中一个常见的应用场景。GNSS 包括 GPS (Global  Positioning System)、GLONASS、Galileo、BeiDou 等全球定位系统。这种连接允许系统读取 GNSS  数据，以获取当前位置、速度、时间和其他相关信息。 
 
-QuecPython部分模组目前已集成外置GNSS功能，并提供了一系列接口，详细请参考[gnss_wiki](https://developer.quectel.com/doc/quecpython/API_reference/zh/gnsslib/gnss.html)。用户可直接使用GNSS系列接口对数据进行获取，可以得到模块定位是否成功，定位的经纬度数据，UTC授时时间，获取GPS模块的定位模式，获取GPS模块定位使用卫星数量，获取GPS模块定位可见卫星数量，获取定位方位角，GPS模块对地速度，模块定位大地高等数据信息。目前，该模块提供的功能接口，所获取的数据都来源于从串口读出的原始GNSS数据包中的GNGGA、GNRMC和GPGSV语句。 
+QuecPython部分模组目前已集成外置GNSS功能，并提供了一系列接口，详细请参考[gnss_wiki](../../../api_reference/gnsslib/gnss.md)。用户可直接使用GNSS系列接口对数据进行获取，可以得到模块定位是否成功，定位的经纬度数据，UTC授时时间，获取GPS模块的定位模式，获取GPS模块定位使用卫星数量，获取GPS模块定位可见卫星数量，获取定位方位角，GPS模块对地速度，模块定位大地高等数据信息。目前，该模块提供的功能接口，所获取的数据都来源于从串口读出的原始GNSS数据包中的GNGGA、GNRMC和GPGSV语句。 
 
 本章节基于L76K定位芯片为例展开介绍
 
@@ -575,7 +575,7 @@ RS-485 可以在半双工模式下工作，这意味着它可以在同一时间�
 
 在发送数据之前，GPIO 被设置为 "高"，然后发送数据。数据发送完毕后，GPIO 被设置为 "低"，从而切换到接收模式。 
 
-QuecPython支持在UART中加入GPIO控制方向的传输。[uart.control_485](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.control_485%3C/code%3E) 可以控制485通信方向，串口发送数据之前和之后进行拉高拉低指定GPIO，用来指示485通信的方向。 
+QuecPython支持在UART中加入GPIO控制方向的传输。[uart.control_485](../../../api_reference/peripherals/machine.UART.md#uart.control_485) 可以控制485通信方向，串口发送数据之前和之后进行拉高拉低指定GPIO，用来指示485通信的方向。 
 
 当方向设置为1时表示： 串口发送数据之前由低拉高、发送数据之后再由高拉低 
 

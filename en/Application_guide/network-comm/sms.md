@@ -239,7 +239,7 @@ After the user finishes editing the SMS, the SMS data is actively sent by the mo
 
 As shown in the following figure:
 
-![](../media/network-comm/sms/2-9.png#pic_center)
+![](../media/network-comm/sms/2-9.png)
 
 <center>Figure 2-10</center>
 
@@ -249,7 +249,7 @@ The mobile device first receives the SMS from the network side, and then the mob
 
 As shown in the following figure:
 
-![](../media/network-comm/sms/2-8.png#pic_center)
+![](../media/network-comm/sms/2-8.png)
 
 <center>Figure 2-11</center>
 

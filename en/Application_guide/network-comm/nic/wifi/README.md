@@ -204,7 +204,7 @@ The following table shows the support for UART interface Wi-Fi and SDIO interfac
 
 ## Wi-Fi API Description
 
-QuecPython supports various models of Wi-Fi, including external or built-in Wi-Fi. Due to historical reasons, currently,  ESP8266/ESP8285 does not support the mpy interface. We will unify all Wi-Fi device interfaces in the future. For detailed interface descriptions of each model, please refer to the [WLAN](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/WLAN.html) section on the Wiki.
+QuecPython supports various models of Wi-Fi, including external or built-in Wi-Fi. Due to historical reasons, currently,  ESP8266/ESP8285 does not support the mpy interface. We will unify all Wi-Fi device interfaces in the future. For detailed interface descriptions of each model, please refer to the [WLAN](../../../../api_reference/wifilib/WLAN.md) section on the Wiki.
 
 <a id="click_jump_6.4.2.1"></a>
 
@@ -212,7 +212,7 @@ QuecPython supports various models of Wi-Fi, including external or built-in Wi-F
 
 Since the ESP8266 is supported on the serial SLIP protocol, in order to facilitate docking and expansion, we only provide the `WLAN.py` script, which contains the built-in ESP8266 control class. This allows you to define and develop interfaces according to your own needs.
 
-For detailed interface information, please refer to the [ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/WLAN.ESP8266.html) section on the Wiki. The content of the ESP8266 control script can be found in [WLAN.py](./WLAN.py).
+For detailed interface information, please refer to the [ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md) section on the Wiki. The content of the ESP8266 control script can be found in WLAN.py.
 
 The interface call relationship is shown in the following figure:  
 ![](../../../media/network-comm/nic/network_wifi_esp8266_api_process.png)
@@ -323,7 +323,7 @@ esp8266.ota(url)
 
 This set of interfaces is developed and adapted according to the MicroPython official interface. It is suitable for SDIO external Wi-Fi NICs and built-in Wi-Fi NICs.
 
-The information is only for the general Wi-Fi interface usage instructions. The implementation may vary for different models. For detailed interface information, please refer to the [Wi-Fi Communication](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/index.html) section on the Wiki.
+The information is only for the general Wi-Fi interface usage instructions. The implementation may vary for different models. For detailed interface information, please refer to the [Wi-Fi Communication](../../../../api_reference/wifilib/README.md) section on the Wiki.
 
 ![](../../../media/network-comm/nic/network_wifi_api_process.png)
 

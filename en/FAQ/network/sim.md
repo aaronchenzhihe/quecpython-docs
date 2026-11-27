@@ -15,7 +15,7 @@
 - In addition to the official website API method, you can also detect SIM card plug-in/out through interrupts and switch between CFUN0/1.
 
 ### **How to investigate and solve the problem of invisible SIM card?**
-- Use API to detect the status of the SIM card:  If it returns 1 after calling sim.getStatus(), which means it is normal. For other situations, please refer to [sim](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html) in detail. 
+- Use API to detect the status of the SIM card:  If it returns 1 after calling sim.getStatus(), which means it is normal. For other situations, please refer to [sim](../../api_reference/iotlib/sim.md) in detail. 
 - Check whether the SIM card is inserted backwards, damaged or poor contact.
 - Remove the capacitors and ESD components from the SIM card circuit to prevent the SIM card from not being recognized due to incorrect welding capacitance values or incorrect welding of ESD components.
 - Test the pin impedance via the diode stall in multimeter with the red probe connected to ground and the black probe connected to the pin.

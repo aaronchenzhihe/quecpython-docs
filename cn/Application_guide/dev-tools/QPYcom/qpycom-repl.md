@@ -42,7 +42,7 @@ QuecPython的 REPL调试需要通过串口来交互，连接QuecPython模组的�
 >>> uart1 = UART(UART.UART3, 115200, 8, 0, 1, 0)
 ```
 
-完成初始化后，此时通过  **USB CDC PORT**  输入的数据将不再被REPL解析，通过该方式可以达到关闭交互口的效果，此时通过交互口输入的数据将作为串口数据被解析，使用教程参考[UART API使用手册](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html)
+完成初始化后，此时通过  **USB CDC PORT**  输入的数据将不再被REPL解析，通过该方式可以达到关闭交互口的效果，此时通过交互口输入的数据将作为串口数据被解析，使用教程参考[UART API使用手册](../../../api_reference/peripherals/machine.UART.md)
 
 如果有关闭再重新打开的需求，使用`close`接口关闭上文创建的uart对象即可恢复REPL调试串口，以上方法通常用在产测流程中，需要在串口数据解析中增加对特定数据格式的数据进行解析，已达到指定方式可以重新打开REPL调试的串口的需求
 
@@ -56,7 +56,7 @@ system.replSetEnable(flag，**kw_args)
 
 开启后可以通过启动时设置的密码来关闭交互保护
 
-详细使用教程参考 [system API使用手册](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/system.html)
+详细使用教程参考 [system API使用手册](../../../api_reference/syslib/system.md)
 
 ## REPL原理
 

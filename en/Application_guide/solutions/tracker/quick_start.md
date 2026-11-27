@@ -200,7 +200,7 @@ Refer to [this chapter](../../../Getting_started/flash_firmware.md), burn firmwa
 
 After executing the ` _main.py ` script, the program starts running and the project running status can be viewed on the interactive page:
 
-> The program needs to run for a period of time to obtain GNSS positioning information, please refer to the [relevant document for details](https://developer.quectel.com/doc/quecpython/FAQ/en/hardware/gnss.html ).
+> The program needs to run for a period of time to obtain GNSS positioning information, please refer to the [relevant document for details](../../../FAQ/hardware/gnss.md ).
 
 ![tracker_running](../../media/solutions/tracker/tracker_running.png)
 

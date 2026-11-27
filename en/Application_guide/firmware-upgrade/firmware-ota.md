@@ -89,7 +89,7 @@ Users create and deploy OTA jobs on the cloud platform webpage. The  device peri
 
 ###### 3. Download Upgrade Package
 
-Once the upgrade package URL is obtained, the device uses firmware  upgrade-related APIs for package download, writing, and verification.  For API details, refer to [fota - Firmware Upgrade](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/fota.html).
+Once the upgrade package URL is obtained, the device uses firmware  upgrade-related APIs for package download, writing, and verification.  For API details, refer to [fota - Firmware Upgrade](../../api_reference/syslib/fota.md).
 
 ###### 4. Restart
 
@@ -200,7 +200,7 @@ When users create and deploy OTA tasks on the cloud platform's web page, the dev
 
 ###### 3. Download the Upgrade Package
 
-Once the upgrade package URL is obtained, the device downloads the  target files to be upgraded into the file system based on the URL. Both  single-file and multi-file batch download methods are supported. For API details, refer to [app_fota - User File Upgrade](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/app_fota.html).
+Once the upgrade package URL is obtained, the device downloads the  target files to be upgraded into the file system based on the URL. Both  single-file and multi-file batch download methods are supported. For API details, refer to [app_fota - User File Upgrade](../../api_reference/syslib/app_fota.md).
 
 ###### 4. Set Upgrade Flag
 

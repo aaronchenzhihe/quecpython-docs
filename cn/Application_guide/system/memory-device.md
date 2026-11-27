@@ -248,7 +248,7 @@ d）烧录完成，重启设备运行已烧录的固件。
 
 #### 裸分区操作
 
-如安全数据分区，将指定分区用来存储用户安全数据，以达到数据掉电保存的目的。数据来源为设备运行过程中用户实时产生的内容。所以，该分区不需要事先烧录特定内容到指定分区，且烧录时不擦除该分区。这种方式适合数据量小，不经常修改且关键数据的存储。接口用法参考[SecureData - 安全数据区](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/securedata.html)。
+如安全数据分区，将指定分区用来存储用户安全数据，以达到数据掉电保存的目的。数据来源为设备运行过程中用户实时产生的内容。所以，该分区不需要事先烧录特定内容到指定分区，且烧录时不擦除该分区。这种方式适合数据量小，不经常修改且关键数据的存储。接口用法参考[SecureData - 安全数据区](../../api_reference/syslib/securedata.md)。
 
 ## 外置存储
 
@@ -286,7 +286,7 @@ d）烧录完成，重启设备运行已烧录的固件。
 
 采用的是SPI通信总线，具体选用哪一路SPI引脚需要根据硬件资源支持和用户使用情况决定。
 
-针对4线SPI NOR flash方案，引脚细节可以参考[class SPI – SPI通信](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SPI.html)中关于SPI引脚对应关系的介绍。由于可能会有其他外设如LCD也需要使用SPI通信，这时需要用户提前分配好硬件资源，各自使用不同的SPI通道，避免和NOR flash冲突的情况。
+针对4线SPI NOR flash方案，引脚细节可以参考[class SPI – SPI通信](../../api_reference/peripherals/machine.SPI.md)中关于SPI引脚对应关系的介绍。由于可能会有其他外设如LCD也需要使用SPI通信，这时需要用户提前分配好硬件资源，各自使用不同的SPI通道，避免和NOR flash冲突的情况。
 
 针对6线SPI NOR flash方案，当前仅ECx00U & EGx00U & ECx00G系列支持，引脚使用情况，需要参考如下表格：
 
@@ -328,7 +328,7 @@ d）烧录完成，重启设备运行已烧录的固件。
 
 ##### 软件接口
 
-其中文件系统分区使用的场景，文件系统需要执行挂载操作后才能使用，外置4线spi nor flash文件系统初始化接口用法参考[注册littleFS存储设备 - SPI NOR FLASH](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SPI-NOR-FLASH)。外置6线spi nor flash仅特定型号特定固件支持，且不支持用户进行挂载操作，仅作内部使用。
+其中文件系统分区使用的场景，文件系统需要执行挂载操作后才能使用，外置4线spi nor flash文件系统初始化接口用法参考[注册littleFS存储设备 - SPI NOR FLASH](../../api_reference/stdlib/uos.md#注册存储设备---SPI-NOR-FLASH)。外置6线spi nor flash仅特定型号特定固件支持，且不支持用户进行挂载操作，仅作内部使用。
 
 ##### 读写速率
 
@@ -352,7 +352,7 @@ SPI接口方式，使用通用的SPI总线与SD卡进行通信，包括初始化
 
 ##### 硬件连接
 
-SDIO接口的硬件引脚使用参考硬件设计手册SD卡接口相关章节。SPI接口的硬件引脚使用参考[class SPI – SPI通信](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SPI.html)中关于SPI引脚对应关系的介绍。
+SDIO接口的硬件引脚使用参考硬件设计手册SD卡接口相关章节。SPI接口的硬件引脚使用参考[class SPI – SPI通信](../../api_reference/peripherals/machine.SPI.md)中关于SPI引脚对应关系的介绍。
 
 ##### 文件系统类型
 
@@ -360,11 +360,11 @@ SD卡功能采用的文件系统是FATFS，支持Windows兼容的FAT32格式。
 
 ##### 软件接口
 
-SD卡功能需要执行文件系统挂载操作后才能使用，SPI SD卡具体接口用法参考[注册存储设备 - SPI - SD卡](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SPI---SD%E5%8D%A1)，SDIO SD卡具体接口用法参考[注册存储设备 - SDIO - SD卡](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SDIO---SD%E5%8D%A1)。
+SD卡功能需要执行文件系统挂载操作后才能使用，SPI SD卡具体接口用法参考[注册存储设备 - SPI - SD卡](../../api_reference/stdlib/uos.md#注册存储设备---SPI---SD卡)，SDIO SD卡具体接口用法参考[注册存储设备 - SDIO - SD卡](../../api_reference/stdlib/uos.md#注册存储设备---SDIO---SD卡)。
 
 ##### 热插拔
 
-当前仅SDIO SD卡支持卡插拔检测功能，而且需要搭配特定代码使用，具体接口用法参考[设置SD卡检测管脚](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E8%AE%BE%E7%BD%AESD%E5%8D%A1%E6%A3%80%E6%B5%8B%E7%AE%A1%E8%84%9A)。
+当前仅SDIO SD卡支持卡插拔检测功能，而且需要搭配特定代码使用，具体接口用法参考[设置SD卡检测管脚](../../api_reference/stdlib/uos.md#设置SD卡检测管脚)。
 
 ##### 读写速率
 
@@ -386,7 +386,7 @@ SDIO SD卡功能仅ECx00U & EGx00U系列支持。SPI SD卡功能仅ECx00N & EGx0
 
 ##### 格式化
 
-如果使用过程中出现文件系统异常，或者文件系统空间存满的情况，可以调用格式化接口对SD卡进行格式化。具体接口用法参考[挂载文件系统](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)。
+如果使用过程中出现文件系统异常，或者文件系统空间存满的情况，可以调用格式化接口对SD卡进行格式化。具体接口用法参考[挂载文件系统](../../api_reference/stdlib/uos.md#挂载文件系统)。
 
 ### EMMC应用
 

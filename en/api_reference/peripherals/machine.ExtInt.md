@@ -12,7 +12,7 @@ class machine.ExtInt(GPIOn, mode, pull, callback, [filter_time])
 
 **Parameter:**
 
-- `GPIOn` - Integer type. GPIO pin number to be controlled. See [Pin Modules](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for pin definitions (excluding BG95M3). <a href="#BG95M3_label_pinmap">Click here to view</a> pin correspondences of BG95M3 platform.
+- `GPIOn` - Integer type. GPIO pin number to be controlled. See [Pin Modules](machine.Pin.md#machine.Pin) for pin definitions (excluding BG95M3). <a href="#BG95M3_label_pinmap">Click here to view</a> pin correspondences of BG95M3 platform.
 
 - `mode` - Integer type. Trigger mode. <br /> `IRQ_RISING` – Trigger rising edge<br />`IRQ_FALLING` – Trigger falling edge <br />`IRQ_RISING_FALLING` – Trigger rising and falling edge
 

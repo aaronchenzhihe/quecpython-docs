@@ -2,7 +2,7 @@
 
 ### **硬件设计有哪些注意事项？**
 
-- 由于QuecPython目前(2023/04/11)并没有专门的硬件设计文档，所以只能参考QuecOpen的硬件设计文档，由于QuecPython和QuecOpen存在一定差异，例如有哪些引脚可以作为GPIO不能直接参考QuecOpen的文档，则要参考QuecPython的API文档[GPIO](../../../API_reference/zh/peripherals/machine.Pin.md)介绍的引脚，其他功能如UART等类同。
+- 由于QuecPython目前(2023/04/11)并没有专门的硬件设计文档，所以只能参考QuecOpen的硬件设计文档，由于QuecPython和QuecOpen存在一定差异，例如有哪些引脚可以作为GPIO不能直接参考QuecOpen的文档，则要参考QuecPython的API文档[GPIO](../../api_reference/peripherals/machine.Pin.md)介绍的引脚，其他功能如UART等类同。
 - 同上，由于具有差异，模块引脚的复位电平状态可能和文档描述的存在差异，状态灯、继电器等对电平默认状态可能较为关注的场景，建议使用示波器或万用表对下载了QuecPython固件的模块引脚电平进行测量做二次确认。
 - 硬件设计时必须引出USB相关引脚，否则将无法进行固件下载和代码调试。
 - 硬件设计时建议引出USB_BOOT引脚，部分模组，如EC600E/EC800E必须引出，否则将不方便固件下载。

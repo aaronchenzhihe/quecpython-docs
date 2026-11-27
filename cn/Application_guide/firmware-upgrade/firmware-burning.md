@@ -8,7 +8,7 @@
 
 给模组烧录固件之前，需要给模组一个触发条件，让其进入一段特殊的程序，这段程序用来接收上位机发送的固件数据，并将固件数据写入到模组的 flash 中。这种过程，我们称之为进入烧录模式。
 
-不同系列的模组（[点此查看模组型号与平台的对应关系](https://developer.quectel.com/doc/quecpython/Application_guide/zh/background/hardware-platform.html#模组型号与平台的对应关系))，进入烧录模式的方法不尽相同。整体来说有三类：
+不同系列的模组（[点此查看模组型号与平台的对应关系](../background/hardware-platform.md#模组型号与平台的对应关系))，进入烧录模式的方法不尽相同。整体来说有三类：
 
 ### 将模组 boot 引脚接地
 

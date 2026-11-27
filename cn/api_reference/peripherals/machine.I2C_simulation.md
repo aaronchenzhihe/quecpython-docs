@@ -12,8 +12,8 @@ class machin.I2C_simulation(GPIO_clk, GPIO_sda, CLK)
 
 **参数描述：**
 
-- `GPIO_clk` - I2C 的CLK引脚(需要控制的GPIO引脚号，参照[Pin模块](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)的定义)，int类型。
-- `GPIO_sda` - I2C 的SDA引脚(需要控制的GPIO引脚号，参照[Pin模块](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)的定义)，int类型。
+- `GPIO_clk` - I2C 的CLK引脚(需要控制的GPIO引脚号，参照[Pin模块](machine.Pin.md#machine.Pin)的定义)，int类型。
+- `GPIO_sda` - I2C 的SDA引脚(需要控制的GPIO引脚号，参照[Pin模块](machine.Pin.md#machine.Pin)的定义)，int类型。
 - `CLK` - I2C 的频率，范围：(0,1000000Hz]，int类型。
 
 **示例：**

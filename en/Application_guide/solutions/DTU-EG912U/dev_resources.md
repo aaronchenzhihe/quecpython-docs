@@ -4,7 +4,7 @@ This document lists required hardware resources and related documents for Quecte
 
 ## Development board and module model number
 
-Mode：[EG912U Core Board](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/bg-eg-core-evb.html)
+Mode：[EG912U Core Board](../../../dev_board_guide/bg-eg-core-evb.md)
 
 - Development board documentation：[EG912U core board product specifications and user guide](https://developer.quectel.com/en/wp-content/uploads/sites/2/2024/11/EG912U_Core_Board_Specification_and_User_Guide.pdf) 
 

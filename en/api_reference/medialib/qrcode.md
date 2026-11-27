@@ -20,7 +20,7 @@ Displays QR codes to LCD.
 - `start_y` - Integer type. The start y coordinate of the displayed QR code.
 - `Background_color` - Integer type. Background color. Default value: 0xffff.
 - `Foreground_color` - Integer type. Foreground color. Default value: 0x0000.
-- `Rotate` - Integer type. Rotation angle. Reference [Constant](https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/qrcode.html#Constant). Default value: 0.
+- `Rotate` - Integer type. Rotation angle. Reference [Constant](qrcode.md#Constant). Default value: 0.
 
 **Return Value:**
 

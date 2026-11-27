@@ -28,7 +28,7 @@ osTimer()
 
 Creates an OS timer object.
 
-> Compared with [machine.Timer](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Timer.html#%3Ccode%3Emachine.Timer%3C/code%3E), there is no limit on the number of created timers.
+> Compared with [machine.Timer](../peripherals/machine.Timer.md#machine.Timer), there is no limit on the number of created timers.
 
 ## Start Timer
 

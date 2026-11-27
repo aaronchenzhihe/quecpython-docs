@@ -26,7 +26,7 @@ It currently all QuecPython series modules.
 
 > Before you start, make sure you have downloaded the appropriate QuecPython firmware package for your module. [Click here to view how to download firmware packages](../../media/dev-tools/VSCode-Plugin-quecpython/download-fw-pkg.png).
 
-The following steps are demonstrated based on the [U-235 development board](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/ec600u-235.html).
+The following steps are demonstrated based on the U-235 development board
 
 ### Firmware Flashing
 

@@ -34,7 +34,7 @@ IIC拓扑结构如下：
 软件模拟IIC是一种使用普通的GPIO引脚，通过软件控制引脚的电平变化，来模拟IIC协议的通信方式。
 当芯片自带的IIC个数无法满足需求或者所用引脚被其他功能占用时，可以使用软件模拟IIC接口来实现功能。
 
-当前部分模组可支持模拟IIC，频率可在1~100k范围内设置，具体设置频率方法见[WIKI-I2C_simulation](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C_simulation.html)。
+当前部分模组可支持模拟IIC，频率可在1~100k范围内设置，具体设置频率方法见[WIKI-I2C_simulation](../../../api_reference/peripherals/machine.I2C_simulation.md)。
 支持模拟IIC模组如下：
 - EC600M-CN系列
 - EC800M-CN系列
@@ -60,7 +60,7 @@ IIC拓扑结构如下：
 2. [发送数据](#发送数据) 
 3. [接收数据](#接收数据)
 
-详细API介绍请参考[machine.IIC](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C.html)
+详细API介绍请参考[machine.IIC](../../../api_reference/peripherals/machine.I2C.md)
 
 ### 创建对象
 
@@ -70,7 +70,7 @@ IIC拓扑结构如下：
 class machine.I2C(I2Cn, MODE)
 ```
 
-参数介绍以及引脚对应关系请参考[machine.IIC](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C.html)
+参数介绍以及引脚对应关系请参考[machine.IIC](../../../api_reference/peripherals/machine.I2C.md)
 
 创建对象时，需注意以下几点：
 
@@ -88,7 +88,7 @@ I2C.write(slaveaddress, addr, addr_len, data, datalen)
 - addr_len为寄存器地址长度，寄存器地址长度可从外设芯片数据手册中确认，目前经常用到的IIC外设芯片的寄存器地址长度一般是一个字节，如QMA7981三轴传感器芯片。
 <img src="../../media/hardware/peripheral-interfaces/IIC/IIC_reg_lenth.png" style="border-style: solid; border-radius: 10px; color:  #f1f1f1;" border=3 alt="">
 
-API介绍请参考[machine.UART.write](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.write%3C/code%3E)
+API介绍请参考[machine.UART.write](../../../api_reference/peripherals/machine.UART.md#uart.write)
 
 ### 接收数据
 ```python
@@ -101,7 +101,7 @@ I2C.read(slaveaddress, addr, addr_len, r_data, datalen, delay)
 **2. delay参数设置：** 由于部分IIC外设芯片收到主机写数据指令后需要延时才能正常返回数据，所以在模组（主机）发送完写指令后延时一段时间再读取IIC外设芯片数据，如图：
 <img src="../../media/hardware/peripheral-interfaces/IIC/IIC_read_delay.png" style="border-style: solid; border-radius: 10px; color:  #f1f1f1;" border=3 alt="">
 
-API及参数含义介绍请参考[machine.UART.read](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.UART.html#%3Ccode%3Euart.read%3C/code%3E)
+API及参数含义介绍请参考[machine.UART.read](../../../api_reference/peripherals/machine.UART.md#uart.read)
 
 
 ## 应用案例

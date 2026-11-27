@@ -204,9 +204,9 @@ sms.getSaveLoc()
 
 | 参数           | 类型   | 含义                                                         |
 | -------------- | ------ | ------------------------------------------------------------ |
-| `loc1`         | 字符串 | 读取和删除消息所在的位置，具体含义同[`sms.setSaveLoc`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sms.html#%3Ccode%3Esms.setSaveLoc%3C/code%3E)中`mem1`的值 |
-| `loc2`         | 字符串 | 写入和发送消息所在的位置，具体含义同[`sms.setSaveLoc`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sms.html#%3Ccode%3Esms.setSaveLoc%3C/code%3E)中`mem1`的值 |
-| `loc3`         | 字符串 | 接收消息的存储位置，具体含义同[`sms.setSaveLoc`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sms.html#%3Ccode%3Esms.setSaveLoc%3C/code%3E)中`mem1`的值 |
+| `loc1`         | 字符串 | 读取和删除消息所在的位置，具体含义同[`sms.setSaveLoc`](sms.md#sms.setSaveLoc)中`mem1`的值 |
+| `loc2`         | 字符串 | 写入和发送消息所在的位置，具体含义同[`sms.setSaveLoc`](sms.md#sms.setSaveLoc)中`mem1`的值 |
+| `loc3`         | 字符串 | 接收消息的存储位置，具体含义同[`sms.setSaveLoc`](sms.md#sms.setSaveLoc)中`mem1`的值 |
 | `current_nums` | 整型   | 当前空间已有短信数量                                         |
 | `max_nums`     | 整型   | 当前空间最大短信存储数量                                     |
 
@@ -353,7 +353,7 @@ sms.getPduLength(pduMsg)
 sms.decodePdu(pduMsg, pduLen)
 ```
 
-该方法用于PDU解码，解析[`sms.searchPduMsg()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sms.html#%3Ccode%3Esms.searchPduMsg%3C/code%3E)接口读取到的PDU数据。
+该方法用于PDU解码，解析[`sms.searchPduMsg()`](sms.md#sms.searchPduMsg)接口读取到的PDU数据。
 
 **参数描述：**
 

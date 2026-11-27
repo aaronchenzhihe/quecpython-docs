@@ -64,14 +64,14 @@ Quecpython支持的蜂窝通信模组要进入休眠，需要先使能休眠模�
 
 autosleep本质上是操作RTOS休眠检测机制中的一个flag，不使能autosleep时，模组的检测机制就会指令模组保持在IDLE状态。autosleep被使能时，检测机制才认为模组处于允许休眠的状态，从而进入休眠的逻辑。
 
-使用方法参见：[自动休眠模式控制](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#自动休眠模式控制)
+使用方法参见：[自动休眠模式控制](../../api_reference/syslib/pm.md#自动休眠模式控制)
 
 #### 休眠锁机制
 在某些场景下，我们既要使模组能够进入休眠，又需要在特定代码段保护某些外设的正常工作，这时，我们就要引入休眠锁机制。
 
 休眠锁本质上也是一个flag，允许创建多个。生效机制是：只要有任意一个休眠锁处于lock状态，模组就不会进入休眠。
 
-使用方法参见：[创建wake_lock锁](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#创建wake_lock锁)
+使用方法参见：[创建wake_lock锁](../../api_reference/syslib/pm.md#创建wake_lock锁)
 
 #### 影响蜂窝通信模组休眠的因素
 
@@ -448,7 +448,7 @@ PSM_INT是唤醒PSM的引脚，此引脚一般都引出自PMIC。PSM_INT的功�
 
 RTC闹钟能将模块从PSM模式下唤醒。其使用方法与模块关机时RTC闹钟的使用方法相同。
 
-参见：[RTC相关API说明](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.RTC.html)
+参见：[RTC相关API说明](../../api_reference/peripherals/machine.RTC.md)
 
 #### Powerkey
 
@@ -544,7 +544,7 @@ if __name__ == '__main__':
 
 需要在联网，且确认运营商支持PSM的前提下使用。根据业务需求决定ACT和TAU的周期，通过API设置即可：
 
-参见：[PSM相关API说明](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#设置PSM模式的控制时间)
+参见：[PSM相关API说明](../../api_reference/syslib/pm.md#设置PSM模式的控制时间)
 
 #### PSM_INT 应用
 
@@ -673,7 +673,7 @@ mA级耗流：全平台支持autosleep，根据其它需求评估适合型号
 
 ### 测量模组休眠电流
 
-完成关机电流测量后，长按powerkey开机，模组开机默认的功耗模式是IDLE，我们需要调用休眠相关的接口，让模组在空闲时进入休眠，操作方法参见[autosleep相关API说明](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/pm.html#自动休眠模式控制)。设置完休眠后，注意断开USB，USB连接时模组无法进入休眠。
+完成关机电流测量后，长按powerkey开机，模组开机默认的功耗模式是IDLE，我们需要调用休眠相关的接口，让模组在空闲时进入休眠，操作方法参见[autosleep相关API说明](../../api_reference/syslib/pm.md#自动休眠模式控制)。设置完休眠后，注意断开USB，USB连接时模组无法进入休眠。
 
 进入休眠模式后，模组应有的耗流波形会有周期稳定的凸起，这就是上文所述的DRX周期，如下图：
 
@@ -683,7 +683,7 @@ mA级耗流：全平台支持autosleep，根据其它需求评估适合型号
 
 ### 测量开机时模组的底电流
 
-完成联网情况下耗流测试后，重新连接USB，指令模组将射频关闭，接口见此处[net - 网络工作模式配置 ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F%E9%85%8D%E7%BD%AE)。配置完成后，断开USB，观察耗流，此时模组空闲且射频被关闭，所耗的电流是模组休眠时可达的最低水平，这时候的电流一般可称之为底电流：
+完成联网情况下耗流测试后，重新连接USB，指令模组将射频关闭，接口见此处[net - 网络工作模式配置 ](../../api_reference/iotlib/net.md#工作模式配置)。配置完成后，断开USB，观察耗流，此时模组空闲且射频被关闭，所耗的电流是模组休眠时可达的最低水平，这时候的电流一般可称之为底电流：
 
 ![](../media/system/power-consumption/Current_test_CFUN0_sleep.png)
 

@@ -60,7 +60,7 @@
 
 ### **无法注册网络、注册网络慢、无法附着网络、附着网络慢的原因排查**
 
-- 调用[`sim.getStatus()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.getStatus%3C/code%3E)方法检查SIM卡是否识别。
+- 调用[`sim.getStatus()`](../../api_reference/iotlib/sim.md#sim.getStatus)方法检查SIM卡是否识别。
 
 - 检查下sim卡是否欠费，流量是否用完【4G模块有一种欠费表现：无法注册4G网络，可以注册2G网络】。【其他情况可以咨询卡商】
 

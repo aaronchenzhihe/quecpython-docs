@@ -12,8 +12,8 @@ class machin.I2C_simulation(GPIO_clk, GPIO_sda, CLK)
 
 **Parameter:**
 
-- `GPIO_clk` - Integer type. CLK pin of I2C (See definitions in [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for GPIO pin numbers that need to be controlled).    
-- `GPIO_sda` - Integer type. SDA pin of I2C (See definitions in [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for GPIO pin numbers that need to be controlled). 
+- `GPIO_clk` - Integer type. CLK pin of I2C (See definitions in [machine.Pin](machine.Pin.md#machine.Pin) for GPIO pin numbers that need to be controlled).    
+- `GPIO_sda` - Integer type. SDA pin of I2C (See definitions in [machine.Pin](machine.Pin.md#machine.Pin) for GPIO pin numbers that need to be controlled). 
 - `CLK` - Integer type. Frequency of I2C. Range: [1, 1000000 Hz].
 
 **Example:**

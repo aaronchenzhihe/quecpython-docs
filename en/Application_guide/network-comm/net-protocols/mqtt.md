@@ -41,7 +41,7 @@ Through these mechanisms, MQTT achieves reliable message delivery, decoupling, a
 
 ![image-20230701163911290](../../media/network-comm/net-protocols/mqtt/mqtt_1.png)
 
-- MQTT Client: An MQTT client refers to a device or application that connects to an MQTT server. Each client is identified by a unique client identifier, which is used by the server to distinguish and differentiate between different clients. In QuecPython, we use `umqtt` to implement MQTT clients. A connection object is created by passing initialization parameters, and for more details, [click here](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3Eumqtt.MQTTClient%3C/code%3E).
+- MQTT Client: An MQTT client refers to a device or application that connects to an MQTT server. Each client is identified by a unique client identifier, which is used by the server to distinguish and differentiate between different clients. In QuecPython, we use `umqtt` to implement MQTT clients. A connection object is created by passing initialization parameters, and for more details, [click here](../../../api_reference/networklib/umqtt.md#umqtt.MQTTClient).
 
   ```python
   from umqtt import MQTTClient
@@ -65,7 +65,7 @@ Through these mechanisms, MQTT achieves reliable message delivery, decoupling, a
 
 ### Publish-Subscribe
 
-- Publisher: A publisher is the sender of messages in MQTT. Publishers publish messages to specific topics, and delivers these messages to all subscribers of that topic through the MQTT server. After creating a client object with `umqtt`, you can use the [publish](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3EMQTTClient.publish%3C/code%3E) method to publish messages.
+- Publisher: A publisher is the sender of messages in MQTT. Publishers publish messages to specific topics, and delivers these messages to all subscribers of that topic through the MQTT server. After creating a client object with `umqtt`, you can use the [publish](../../../api_reference/networklib/umqtt.md#MQTTClient.publish) method to publish messages.
 
   ```python
   MQTTClient.publish(topic, msg, retain=False, qos=0)
@@ -82,7 +82,7 @@ Through these mechanisms, MQTT achieves reliable message delivery, decoupling, a
 
 - Subscriber: A subscriber is the receiver of messages in MQTT. Subscribers can subscribe to topics of interest to receive messages related to those topics. Once a subscriber subscribes to a specific topic, it will receive all published messages under that topic. In projects, topics are often defined based on different events. When a device subscribes to an event topic, it can receive push messages related to that topic.
 
-  [Click here to see API references](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3EMQTTClient.subscribe%3C/code%3E)
+  [Click here to see API references](../../../api_reference/networklib/umqtt.md#MQTTClient.subscribe)
 
   ```python
   MQTTClient.subscribe(topic,qos)
@@ -111,7 +111,7 @@ MQTT defines three different levels of Quality of Service (QoS) for controlling 
 - QoS 1 (At least once): Message publishers ensure that the message is delivered at least once, which might lead to duplicate deliveries. This level uses a publish-and-acknowledge mechanism to achieve reliable delivery and is suitable for scenarios that require at least once delivery.
 - QoS 2 (Exactly once): Message publishers ensure that the message is delivered exactly once, achieved through a two-step handshake and four-step handshake confirmation mechanism. This level provides the highest level of delivery reliability and is suitable for scenarios where precise delivery is of utmost importance.
 
-[Click here to see](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3EMQTTClient.subscribe%3C/code%3E) the method of setting the QoS level in QuecPython.
+[Click here to see](../../../api_reference/networklib/umqtt.md#MQTTClient.subscribe) the method of setting the QoS level in QuecPython.
 
 ```python
 """
@@ -129,7 +129,7 @@ MQTTClient.publish("Quectel/Python/demo","Hello", qos=1)
 
 MQTT allows clients to set a Last Will and Testament (LWT) message when establishing a connection. During the connection setup process, a client can define the parameters for the LWT message, including the topic, message content, and QoS level. If the MQTT server detects that a client has not sent a keep-alive packet within the specified interval and the client has not requested to close the connection, the server considers the client to have disconnected abnormally. In such cases, the server publishes the LWT message to the specified topic based on the client's LWT settings. Subscribers of this topic can then receive the LWT message, indicating the offline status of the client.
 
-The `set_last_will` API in QuecPython allows you to set the WT message.  [Click here](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3EMQTTClient.set_last_will%3C/code%3E) for more details.
+The `set_last_will` API in QuecPython allows you to set the WT message.  [Click here](../../../api_reference/networklib/umqtt.md#MQTTClient.set_last_will) for more details.
 
 ```python
 MQTTClient.set_last_will(topic,msg,retain=False,qos=0)
@@ -156,7 +156,7 @@ MQTT employs a long connection approach to maintain persistent communication bet
 
 - Disconnection Monitoring: If the server doesn't receive heartbeat requests or other messages from the client within a certain period, it considers that the client has disconnected and terminates the connection. Similarly, the client can detect the server's disconnection and attempt reconnection.
 
-In MQTT initialization, configuring a non-zero value indicates that the the keep alive mechanism is enabled by default. QuecPython will actively send heartbeat packets within the defined heartbeat interval with`umqtt.ping()` . [Click here](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html#%3Ccode%3EMQTTClient.ping%3C/code%3E) to fins more details.
+In MQTT initialization, configuring a non-zero value indicates that the the keep alive mechanism is enabled by default. QuecPython will actively send heartbeat packets within the defined heartbeat interval with`umqtt.ping()` . [Click here](../../../api_reference/networklib/umqtt.md#MQTTClient.ping) to fins more details.
 
 ```python
 MQTTClient.ping()
@@ -164,7 +164,7 @@ MQTTClient.ping()
 
 ## MQTT Application
 
-QuecPython provides the `umqtt` feature for client connection of MQTT protocol. For the usage of `umqtt`  interfaces, [click here](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html) for details.
+QuecPython provides the `umqtt` feature for client connection of MQTT protocol. For the usage of `umqtt`  interfaces, [click here](../../../api_reference/networklib/umqtt.md) for details.
 
 This section will set up two MQTT clients for demonstration. For better demonstration, Client A is set up on a PC with the MQTT.fx tool and connect to the server. Client B is implemented with QuecPython `umqtt`. Once both clients are connected to the same server, they will push topic messages to each other, and the messages are forwarded between devices through the server. Before the MQTT application demonstration, please get a brief understanding of the process for implementing an MQTT client application with QuecPython in the following diagram.
 
@@ -226,14 +226,14 @@ The module uses `umqtt`  of QuecPython to set up the MQTT Client B, connects to 
 1. **Downlaod QuecPython Firmware**: Depending on your module model, flash the QuecPython firmware into your device.
 2. **Connect to the Network**: Ensure that your device is properly connected to the network.
 
-After downloading the firmware, you need to check whether the current firmware includes the `umqtt` module and check the network status. You can use [QPYcom](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/index.html) for debugging. The demonstration in this document is performed with this tool. On the interactive page of QPYcom, you can confirm whether the module contains and uses APIs to check the network status by importing the feature. In Python syntax, you can import APIs with `import xxx` or `from xx import xxx`.
+After downloading the firmware, you need to check whether the current firmware includes the `umqtt` module and check the network status. You can use [QPYcom](../../dev-tools/QPYcom/README.md) for debugging. The demonstration in this document is performed with this tool. On the interactive page of QPYcom, you can confirm whether the module contains and uses APIs to check the network status by importing the feature. In Python syntax, you can import APIs with `import xxx` or `from xx import xxx`.
 
 ```python
 # Inclueded if no exception occurs
 import umqtt
 ```
 
-You can import the `checkNet` API to query the network status of the device. The status values are available in the [wiki](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/checkNet.html#%3Ccode%3EcheckNet.waitNetworkReady%3C/code%3E).
+You can import the `checkNet` API to query the network status of the device. The status values are available in the [wiki](../../../api_reference/iotlib/checkNet.md#checkNet.waitNetworkReady).
 
 ```python
 import checkNet

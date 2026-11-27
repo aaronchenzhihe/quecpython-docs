@@ -25,7 +25,7 @@
 # (sysname='EC600U-CNLB', nodename='EC600U', release='1.13.0', version='v1.12 on Sat_Nov_19_2022_5:29:48_PM', machine='EC600U with QUECTEL', qpyver='V0002')
 ```
 
-如上所示，此接口和 uos.uname()返回的信息是一样的，只是返回值兼容了 microPython 的用法，更方便用户在脚本中访问返回值中“=”右边的信息，具体用法参考 [uos - 基本系统服务](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html)。
+如上所示，此接口和 uos.uname()返回的信息是一样的，只是返回值兼容了 microPython 的用法，更方便用户在脚本中访问返回值中“=”右边的信息，具体用法参考 [uos - 基本系统服务](../../api_reference/stdlib/uos.md)。
 
 除此之外我们还可以使用如下方法获取固件版本信息：
 
@@ -76,9 +76,9 @@ mem = gc.mem_free()
 print('剩余可用RAM空间:{}KB'.format(mem / 1024))
 ```
 
-如上所示我们使用 uos.statvfs 这个函数查询了根目录下'usr'和'bak'两个文件夹的状态信息，可以获取到文件夹的剩余空间大小。关于根目录和这两个文件夹做如下简介，根目录：对于用户来说是不允许操作的，所以对根目录做的任何操作都会导致报 OSerror 异常。'usr'目录：此目录是允许客户做文件读写操作的，通常客户代码等文件均是主要存放在这里，如需扩展请看 [外扩存储](./memory-device.html#外置存储) 章节。'bak'目录：此目录是用于量产时存放客户需要备份的重要文件，可读不可写，存放重要文件请看 [备份分区和数据安全区的使用](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/securedata.html) 。
+如上所示我们使用 uos.statvfs 这个函数查询了根目录下'usr'和'bak'两个文件夹的状态信息，可以获取到文件夹的剩余空间大小。关于根目录和这两个文件夹做如下简介，根目录：对于用户来说是不允许操作的，所以对根目录做的任何操作都会导致报 OSerror 异常。'usr'目录：此目录是允许客户做文件读写操作的，通常客户代码等文件均是主要存放在这里，如需扩展请看 [外扩存储](./memory-device.md#外置存储) 章节。'bak'目录：此目录是用于量产时存放客户需要备份的重要文件，可读不可写，存放重要文件请看 [备份分区和数据安全区的使用](../../api_reference/syslib/securedata.md) 。
 
-其他 uos 相关使用请查看 [uos - 基本系统服务](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html)。
+其他 uos 相关使用请查看 [uos - 基本系统服务](../../api_reference/stdlib/uos.md)。
 
 ## 查询 microPython 虚拟机版本
 
@@ -127,7 +127,7 @@ print('剩余可用RAM空间:{}KB'.format(mem / 1024))
 
 总之，IMEI 是物联网设备非常重要的标识符，可以用于设备管理、安全性、远程管理和数据分析等方面。
 
-使用 modem 库查询其他设备信息不再赘述，请查看 [modem - 设备相关](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/modem.html)。
+使用 modem 库查询其他设备信息不再赘述，请查看 [modem - 设备相关](../../api_reference/syslib/modem.md)。
 
 ## 总结
 

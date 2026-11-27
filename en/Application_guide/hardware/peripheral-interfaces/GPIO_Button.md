@@ -96,7 +96,7 @@ class Button(gpio,timer_id)
 - Functionality: Create Button object 
 - Return: Button object 
 - Button: Button class
-- gpio: GPIO number to control LED. For specific, please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E).
+- gpio: GPIO number to control LED. For specific, please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin).
 
 ```python
 import machine

@@ -29,7 +29,7 @@
 
 #### SPI 接口
 
->[SPI](https://developer.quectel.com/doc/quecpython/Application_guide/zh/hardware/peripheral-interfaces/SPI.html) 是串行外设接口（Serial Peripheral Interface）的缩写，是美国摩托罗拉公司最先推出的一种同步串行传输规范，也是一种单片机外设芯片串行扩展接口，是一种高速、全双工、同步通信总线，所以可以在同一时间发送和接收数据，通常能达到甚至超过 10M/bps。
+>[SPI](../../../hardware/peripheral-interfaces/SPI.md) 是串行外设接口（Serial Peripheral Interface）的缩写，是美国摩托罗拉公司最先推出的一种同步串行传输规范，也是一种单片机外设芯片串行扩展接口，是一种高速、全双工、同步通信总线，所以可以在同一时间发送和接收数据，通常能达到甚至超过 10M/bps。
 
 对于不支持 MAC 层的 QuecPython 模组，可以通过 SPI 硬件接口外挂支持 MAC + PHY 的芯片。当前已支持多种型号，如 W5500/DM9051/CH395。
 
@@ -102,7 +102,7 @@ QuecPython 支持对以太网口的工作方式进行配置，根据工作环境
 
 ### 数据流
 
-QuecPython 下以太网卡配置不同的工作方式，具有不同的工作流程，[终端模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-wan-example.html)（WAN）主要是将模块通过以太网，连接外部设备接入外网，[网关模式](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/ethernet-lan-example.html)（LAN）主要为局域网设备提供 4G 网络。
+QuecPython 下以太网卡配置不同的工作方式，具有不同的工作流程，[终端模式](ethernet-wan-example.md)（WAN）主要是将模块通过以太网，连接外部设备接入外网，[网关模式](ethernet-lan-example.md)（LAN）主要为局域网设备提供 4G 网络。
 
 1. 终端模式（WAN）
 
@@ -120,7 +120,7 @@ QuecPython 下以太网卡配置不同的工作方式，具有不同的工作流
 
 ### 各平台接口支持情况
 
-下表是各平台型号对于 SPI 接口以太网及 RMII 接口 PHY 适配支持情况。不同平台对于支持以太网卡型号目前不一致，请参考[ethernet - 以太网相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/ethernet.html)，进行以太网卡选型。
+下表是各平台型号对于 SPI 接口以太网及 RMII 接口 PHY 适配支持情况。不同平台对于支持以太网卡型号目前不一致，请参考[ethernet - 以太网相关功能](../../../../api_reference/peripherals/ethernet.md)，进行以太网卡选型。
 
 |  型号\接口类型   | SPI-ETHERNET | RMII-PHY |
 | :-: | :-: | :-: |
@@ -144,7 +144,7 @@ QuecPython 对于外挂 RMII 接口 PHY 设备或者外挂 SPI 接口太网卡�
 
 ### 选择以太网卡
 
-以太网均被包含在 ethernet 模块中，不同类型网卡加载有所区别，各模块加载参数也有所差异，请参考[ethernet - 以太网相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/ethernet.html) 查看各网卡初始化传参含义。各以太网卡加载方式如下所示：
+以太网均被包含在 ethernet 模块中，不同类型网卡加载有所区别，各模块加载参数也有所差异，请参考[ethernet - 以太网相关功能](../../../../api_reference/peripherals/ethernet.md) 查看各网卡初始化传参含义。各以太网卡加载方式如下所示：
 
 **加载 W5500**
 为了方便W5500适配，对于W5500接口设置较多自定义参数，方便灵活对接。
@@ -177,10 +177,10 @@ nic = ethernet.YT8512H(mac, ip='', subnet='', gateway='')
 | `ip` | 以太网卡的 `ip` 地址，若值为空字符串''，表示使用默认值`192.168.1.100`。 | 均适配该参数 | 用于初始化配置网卡 ip 相关信息 |
 | `subnet` | 以太网卡的子网掩码地址，若值为空字符串''，表示使用默认值`255.255.255.0`。 | 均适配该参数 | 用于初始化配置网卡 ip 相关信息 |
 | `gateway` | 以太网卡的网关地址，若值为空字符串''，表示将 `ip` 地址的最后一位替换成`1`作为网关。 | 均适配该参数 | 用于初始化配置网卡 ip 相关信息 |
-| `spi_port` | [SPI端口](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SPI.html)，默认值为`-1`，表示使用上次配置的值，程序中默认配置为 `SPI1` 端口。 | W5500/DM9051/CH395均适配 |  SPI-ETHERNET 外挂设备均适配 SPI 可选接口。RMII 接口使用接口是固定的，无需适配。 |
-| `spi_cs_pin` | SPI 片选[GPIO管脚](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html)，默认值为`-1`，表示使用上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/DM9051/CH395已适配 | SPI-ETHERNET 外挂设备均适配 SPI CS 可选PIN脚。RMII 使用接口是固定的，无需适配。 |
-| `extint_pin` | 外部中断[GPIO管脚](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html)，默认值为`-1`，表示上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/CH395已适配 | DM9051尚未适配中断方式数据处理。<br/> YT8512/SZ18201/JL1101 RMII 接口内部固定中断脚，不可更改。|
-| `reset_pin` | 重置[GPIO管脚](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html)，默认值为`-1`, 表示上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/CH395 已适配 | DM9051 尚未适配。<br/> YT8512/SZ18201/JL1101 RMII 接口内部固定 RST 脚，不可更改。 |
+| `spi_port` | [SPI端口](../../../../api_reference/peripherals/machine.SPI.md)，默认值为`-1`，表示使用上次配置的值，程序中默认配置为 `SPI1` 端口。 | W5500/DM9051/CH395均适配 |  SPI-ETHERNET 外挂设备均适配 SPI 可选接口。RMII 接口使用接口是固定的，无需适配。 |
+| `spi_cs_pin` | SPI 片选[GPIO管脚](../../../../api_reference/peripherals/machine.Pin.md)，默认值为`-1`，表示使用上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/DM9051/CH395已适配 | SPI-ETHERNET 外挂设备均适配 SPI CS 可选PIN脚。RMII 使用接口是固定的，无需适配。 |
+| `extint_pin` | 外部中断[GPIO管脚](../../../../api_reference/peripherals/machine.Pin.md)，默认值为`-1`，表示上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/CH395已适配 | DM9051尚未适配中断方式数据处理。<br/> YT8512/SZ18201/JL1101 RMII 接口内部固定中断脚，不可更改。|
+| `reset_pin` | 重置[GPIO管脚](../../../../api_reference/peripherals/machine.Pin.md)，默认值为`-1`, 表示上次配置的值，程序中默认配置参考 API参考手册内具体型号。 | W5500/CH395 已适配 | DM9051 尚未适配。<br/> YT8512/SZ18201/JL1101 RMII 接口内部固定 RST 脚，不可更改。 |
 | `work_mode` | 以太网工作模式配置，默认为终端模式，`0`/`1` 分别表示终端模式/网关模式。终端模式表示该模块作为终端设备连接供网设备上网。网关模式表示该模块作为网关，为外部设备提供网络访问，通过`4G`上网。 | W5500/DM9051/CH395 均适配 | YT8512/SZ18201/JL1101 尚未适配，不限制工作默认配置，自行调用接口确认工作模式。 |
 
 ### 获取动态 IP 地址

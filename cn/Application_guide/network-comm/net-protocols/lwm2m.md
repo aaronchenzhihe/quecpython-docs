@@ -124,7 +124,7 @@ Endpoint Name 支持以下配置方式：
 
 ### 检查固件和网络
 
-可使用 [QPYcom](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/qpycom-repl.html) 在交互界面导入模块。未抛出异常表示当前固件包含 `lwm2m` 模块。
+可使用 [QPYcom](../../dev-tools/QPYcom/qpycom-repl.md) 在交互界面导入模块。未抛出异常表示当前固件包含 `lwm2m` 模块。
 
 ```python
 import lwm2m
@@ -527,7 +527,7 @@ else:
 | `+QLWURC: "deregister",ssid,code` 或 `+QLWURC: "deregister",code` | 注销结果 | 不同平台可能省略 `ssid` |
 | `+QLWURC: "fota/pkgurl",url` | 服务器下发固件 URL | `url` |
 
-服务器还可能下发 APN、用户名、密码、鉴权方式、注册生存时间和当前时间等变更事件。完整事件列表请参考 [`lwm2m` API 文档](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/Lwm2m.html)。
+服务器还可能下发 APN、用户名、密码、鉴权方式、注册生存时间和当前时间等变更事件。完整事件列表请参考 [`lwm2m` API 文档](../../../api_reference/networklib/Lwm2m.md)。
 
 ## 常见问题
 
@@ -565,5 +565,5 @@ A：表示当前固件不支持该配置项。请核对模组型号和固件版�
 
 ## 参考链接
 
-- [`lwm2m` API 文档](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/Lwm2m.html)
+- [`lwm2m` API 文档](../../../api_reference/networklib/Lwm2m.md)
 - [QuecPython LwM2M 官方示例](https://github.com/QuecPython/examples/tree/main/network-comm/net-protocols/lwm2m/example_lwm2m.py)

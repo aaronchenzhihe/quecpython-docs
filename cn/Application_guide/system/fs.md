@@ -25,13 +25,13 @@
 
 该步主要进行存储介质硬件初始化，然后挂载实体文件系统，最后获取到实体文件系统的句柄和文件操作接口。每个实体文件系统有各自独立的硬件初始化和挂载接口。如果初始化成功，这些接口最终返回实体文件系统的对象，对象中包含有实体文件系统句柄和文件操作接口等信息。
 
-- littleFS对应初始化接口为uos.VfsLfs1()（接口用法参考[注册存储设备 - SPI NOR FLASH](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SPI-NOR-FLASH)）
-- SPI SD卡FATFS对应初始化接口为uos.VfsFat()（接口用法参考[注册存储设备 - SPI - SD卡](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SPI---SD%E5%8D%A1)）
-- SDIO SD卡FATFS对应初始化接口为uos.VfsSd()（接口用法参考[注册存储设备 - SDIO - SD卡](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%B3%A8%E5%86%8C%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87---SDIO---SD%E5%8D%A1)）
+- littleFS对应初始化接口为uos.VfsLfs1()（接口用法参考[注册存储设备 - SPI NOR FLASH](../../api_reference/stdlib/uos.md#注册存储设备---SPI-NOR-FLASH)）
+- SPI SD卡FATFS对应初始化接口为uos.VfsFat()（接口用法参考[注册存储设备 - SPI - SD卡](../../api_reference/stdlib/uos.md#注册存储设备---SPI---SD卡)）
+- SDIO SD卡FATFS对应初始化接口为uos.VfsSd()（接口用法参考[注册存储设备 - SDIO - SD卡](../../api_reference/stdlib/uos.md#注册存储设备---SDIO---SD卡)）
 
 #### 挂载虚拟文件系统
 
-该步将实体文件系统接口绑定到虚拟文件系统接口。具体接口为uos.mount(vfs_obj, path)。其中参数vfs_obj为上一步初始化实体文件系统返回的对象，参数path为虚拟文件系统的根目录，虚拟文件系统正是以根目录来区分不同的实体文件系统，即每一个实体文件系统绑定一个不同的根目录。根据应用场景，文件系统根目录可以分为：内置NOR flash用户区usr、内置NOR flash备份区bak、外置NOR flash区ext、SD卡区sd、EMMC区emmc。这样不同的存储区域可以使用同一套软件接口传入不同的根目录进行访问。接口用法参考[挂载文件系统](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html#%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)。
+该步将实体文件系统接口绑定到虚拟文件系统接口。具体接口为uos.mount(vfs_obj, path)。其中参数vfs_obj为上一步初始化实体文件系统返回的对象，参数path为虚拟文件系统的根目录，虚拟文件系统正是以根目录来区分不同的实体文件系统，即每一个实体文件系统绑定一个不同的根目录。根据应用场景，文件系统根目录可以分为：内置NOR flash用户区usr、内置NOR flash备份区bak、外置NOR flash区ext、SD卡区sd、EMMC区emmc。这样不同的存储区域可以使用同一套软件接口传入不同的根目录进行访问。接口用法参考[挂载文件系统](../../api_reference/stdlib/uos.md#挂载文件系统)。
 
 #### 卸载虚拟文件系统
 
@@ -168,7 +168,7 @@ test end
 
 #### uos API
 
-当进行目录等操作的时候，需要调用uos库进行操作，接口用法参考[uos - 基本系统服务](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html)。
+当进行目录等操作的时候，需要调用uos库进行操作，接口用法参考[uos - 基本系统服务](../../api_reference/stdlib/uos.md)。
 
 ##### 综合示例
 
@@ -265,7 +265,7 @@ remove test dir, usr files:['system_config.json', 'example_fs_basic_operation_uo
 
 ### 高级文件操作
 
-ql_fs - 高级文件操作，接口用法参考[ql_fs - 高级文件操作](https://developer.quectel.com/doc/quecpython/API_reference/zh/syslib/ql_fs.html)。
+ql_fs - 高级文件操作，接口用法参考[ql_fs - 高级文件操作](../../api_reference/syslib/ql_fs.md)。
 
 ##### 综合示例
 

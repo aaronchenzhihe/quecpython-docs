@@ -21,7 +21,7 @@ LED(gpio)
 - Function: Create LED Object
 - Return: LED Object
 - LED: LED Classification
-- gpio: GPIO number used to control LED. For specific, please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+- gpio: GPIO number used to control LED. For specific, please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 ```python
 LED.on()
@@ -132,7 +132,7 @@ In convenience of test, the LED in LTE OPEN-EVB_V1.1 such as NET_STATUS can be d
 
 
 
-> The NET_STATUS will be taken as network indicator by default. However, it is mandatory to disable network indicator via API beforehand. See [misc](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.html) in detail.
+> The NET_STATUS will be taken as network indicator by default. However, it is mandatory to disable network indicator via API beforehand. See [misc](../../../api_reference/peripherals/misc.md) in detail.
 >
 > Moreover, it is available to turn off network indicator via following commands in EC600U module
 >
@@ -146,7 +146,7 @@ In convenience of test, the LED in LTE OPEN-EVB_V1.1 such as NET_STATUS can be d
 Execute following steps once above procedure is done
 
 2. Reach pin that controls network indicator in EC600U module via [Hardware_Design](https://developer.quectel.com/en/resource-download?cid=250). It is found the NET_STATUS of EC600U is controlled by pin 54.
-4. After acquring pin number, it is available to find the exact GPIO 14 that corresponding to pin 54 in EC600U module based on the mapping relationship between GPIO pin number and physical pin via [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+4. After acquring pin number, it is available to find the exact GPIO 14 that corresponding to pin 54 in EC600U module based on the mapping relationship between GPIO pin number and physical pin via [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 5. Compile script to control LED and run it
 
 By running above codes via QPYcom, it is vivid that the NET_STATUS will blink with an interval of 1s.

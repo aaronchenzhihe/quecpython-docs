@@ -1,7 +1,7 @@
 
 # QuecPython 支持网卡介绍
 
-本章节主要针对当前 QuecPython 下支持的网卡（[蜂窝无线网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/index.html)、[Wi-Fi 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/index.html)、[以太网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/ethernet/index.html)、[USB 网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/index.html)）进行简单介绍。
+本章节主要针对当前 QuecPython 下支持的网卡（[蜂窝无线网卡](../cellular/README.md)、[Wi-Fi 网卡](../wifi/README.md)、[以太网卡](../ethernet/README.md)、[USB 网卡](../usbnet/README.md)）进行简单介绍。
 
 ## 支持网卡简介
 
@@ -18,7 +18,7 @@ QuecPython 提供了 Wi-Fi 设备管理功能，通过硬件接口外挂 Wi-Fi �
 QuecPython 提供了以太网卡/PHY芯片管理功能，QuecPython 内置 lwIP 协议栈以及 EMAC 层，使得能够驱动以太网 / PHY 芯片。现已支持多种 SPI/RMII 接口以太网芯片。
 
 ### USB 网卡
-QuecPython 提供了 USB 网卡管理功能，QuecPython 在 USB 接口集成 RNDIS/ECM/MBIM 协议，能够在不同系统下（如 [Windows](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-windows-example.html)/[Linux](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-linux-example.html)/[Android](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-android-example.html)/[IOS](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/usbnet/usbnet-linux-example.html)等）识别成网卡设备，直接进行网络连接。
+QuecPython 提供了 USB 网卡管理功能，QuecPython 在 USB 接口集成 RNDIS/ECM/MBIM 协议，能够在不同系统下（如 [Windows](../usbnet/usbnet-windows-example.md)/[Linux](../usbnet/usbnet-linux-example.md)/[Android](../usbnet/usbnet-android-example.md)/[IOS](../usbnet/usbnet-linux-example.md)等）识别成网卡设备，直接进行网络连接。
 
 ## 网卡支持列表
 

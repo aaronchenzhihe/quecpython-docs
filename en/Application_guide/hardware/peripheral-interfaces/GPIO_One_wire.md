@@ -82,7 +82,7 @@ The master can communicate with up to 100 slaves on a 1-wire standard bus. Howev
 
 ## Functionality Briefing					
 
-Among QuecPython modules, EC200U/EC600U/EG912U/EG915U support GPIO 1-Wire Protocol. Please refer to the API introduction: [machine.OneWire](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.OneWire.html)
+Among QuecPython modules, EC200U/EC600U/EG912U/EG915U support GPIO 1-Wire Protocol. Please refer to the API introduction: [machine.OneWire](../../../api_reference/peripherals/machine.OneWire.md)
 
 
 ### Object Creation								
@@ -90,7 +90,7 @@ Among QuecPython modules, EC200U/EC600U/EG912U/EG915U support GPIO 1-Wire Protoc
 ```python
 class machine.OneWire(GPIOn)
 ```
-For relationship between pin number and physical pins, please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E).
+For relationship between pin number and physical pins, please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin).
 
 It is available in the module, so please make sure to import it first. You can then create an one-wire like this:
 
@@ -176,7 +176,7 @@ class DS18B20Sensor(onewire_pin)
 - Functionality: Create a DS18B20 object.
 - Returns: DS18B20 object.
 - DS18B20Sensor: DS18B20Sensor class.
-- onewire_pin: GPIO number of the One-Wire bus. Please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E).
+- onewire_pin: GPIO number of the One-Wire bus. Please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin).
 
 ```python
 DS18B20Sensor.read_temperature()

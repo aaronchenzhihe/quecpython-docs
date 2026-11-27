@@ -4,7 +4,7 @@
 
 ## 开发板资料
 
-- 型号：[EC800GCN 华系列 DTU 开发板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec800g_hua_dtu.html)
+- 型号：[EC800GCN 华系列 DTU 开发板](../../../dev_board_guide/ec800g_hua_dtu.md)
 - 购买链接：[点此跳转](https://www.quecmall.com/goods-detail/2c90800b987f06090198cfd64f9a0111)
 - 开发板文档：[EP-D200_华系列DTU_产品规格及用户指导](https://developer.quectel.com/wp-content/uploads/2024/09/QuecPython_EP-D200_%E5%8D%8E%E7%B3%BB%E5%88%97DTU_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E5%8F%8A%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC_V1.0.pdf) 
 

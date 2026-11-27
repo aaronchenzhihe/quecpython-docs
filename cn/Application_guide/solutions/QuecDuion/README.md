@@ -51,6 +51,6 @@
 ## 相关资源
 
 - 传感器驱动案例仓库
-- [EG800Z Duion开发板介绍](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec800x-duino-evb.html)
-- [EG800Z 引脚查询](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html)
-- [QuecPython开发流程](https://developer.quectel.com/doc/quecpython/Getting_started/zh/)
+- [EG800Z Duion开发板介绍](../../../dev_board_guide/ec800x-duino-evb.md)
+- [EG800Z 引脚查询](../../../api_reference/peripherals/machine.Pin.md)
+- [QuecPython开发流程](../../../Getting_started/README.md)

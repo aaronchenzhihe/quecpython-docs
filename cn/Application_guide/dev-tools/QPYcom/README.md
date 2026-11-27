@@ -1,6 +1,6 @@
 # QPYcom 使用教程
 
-[QPYcom](https://developer.quectel.com/resource-download?cid=6) 是 QuecPython 全栈式开发调试工具, 支持 REPL 交互、文件传输、固件合成与烧录等基础功能，同时也包含了差分包制作、分区调整等扩展功能。
+[QPYcom](https://www.quectel.com.cn/download-zone) 是 QuecPython 全栈式开发调试工具, 支持 REPL 交互、文件传输、固件合成与烧录等基础功能，同时也包含了差分包制作、分区调整等扩展功能。
 
 本系列文档将从以下几个方便对 QPYcom 工具的使用做介绍：
 

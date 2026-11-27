@@ -12,17 +12,17 @@ All operators use specific APNs (Access Point Names), which are usually pre-conf
 
 For APN configuration interface description, please refer to the following sections:
 
-[APN configuration interface description](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#APN-Configuration-and-Retrieval)
+[APN configuration interface description](../../../../api_reference/iotlib/dataCall.md#APN-Configuration-and-Retrieval)
 
 APN configuration example:
 
-* [Automatically Activate One NIC at Startup and Configure APN](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Automatically-Activate-One-NIC-at-Startup-and-Configure-APN)
+* [Automatically Activate One NIC at Startup and Configure APN](application.md#Automatically-Activate-One-NIC-at-Startup-and-Configure-APN)
 
-* [Automatically Activate Multiple NICs at Startup and Configure APN](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Automatically-Activate-Multiple-NICs-at-Startup-and-Configure-APN)
+* [Automatically Activate Multiple NICs at Startup and Configure APN](application.md#Automatically-Activate-Multiple-NICs-at-Startup-and-Configure-APN)
 
-* [Manually Activate One NIC](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-One-NIC)
+* [Manually Activate One NIC](application.md#Manually-Activate-One-NIC)
 
-* [Manually Activate Multiple NICs](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-Multiple-NICs)
+* [Manually Activate Multiple NICs](application.md#Manually-Activate-Multiple-NICs)
 
 ### Confirm Which APN to Use
 
@@ -32,7 +32,7 @@ All operators have their own APNs. Generally, for regular SIM cards (also known 
 
 ## CFUN
 
-CFUN (Cellular Functionality) refers to the functional mode of a mobile terminal. When talking about CFUN, we generally refer to the APIs of `net` feature or the AT command `AT+CFUN` to set or get the functional mode of the mobile terminal. For how to get and set CFUN, please refer to [Get/Set Module Work Mode](./api-instruction.html#Get/Set-Module-Work-Mode) section in the *Cellular Network API* chapter. Mobile terminals usually have the following functional modes:
+CFUN (Cellular Functionality) refers to the functional mode of a mobile terminal. When talking about CFUN, we generally refer to the APIs of `net` feature or the AT command `AT+CFUN` to set or get the functional mode of the mobile terminal. For how to get and set CFUN, please refer to [Get/Set Module Work Mode](./api-instruction.md#Get/Set-Module-Work-Mode) section in the *Cellular Network API* chapter. Mobile terminals usually have the following functional modes:
 
 * Minimum functionality mode: In this mode, the entire radio frequency network protocol stack is turned off, and the SIM card is powered off. In this mode, the power consumption of the terminal device is the lowest when it is not turned off.
 
@@ -72,17 +72,17 @@ For a UE, cells are divided into serving cells and neighboring cells.
 
 In cellular mobile networks, signal quality is determined by different measurement values, not a single value of a parameter. The parameters used to measure signal quality and their ranges generally vary in different network modes. Here are some common measurement values:
 
-* [RSSI](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength)
+* [RSSI](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength)
 
-* [CSQ](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Signal-Strength)
+* [CSQ](../../../../api_reference/iotlib/net.md#Get-Signal-Strength)
 
-* [RSRP](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength)
+* [RSRP](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength)
 
-* [RSRQ](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength)
+* [RSRQ](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength)
 
-* [RSCP](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength)
+* [RSCP](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength)
 
-* [SINR](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength)
+* [SINR](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength)
 
 ### Factors Affecting Signal Quality
 
@@ -110,7 +110,7 @@ When measuring signal strength and signal quality, high signal strength values o
 
 ### RSSI
 
-[RSSI](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) (Received Signal Strength Indicator) refers to the total power (in dBm) of all received signals, including pilot signals, data signals, neighboring interference signals, and background noise signals. The parameter range of RSSI varies in different network modes, but a larger value indicates better signal strength.
+[RSSI](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) (Received Signal Strength Indicator) refers to the total power (in dBm) of all received signals, including pilot signals, data signals, neighboring interference signals, and background noise signals. The parameter range of RSSI varies in different network modes, but a larger value indicates better signal strength.
 
 RSSI is usually a relative value, and its measurement is highly dependent on the receiving device. Therefore, the measurement standards for RSSI may not be completely uniform for different devices. The RSSI measurement standards provided below are for reference only:
 
@@ -128,7 +128,7 @@ RSSI is usually a relative value, and its measurement is highly dependent on the
 
 ### CSQ
 
-[CSQ](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#%3Ccode%3Enet.csqQueryPoll%3C/code%3E) (Carrier Signal Quality) refers to the signal strength, used to indicate RSSI level. Range: 0 – 31. Larger values indicate better signal strength. If the CSQ value is less than 6, the terminal may have difficulty establishing network communication. There is a corresponding relationship between CSQ and RSSI:
+[CSQ](../../../../api_reference/iotlib/net.md#net.csqQueryPoll) (Carrier Signal Quality) refers to the signal strength, used to indicate RSSI level. Range: 0 – 31. Larger values indicate better signal strength. If the CSQ value is less than 6, the terminal may have difficulty establishing network communication. There is a corresponding relationship between CSQ and RSSI:
 $$
 CSQ = (RSSI + 113) / 2
 $$
@@ -145,7 +145,7 @@ $$
 
 ### RSRP
 
-[RSRP](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) (Reference Signal Received Power) refers to the received power of reference signals. It is the average power of the signals received on all REs (resource elements) carrying reference signals in a symbol. It reflects the path loss intensity in the current channel and is used for cell coverage measurements, cell selection, and re-selection. Range: -140 dBm to -44 dBm. Larger values indicate better signal strength.
+[RSRP](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) (Reference Signal Received Power) refers to the received power of reference signals. It is the average power of the signals received on all REs (resource elements) carrying reference signals in a symbol. It reflects the path loss intensity in the current channel and is used for cell coverage measurements, cell selection, and re-selection. Range: -140 dBm to -44 dBm. Larger values indicate better signal strength.
 
 Please note that RSRP is a concept introduced in LTE, so it is used to measure LTE network signal strength, equivalent to RSCP in WCDMA networks. The following RSRP standards are for reference only:
 
@@ -162,7 +162,7 @@ Please note that RSRP is a concept introduced in LTE, so it is used to measure L
 
 ### RSRQ
 
-[RSRQ](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) (Reference Signal Received Quality) refers to the quality of the received reference signals. It reflects the signal-to-noise ratio and interference levels of the current channel. Range: -20 dB to -3 dB. Larger values indicate better signal strength. RSRQ is a concept introduced in LTE, so it is used to measure LTE network signal strength
+[RSRQ](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) (Reference Signal Received Quality) refers to the quality of the received reference signals. It reflects the signal-to-noise ratio and interference levels of the current channel. Range: -20 dB to -3 dB. Larger values indicate better signal strength. RSRQ is a concept introduced in LTE, so it is used to measure LTE network signal strength
 
 RSRQ is the ratio of RSRP to RSSI, but adjusted by a coefficient since their measurements may be based on different bandwidths, i.e. RSRQ = N*RSRP/RSSI. 
 
@@ -177,7 +177,7 @@ The following RSRQ standards are for reference only:
 
 ### RSCP
 
-[RSCP](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) (Receive Signal Code Power) refers to the received power of the code signals. It is a concept in UMTS networks and represents the power measured on a specific physical channel by the receiver. It is used as an indication of signal strength, handover criteria, and path loss calculation in downlink power control.  Range: -120 dBm to -25 dBm. Larger values indicate better signal strength.
+[RSCP](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) (Receive Signal Code Power) refers to the received power of the code signals. It is a concept in UMTS networks and represents the power measured on a specific physical channel by the receiver. It is used as an indication of signal strength, handover criteria, and path loss calculation in downlink power control.  Range: -120 dBm to -25 dBm. Larger values indicate better signal strength.
 
 The following RSCP standards are for reference only:
 
@@ -193,7 +193,7 @@ The following RSCP standards are for reference only:
 
 ### SINR
 
-[SINR](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) (Signal to Interference plus Noise Ratio) refers to the ratio of the received useful signal strength to the received interference signal strength. It is an important parameter for measuring signal quality in mobile network communication. Range: -10 dB to 40 dB.
+[SINR](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) (Signal to Interference plus Noise Ratio) refers to the ratio of the received useful signal strength to the received interference signal strength. It is an important parameter for measuring signal quality in mobile network communication. Range: -10 dB to 40 dB.
 
 The following SINR standards are for reference only:
 
@@ -211,13 +211,13 @@ The following SINR standards are for reference only:
 
 In mobile communication, a band refers to a frequency band, which is a specific range of frequencies in the radio spectrum. Each band consists of a certain frequency range and bandwidth. The radio spectrum is a limited and valuable resource that needs to be shared among various wireless communication services worldwide. To ensure harmonious coexistence and avoid interference between different services, the International Telecommunication Union (ITU) and telecom authorities divide the radio spectrum into multiple bands, each assigned to one or more specific services. These communication bands are usually numbered, such as Band 1, Band 2, Band 3, etc.
 
-Different frequency bands have different transmission characteristics. For example, signals in lower frequency bands can penetrate buildings better, while signals in higher frequency bands are more suitable for transmission in open areas or line-of-sight conditions. Therefore, network operators need to balance and decide which bands to support in order to optimize network coverage and capacity. Users can refer to Part [Set and Get Band](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Set-and-Get-Band) of the QuecPython wiki documentation to set and query the band of the module.
+Different frequency bands have different transmission characteristics. For example, signals in lower frequency bands can penetrate buildings better, while signals in higher frequency bands are more suitable for transmission in open areas or line-of-sight conditions. Therefore, network operators need to balance and decide which bands to support in order to optimize network coverage and capacity. Users can refer to Part [Set and Get Band](../../../../api_reference/iotlib/net.md#Set-and-Get-Band) of the QuecPython wiki documentation to set and query the band of the module.
 
 
 
 ## Network Mode
 
-Network mode, also called radio access technology (RAT), refers to the wireless technology for devices to connect to the network. Technologies like GSM, GPRS, WCDMA, CDMA2000 and LTE are network modes. Users can refer to Part [Network Mode and Roaming Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Network-Mode-and-Roaming-Configuration) of the QuecPython wiki documentation to set and query the network mode of the module.
+Network mode, also called radio access technology (RAT), refers to the wireless technology for devices to connect to the network. Technologies like GSM, GPRS, WCDMA, CDMA2000 and LTE are network modes. Users can refer to Part [Network Mode and Roaming Configuration](../../../../api_reference/iotlib/net.md#Network-Mode-and-Roaming-Configuration) of the QuecPython wiki documentation to set and query the network mode of the module.
 
 
 
@@ -229,7 +229,7 @@ For example:
 
 COMPACT is an optimization technology for GSM networks. It improves the spectrum efficiency and capacity of the network by changing the processing of control channels. Therefore, it is classified as a GSM network technology.
 
-EMTC (Enhanced Machine-Type Communication) is an LTE technology aimed at improving network support for a large number of low-power devices. Therefore, it is classified as an LTE network technology. Users can refer to Part [Get Network Configuration Mode](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Network-Configuration-Mode) of the QuecPython wiki documentation to query the network technology of the module.
+EMTC (Enhanced Machine-Type Communication) is an LTE technology aimed at improving network support for a large number of low-power devices. Therefore, it is classified as an LTE network technology. Users can refer to Part [Get Network Configuration Mode](../../../../api_reference/iotlib/net.md#Get-Network-Configuration-Mode) of the QuecPython wiki documentation to query the network technology of the module.
 
 
 
@@ -249,4 +249,4 @@ In an LTE network, bearers are generally divided into default bearers and dedica
 
 Base station time usually refers to the internal clock of a wireless base station, which provides an accurate time reference for the mobile communication network. In a wireless communication system, sending and receiving data needs to be done within precise time windows. For example, data transmission needs to be synchronized with the base station's time accurately, otherwise, data loss or errors may occur. Therefore, base stations need a precise internal clock to control these time-sensitive operations.
 
-In addition, base station time is commonly used for automatic time calibration of mobile devices, especially when devices move between different time zones. This process is achieved through Network Identity and Time Zone (NITZ). Users can refer to Part [Get Current Base Station Time](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Current-Base-Station-Time) of the QuecPython wiki documentation to query the base station time.
+In addition, base station time is commonly used for automatic time calibration of mobile devices, especially when devices move between different time zones. This process is achieved through Network Identity and Time Zone (NITZ). Users can refer to Part [Get Current Base Station Time](../../../../api_reference/iotlib/net.md#Get-Current-Base-Station-Time) of the QuecPython wiki documentation to query the base station time.

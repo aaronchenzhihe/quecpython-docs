@@ -140,7 +140,7 @@ Unlike the powerkey, RESET is generally directly connected to the CPU, and its t
 
 Customizing the short press and long press functions of the powerkey is actually button detection. The implementation method is to start a timer in the interrupt when the button is pressed, and stop the timer in the interrupt when the button is released. If the timer has not expired and is stopped by the interrupt triggered by the powerkey release, it is judged as a short press. If there is no interrupt triggered by the release until timeout, it is judged as a long press. The timeout of the timer is the threshold that defines the short press and long press.
 
-Usage of configuring custom powerkey functions: [class PowerKey - PowerKey Callback and Registration](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.PowerKey.html)
+Usage of configuring custom powerkey functions: [class PowerKey - PowerKey Callback and Registration](../../api_reference/peripherals/misc.PowerKey.md)
 
 Example code for customizing short press/long press of powerkey:
 
@@ -325,14 +325,14 @@ Most PMICs in cellular modules have multiple ADC channels. Typically, one channe
 ### Typical Applications
 
 1. **Monitoring Module VBAT Voltage**
-   - **Usage:** [Get Battery Voltage](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.Power.html#Get-Battery-Voltage)
+   - **Usage:** [Get Battery Voltage](../../api_reference/peripherals/misc.Power.md#Get-Battery-Voltage)
    - This ADC channel is fixed to monitor the VBAT voltage of the module. When powering the module using a battery, this interface can be used to manage the battery.
 
    Aside from voltage measurement, when this ADC channel detects that the VBAT voltage is too high or too low, it triggers overvoltage/undervoltage interrupts on the PMIC. In this case, to protect the module hardware, the PMIC will actively change the power state, instructing the module to shut down.
 
 2. **ADC Usage**
    
-   - **Usage:** [ADC - Voltage Collection](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.ADC.html)
+   - **Usage:** [ADC - Voltage Collection](../../api_reference/peripherals/misc.ADC.md)
    - Connect a device that outputs an analog signal to an ADC channel, allowing you to read the voltage value that the device outputs. In this scenario, you can use the device's voltage value to calculate sensor data in the application.
 
 Different PMICs have varying detection ranges for matching ADCs, which is determined based on the hardware design manual. If the output range of an analog device does not match the detected range of the ADC, voltage division may need to be designed in the hardware to match the output voltage with the ADC's effective range. In the application layer, the detected voltage can then be used to calculate the actual output value of the analog device.

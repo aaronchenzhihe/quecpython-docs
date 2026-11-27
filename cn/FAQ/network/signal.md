@@ -7,7 +7,7 @@
 - CSQ信号强度：net.csqQueryPoll()
 - RSRP信号强度：net.getSignal()
 
-> 具体详情链接： [CSQ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html?highlight=信号强度#获取CSQ信号强度);[RSRP]([net - 网络相关功能 - QuecPython (quectel.com)](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html?highlight=信号强度#获取详细信号强度))
+> 具体详情链接： [CSQ](../../api_reference/iotlib/net.md#获取CSQ信号强度);[RSRP](../../api_reference/iotlib/net.md#获取详细信号强度)
 
 ### 信号强度与网络数据业务的稳定性的关系
 

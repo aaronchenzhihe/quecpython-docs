@@ -184,7 +184,7 @@ BPP < 8 时，一个字节映射到了多个像素，因此无法直接地控制
 
 ### API 说明
 
-详细的接口说明请参考 [class LCD - LCD显示屏](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)
+详细的接口说明请参考 [class LCD - LCD显示屏](../../../api_reference/peripherals/machine.LCD.md)
 
 <font color='red'>**注意：**</font>该部分为 QuecPython LCD 驱动的相关 API，请驱动屏幕前，详细阅读
 
@@ -208,9 +208,9 @@ SPI LCD 显示屏是使用 SPI 接口进行通信的 LCD 显示屏。这种显�
 
 <font color='red'>**注意：**</font> 原厂提供的初始化参数非常重要，后面 SPI LCD 初始化时，实际为将该参数替换成 lcd.lcd_init 所需要格式的参数。
 
-了解[QuecPython LCD接口](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_init%3C/code%3E)，才能更好是利用它点亮屏幕 。
+了解[QuecPython LCD接口](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_init)，才能更好是利用它点亮屏幕 。
 
-<font color='red'>**注意：**</font>目前 QuecPython SPI 驱动分为两种，LCM( Liquid Crystal Module )和通用 SPI( Serial Peripheral Interface )。两者的初始化接口有差异，具体详细可参考[QuecPython LCD接口](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_init%3C/code%3E)
+<font color='red'>**注意：**</font>目前 QuecPython SPI 驱动分为两种，LCM( Liquid Crystal Module )和通用 SPI( Serial Peripheral Interface )。两者的初始化接口有差异，具体详细可参考[QuecPython LCD接口](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_init)
 
 <font color='red'>**了解 LCD.lcd_init 中的参数，对于 QuecPython 驱动 LCD 至关重要，请仔细阅读如下内容。**</font>
 
@@ -359,7 +359,7 @@ mipi_lcd = LCD()
 
 ###### SPI LCD 初始化接口介绍
 
-请参考[LCM 接口 API](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Cstrong%3E%E6%8E%A5%E5%8F%A31%EF%BC%9A%E8%AE%BE%E5%A4%87%E6%8E%A5%E6%A8%A1%E5%9D%97LCM%E6%8E%A5%E5%8F%A3%3C/strong%3E) 和 [SPI LCD 接口 API](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Cstrong%3E%E6%8E%A5%E5%8F%A32%EF%BC%9A%E8%AE%BE%E5%A4%87%E6%8E%A5%E6%A8%A1%E5%9D%97SPI%E6%8E%A5%E5%8F%A3%3C/strong%3E)。
+请参考[LCD 接口 API](../../../api_reference/peripherals/machine.LCD.md#接口1：设备接模块LCD接口) 和 [SPI LCD 接口 API](../../../api_reference/peripherals/machine.LCD.md#接口2：设备接模块SPI接口)。
 
 ###### 编写初始化参数
 
@@ -495,7 +495,7 @@ spilcd.lcd_init(init_st7789_240X320_p, 240,320,52000,1,4,0,invalid_st7789_240X32
 
 该接口 <font color='red'>十分重要</font>，UI 就是基于该接口对屏幕进行 UI 绘制。
 
-[lcd.lcd_write 接口原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_write%3C/code%3E)
+[lcd.lcd_write 接口原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_write)
 
 注意：
 
@@ -514,7 +514,7 @@ spilcd.lcd_write(buf,110,150,130,170)
 
 ###### 清屏
 
-[lcd.lcd_clear 接口原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_clear%3C/code%3E)
+[lcd.lcd_clear 接口原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_clear)
 
 **示例如下（ST7789V）：**
 
@@ -528,7 +528,7 @@ spilcd.lcd_clear(0xf800) #0xf800 is represented in red in RGB565
 
 ###### 图片显示
 
-[lcd.lcd_show_jpg 原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_show_jpg%3C/code%3E)
+[lcd.lcd_show_jpg 原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_show_jpg)
 
 <font color='red'>注意 ：</font>该接口并非所有模组都支持，具体支持情况请咨询移远通信技术支持。
 
@@ -548,7 +548,7 @@ MIPI 协议实际上是一系列接口的协议，包含液晶、摄像头等等
 
 本章节将基于 QuecPython 铀 235 开发板驱动 ST7701S（480\*854）屏幕，介绍 MIPI LCD 的调试。
 
-由于 QuecPython 下 LCD 的相关**[API](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E)**已经开发好，用户可以直接依照[API](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E)格式，编写 MIPI 屏幕驱动。
+由于 QuecPython 下 LCD 的相关**[API](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init)**已经开发好，用户可以直接依照[API](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init)格式，编写 MIPI 屏幕驱动。
 
 <font color='red'>**注意：** 目前 QuecPython 支持 mipi 的平台仅支持 RGB565 格式. </font>
 
@@ -575,7 +575,7 @@ mipi_lcd = LCD()
 
 ###### MIPI 初始化接口介绍
 
-[lcd.mipi_init 接口原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.mipi_init%3C/code%3E)
+[lcd.mipi_init 接口原型](../../../api_reference/peripherals/machine.LCD.md#lcd.mipi_init)
 
 ```python
 lcd.mipi_init(initbuf, **kwargs)
@@ -679,7 +679,7 @@ mipilcd.mipi_init(initbuf=bytearray(init_480X854), TransMode=1)
 
 该接口 <font color='red'>十分重要 </font>，UI 就是基于该接口对屏幕进行 UI 绘制。
 
-[lcd.lcd_write 接口原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_write%3C/code%3E)
+[lcd.lcd_write 接口原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_write)
 
 注意：
 
@@ -718,7 +718,7 @@ mipilcd.lcd_write(test_buf1,10,10,20,20)
 
 ###### 清屏
 
-[lcd.lcd_clear 接口原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_clear%3C/code%3E)
+[lcd.lcd_clear 接口原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_clear)
 
 **示例如下（st7701s）：**
 
@@ -732,7 +732,7 @@ mipilcd.lcd_clear(0xf800) #0xf800 is represented in red in RGB565
 
 ###### 图片显示
 
-[lcd.lcd_show_jpg 原型](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html#%3Ccode%3Elcd.lcd_show_jpg%3C/code%3E)
+[lcd.lcd_show_jpg 原型](../../../api_reference/peripherals/machine.LCD.md#lcd.lcd_show_jpg)
 
 <font color='red'>注意 ：</font>该接口并非所有模组都支持，具体支持情况请参考 WIKI.
 

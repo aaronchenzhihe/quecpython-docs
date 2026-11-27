@@ -4,7 +4,7 @@
 
 
 
->建议用户使用不同运营商的SIM卡时，则配置对应运营商的APN信息；如果不配置或者配置错误，可能会导致模组无法注网。用户具体如何配置APN信息，参考[`dataCall.setPDPContext`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%3Ccode%3EdataCall.setPDPContext%3C/code%3E)方法。
+>建议用户使用不同运营商的SIM卡时，则配置对应运营商的APN信息；如果不配置或者配置错误，可能会导致模组无法注网。用户具体如何配置APN信息，参考[`dataCall.setPDPContext`](dataCall.md#dataCall.setPDPContext)方法。
 
 
 
@@ -367,7 +367,7 @@ net.nitzTime()
 
 | 参数       | 类型   | 参数意义                                                     |
 | ---------- | ------ | ------------------------------------------------------------ |
-| `date`     | 字符串 | 基站时间，其中关于时区的部分，不同系列有所区别，具体见示例。<br>如果需要设置和获取时区，请使用`utime`模块的[`setTimeZone(offset)`](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/utime.html#%3Ccode%3Eutime.setTimeZoneEx%3C/code%3E)和[`getTimeZone()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/utime.html#%3Ccode%3Eutime.getTimeZoneEx%3C/code%3E)接口，<br>不同平台，这两个接口的单位都是小时，具体参考[`utime`](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/utime.html)模块的说明。 |
+| `date`     | 字符串 | 基站时间，其中关于时区的部分，不同系列有所区别，具体见示例。<br>如果需要设置和获取时区，请使用`utime`模块的[`setTimeZone(offset)`](../stdlib/utime.md#utime.setTimeZoneEx)和[`getTimeZone()`](../stdlib/utime.md#utime.getTimeZoneEx)接口，<br>不同平台，这两个接口的单位都是小时，具体参考[`utime`](../stdlib/utime.md)模块的说明。 |
 | `abs_time` | 整型   | 基站时间的绝对秒数表示                                       |
 | `leap_sec` | 整型   | 闰秒数                                                       |
 
@@ -513,7 +513,7 @@ net.getState()
 net.getCi()
 ```
 
-该方法用于获取附近小区ID。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的cid集合。
+该方法用于获取附近小区ID。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的cid集合。
 
 **返回值描述：**
 
@@ -536,7 +536,7 @@ net.getCi()
 net.getServingCi()
 ```
 
-该方法用于获取服务小区ID。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的cid集合。
+该方法用于获取服务小区ID。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的cid集合。
 
 **返回值描述：**
 
@@ -562,7 +562,7 @@ net.getServingCi()
 net.getMnc()
 ```
 
-该方法用于获取附近小区的mnc。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的mnc集合。
+该方法用于获取附近小区的mnc。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的mnc集合。
 
 **返回值描述：**
 
@@ -622,7 +622,7 @@ net.getMncHex([simId])
 net.getServingMnc()
 ```
 
-该方法用于获取服务小区的mnc。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的mnc集合。
+该方法用于获取服务小区的mnc。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的mnc集合。
 
 **返回值描述：**
 
@@ -680,7 +680,7 @@ net.getServingMncHex([simId])
 net.getMcc()
 ```
 
-该方法用于获取附近小区的mcc。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的mcc集合。
+该方法用于获取附近小区的mcc。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的mcc集合。
 
 **返回值描述：**
 
@@ -746,7 +746,7 @@ net.getMccHex([simId])
 net.getServingMcc()
 ```
 
-该方法用于获取服务小区的mcc。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的mcc集合。
+该方法用于获取服务小区的mcc。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的mcc集合。
 
 **返回值描述：**
 
@@ -808,7 +808,7 @@ net.getServingMccHex([simId])
 net.getLac()
 ```
 
-该方法用于获取附近小区的Lac。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的lac集合。
+该方法用于获取附近小区的Lac。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的lac集合。
 
 **返回值描述：**
 
@@ -832,7 +832,7 @@ net.getLac()
 net.getServingLac()
 ```
 
-该方法用于获取服务小区的Lac。该接口获取结果即为[`net.getCellInfo()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getCellInfo%3C/code%3E)接口获取结果中的lac集合。
+该方法用于获取服务小区的Lac。该接口获取结果即为[`net.getCellInfo()`](net.md#net.getCellInfo)接口获取结果中的lac集合。
 
 **返回值描述：**
 

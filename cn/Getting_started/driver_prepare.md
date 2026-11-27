@@ -35,6 +35,6 @@
 
 **安装驱动后:**
 
-驱动安装常见问题参考: [开发环境与工具相关问题](https://developer.quectel.com/doc/quecpython/FAQ/zh/tools/index.html)
+驱动安装常见问题参考: [开发环境与工具相关问题](../FAQ/tools/README.md)
 
 <img src="media/readme/driver_after.jpg"  style="zoom: 130%;"/>

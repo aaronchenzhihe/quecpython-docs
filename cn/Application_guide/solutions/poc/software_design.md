@@ -29,7 +29,7 @@
 
 ### 核心业务模块(POC)
 
-> 有关 poc 库的 API 函数可参考[POC-公网对讲机](https://developer.quectel.com/doc/quecpython/API_reference/zh/industry/poc.html)说明文档。
+> 有关 poc 库的 API 函数可参考[POC-公网对讲机](../../../api_reference/industry/poc.md)说明文档。
 
 - #### 账户登录
 

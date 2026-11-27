@@ -21,7 +21,7 @@ Wi-Fi 无线网卡是一种用于连接终端设备到无线局域网（Wireless
 
 ### QuecPython 支持的 Wi-Fi 网卡硬件接口
 
-QuecPython 支持的 Wi-Fi 网卡有多种硬件连接方式：蜂窝无线通信模组通过 [UART](https://developer.quectel.com/doc/quecpython/Application_guide/zh/hardware/peripheral-interfaces/UART.html) 或 SDIO 接口外接 Wi-Fi 网卡，或者在移远的 Wi-Fi 芯片中移植 QuecPython。
+QuecPython 支持的 Wi-Fi 网卡有多种硬件连接方式：蜂窝无线通信模组通过 [UART](../../../hardware/peripheral-interfaces/UART.md) 或 SDIO 接口外接 Wi-Fi 网卡，或者在移远的 Wi-Fi 芯片中移植 QuecPython。
 
 <a id="click_jump_6.4.1.1.1"></a>
 
@@ -101,7 +101,7 @@ QuecPython 内置 Wi-Fi，是指直接将 QuecPython 移植到 Wi-Fi 芯片上�
 
 ### 工作模式介绍
 
-Wi-Fi 支持多种工作模式，当前 QuecPython 主要支持基础功能 [AP](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-ap-example.html) 和 [Station](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/wifi/wifi-station-example.html) 模式，即 Wi-Fi 作为终端连接到其他接入点入网（如路由器），或者 Wi-Fi 本身作为接入点给其他设备入网。
+Wi-Fi 支持多种工作模式，当前 QuecPython 主要支持基础功能 [AP](wifi-ap-example.md) 和 [Station](wifi-station-example.md) 模式，即 Wi-Fi 作为终端连接到其他接入点入网（如路由器），或者 Wi-Fi 本身作为接入点给其他设备入网。
 
 >AP 模式（Access Point Mode）：
 - AP 模式也被称为热点模式或基础设施模式。
@@ -181,7 +181,7 @@ QuecPython 下 Wi-Fi 配置不同的工作方式，具有不同的工作流程�
 
 ## Wi-Fi API 说明
 
-QuecPython 支持多种型号 Wi-Fi，其中包括外挂或者内置 Wi-Fi，由于历史原因，当前 ESP8266/ESP8285 尚未支持mpy接口，我们后续将对所有 Wi-Fi 设备接口进行统一。详细各型号接口说明请参考 Wiki下 [WLAN](https://developer.quectel.com/doc/quecpython/API_reference/zh/wifilib/index.html) 章节。
+QuecPython 支持多种型号 Wi-Fi，其中包括外挂或者内置 Wi-Fi，由于历史原因，当前 ESP8266/ESP8285 尚未支持mpy接口，我们后续将对所有 Wi-Fi 设备接口进行统一。详细各型号接口说明请参考 Wiki下 [WLAN](../../../../api_reference/wifilib/README.md) 章节。
 
 <a id="click_jump_6.4.2.1"></a>
 
@@ -189,7 +189,7 @@ QuecPython 支持多种型号 Wi-Fi，其中包括外挂或者内置 Wi-Fi，由
 
 由于 ESP8266 是在串口 SLIP 协议上进行支持的，为了方便对接使用拓展，我们只是提供了 WLAN.py 脚本，内置 ESP8266 控制类，方便用户根据自己需求进行接口定义并开发。
 
-详细接口信息请参考 WIKI 下[ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/zh/wifilib/WLAN.ESP8266.html)章节介绍。
+详细接口信息请参考 WIKI 下[ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md)章节介绍。
 
 > [点此在 github 中下载 WLAN.py 代码。](https://github.com/QuecPython/examples/tree/main/network-comm/nic/wifi)
 
@@ -317,7 +317,7 @@ esp8266.ota(url)
 
 此套接口是完全按照 MicroPython 官方接口进行开发适配。适用于 SDIO 外挂 Wi-Fi 网卡以及内置 Wi-Fi 网卡。
 
-当前信息只是对于通用 Wi-Fi 接口使用说明，部分型号适配根据实际情况实现有所差异，详细接口信息请参考 Wiki 下 [Wi-Fi通信](https://developer.quectel.com/doc/quecpython/API_reference/zh/wifilib/index.html) 章节介绍。
+当前信息只是对于通用 Wi-Fi 接口使用说明，部分型号适配根据实际情况实现有所差异，详细接口信息请参考 Wiki 下 [Wi-Fi通信](../../../../api_reference/wifilib/README.md) 章节介绍。
 
 ![](../../../media/network-comm/nic/network_wifi_api_process.png)
 

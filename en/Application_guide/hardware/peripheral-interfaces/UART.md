@@ -244,7 +244,7 @@ Application：
 
 ## Supported situation 
 
-For support of individual QuecPython module, see  [machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E).
+For support of individual QuecPython module, see  [machine.UART](../../../api_reference/peripherals/machine.UART.md#machine.UART).
 
 ## Data flow 
 
@@ -278,13 +278,13 @@ Rx communication: Receive data for 64 bytes or OT -> trigger interrupt-> trigger
 
 In this chapter, it will illustrate how to communicate between QuecPython Series and other UART devices based on function of UART driver program and data type. 
 
-1. [Create object](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Create-object)
-2. [Transmit data](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Transmit-data) 
-3. [Receive data](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Receive-data)
-4. [Interrupt](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Interrupt)
-5. [RS485 control](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#RS485-control)
+1. [Create object](UART.md#Create-object)
+2. [Transmit data](UART.md#Transmit-data) 
+3. [Receive data](UART.md#Receive-data)
+4. [Interrupt](UART.md#Interrupt)
+5. [RS485 control](UART.md#RS485-control)
 
-For specific API, see [machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html).
+For specific API, see [machine.UART](../../../api_reference/peripherals/machine.UART.md).
 
 ### Create object 
 
@@ -294,7 +294,7 @@ The UART communication parameters will be configured in this step, including bau
 class machine.UART(UART.UARTn, baudrate, databits, parity, stopbits, flowctl
 ```
 
-About parameters introduction and pin mapping, see [machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Emachine.UART%3C/code%3E).
+About parameters introduction and pin mapping, see [machine.UART](../../../api_reference/peripherals/machine.UART.md#machine.UART).
 
 When creating objects, please pay attention to following aspects. 
 
@@ -315,7 +315,7 @@ msg = "This is a test string"
 uart.write(msg)
 ```
 
-About API, see [machine.UART.write](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.write%3C/code%3E)
+About API, see [machine.UART.write](../../../api_reference/peripherals/machine.UART.md#uart.write)
 
 ### Receive data
 
@@ -334,7 +334,7 @@ In terms of receiving data, following aspects shall be noted:
 
  **3. Data format**: The received data format shall be aligned with the settings in Tx, including data coding (ASCII, UTF-8 and binary), data bit quantity, start bit, stop bit and parity check bit. 
 
-For API introduction, please refer to [machine.UART.read](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.read%3C/code%3E).
+For API introduction, please refer to [machine.UART.read](../../../api_reference/peripherals/machine.UART.md#uart.read).
 
 ### Interrupt
 
@@ -351,7 +351,7 @@ def uart_call(para):
 uart1.set_callback(uart_call)
 ```
 
-For API introduction, please refer to [machine.UART.setCallback](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.set_callback%3C/code%3E)
+For API introduction, please refer to [machine.UART.setCallback](../../../api_reference/peripherals/machine.UART.md#uart.set_callback)
 
 > To avoid executing interrupt for a long time, it is needed to notify other threads to read serial port data by sending semaphore in callback. 
 
@@ -359,23 +359,23 @@ For API introduction, please refer to [machine.UART.setCallback](https://develop
 
 Control 485 communication direction: Pull up/down dedicated GPIO to notify 485 communication direction before and after transmitting data by serial port. 
 
-For API introduction, please refer to [machine.UART.control_485](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.control_485%3C/code%3E).
+For API introduction, please refer to [machine.UART.control_485](../../../api_reference/peripherals/machine.UART.md#uart.control_485).
 
 ## Applications 
 
 
 | Cases                                 | Description                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
-| [Basic Tx/Rx](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Basic-Tx/Rx)           | Configure UART setting and read and write via UART1. It will read data in a method of callback |
-| [External GNSS](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#External-GNSS)       | By decrypting the GNGGA, GNRMC and GPGSV in raw GNSS data packet read from external GNSS by UART to get positioning info. |
-| [RS485application](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#RS-485-application) | Set UART driver programm in half duplex to communicate via RS485 interface |
-| [Power meter chip](https://developer.quectel.com/doc/quecpython/Application_guide/en/hardware/peripheral-interfaces/UART.html#Power-meter-chip) | Take power meter chip as an example: read and write corresponding parameter via UART to get power data or execute other controlling commands. |
+| [Basic Tx/Rx](UART.md#Basic-Tx/Rx)           | Configure UART setting and read and write via UART1. It will read data in a method of callback |
+| [External GNSS](UART.md#External-GNSS)       | By decrypting the GNGGA, GNRMC and GPGSV in raw GNSS data packet read from external GNSS by UART to get positioning info. |
+| [RS485application](UART.md#RS-485-application) | Set UART driver programm in half duplex to communicate via RS485 interface |
+| [Power meter chip](UART.md#Power-meter-chip) | Take power meter chip as an example: read and write corresponding parameter via UART to get power data or execute other controlling commands. |
 
 ### Basic Tx/Rx 
 
 In terms of communication module, one simplified method is provided by QuecPython to carry out UART communication. For real-time application or scenario needs deal with UART info effectively, it is suggested to read UART via callback function. 
 
-Before that, it is necessary to learn about UART QuecPython Interface, see [machine.UART](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html)
+Before that, it is necessary to learn about UART QuecPython Interface, see [machine.UART](../../../api_reference/peripherals/machine.UART.md)
 
 Procedure
 
@@ -463,7 +463,7 @@ if __name__ == "__main__":
 
 In embedded system, it is common that the GNSS (Global  Navigation Satellite System) receiver will be connected by UART, including GPS, GLONASS, Galileo, BeiDou and so on. Moreover, this connection allows system to decrypt GNSS data to acquire current location, speed, time and other relevant info.
 
-Nowadays, some QuecPython modules are integrated with external GNSS and series of interfaces are provided. For specific, please refer to [gnss_wiki](https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/gnss.html) in detail. Thus, it is available for user to acquire data via these above interfaces, including whether the module positioning is a success, coordinates, UTC time, positioning mode of GPS module, satellite quantity, visible satellite quantity, Azimuth, ground speed and Geoid Height. Currently, the data acquired is originated from raw GNSS data packet read by serial port, including GNGGA, GNRMC and GPGSV. 
+Nowadays, some QuecPython modules are integrated with external GNSS and series of interfaces are provided. For specific, please refer to [gnss_wiki](../../../api_reference/gnsslib/gnss.md) in detail. Thus, it is available for user to acquire data via these above interfaces, including whether the module positioning is a success, coordinates, UTC time, positioning mode of GPS module, satellite quantity, visible satellite quantity, Azimuth, ground speed and Geoid Height. Currently, the data acquired is originated from raw GNSS data packet read by serial port, including GNGGA, GNRMC and GPGSV. 
 
 In this chapter, it will introduce based on L76K. 
 
@@ -583,7 +583,7 @@ This GPIO will be targeted at the line for "direction control". When the line is
 
 Before sending data, the GPIO will be set as HIGH and transmits data afterwards. Once former step is accomplished, the GPIO will be set as LOW and switched to Rx mode. 
 
-QuecPython supports the transfer of GPIO control directions in the UART. The [uart.control_485](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html#%3Ccode%3Euart.control_485%3C/code%3E) can be applied to control 485 communication direction. The designated GPIO will be pulled up/down to indicate the communication direction of 485 before and after transmitting data via serial interface.  
+QuecPython supports the transfer of GPIO control directions in the UART. The [uart.control_485](../../../api_reference/peripherals/machine.UART.md#uart.control_485) can be applied to control 485 communication direction. The designated GPIO will be pulled up/down to indicate the communication direction of 485 before and after transmitting data via serial interface.  
 
 Direction is set as 1: it will be pulled from low to high before transmitting data and pulled from high to low after transmitting data via serial interface. 
 

@@ -68,7 +68,7 @@
 
 3. 参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件`demo.py`
 
-4. 参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行
+4. 参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行
 
 
 

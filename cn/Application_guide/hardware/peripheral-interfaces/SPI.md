@@ -116,7 +116,7 @@ lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, 
 ```
 和LCD SPI引脚相比，初始化参数中增加了SPI模式、SPI口以及CS、DC、RST引脚。
 
-具体示例可参考[WIKI-LCD](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html)中的参考代码。
+具体示例可参考[WIKI-LCD](../../../api_reference/peripherals/machine.LCD.md)中的参考代码。
 
 
 ### MCP2515 CAN控制器

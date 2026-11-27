@@ -297,7 +297,7 @@ With autosleep enabled during idle, the module enters sleep mode by deactivating
    <img src="./media/bg95/open_auto_sleep.png" alt="Sleep current waveform" />
 
 3. Disable USB_VBus again (switch to "off").
-   [API Reference](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html) | [Details](https://developer.quectel.com/doc/quecpython/Application_guide/en/system/power-consumption.html)
+   [API Reference](../api_reference/syslib/pm.md) | [Details](../Application_guide/system/power-consumption.md)
 
 4. Sleep current shows periodic spikes:
    <img src="./media/bg95/sleep_power.png" alt="Sleep current waveform" />
@@ -314,7 +314,7 @@ Steps:
 
 1. Enable USB_VBus.
 
-2. [PSM Guide](https://developer.quectel.com/doc/quecpython/Application_guide/en/system/power-consumption.html) | [API](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html). In QPYcom:
+2. [PSM Guide](../Application_guide/system/power-consumption.md) | [API](../api_reference/syslib/pm.md). In QPYcom:
 
    ```python
    pm.set_psm_time(tau_uint,tau_time,act_uint,act_time)   # Configure PSM
@@ -330,4 +330,4 @@ Steps:
 > **Notes:**
 >
 > - Confirm carrier support for PSM and configure compatible network standards (this test uses catM).
-> - [Additional guidance](https://developer.quectel.com/doc/quecpython/Application_guide/en/system/power-consumption.html).
+> - [Additional guidance](../Application_guide/system/power-consumption.md).

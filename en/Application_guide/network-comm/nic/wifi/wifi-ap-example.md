@@ -2,13 +2,13 @@
 
 The Wi-Fi NIC connects to the hotspot to provide 4G network services to other devices.
 
-Please refer to the [Getting Started](https://developer.quectel.com/doc/quecpython/Getting_started/en/index.html) section for development environment setup. This section introduces the usage of ESP8266/ESP8285.
+Please refer to the [Getting Started](../../../../Getting_started/README.md) section for development environment setup. This section introduces the usage of ESP8266/ESP8285.
 
 ## Hardware Preparation
 
 To use the external Wi-Fi  NIC functionality, you need to prepare an external Wi-Fi  NIC, a router, and DuPont wires.
 
-Connect the module to the Wi-Fi NIC with DuPont wires. The wiring between the module and the NIC can be configured according to actual requirements. For specific interface configuration parameters, please refer to the [ESP8266](https://developer.quectel.com/doc/quecpython/API_reference/en/wifilib/WLAN.ESP8266.html) section on Wiki.
+Connect the module to the Wi-Fi NIC with DuPont wires. The wiring between the module and the NIC can be configured according to actual requirements. For specific interface configuration parameters, please refer to the [ESP8266](../../../../api_reference/wifilib/WLAN.ESP8266.md) section on Wiki.
 
 [ESP8266 Hardware Connection Photo](../../../media/network-comm/nic/network_wifi_esp8266_connection.png)  
 [ASR5803 Hardware Connection Photo](../../../media/network-comm/nic/network_wifi_asr5803_connection.png)  

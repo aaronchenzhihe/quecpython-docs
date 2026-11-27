@@ -10,15 +10,15 @@ APN（Access Point Name，接入点名称）指一种网络接入技术，是终
 
 所有运营商都使用特定的APN（Access Point Name，接入点名称）。这通常是您的SIM卡预先配置的，但必要时，您需手动进行调整。
 
-关于APN的配置接口说明，可以参考QuecPython官方网站Wiki说明的[APN配置与获取功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#APN%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%8E%B7%E5%8F%96%E5%8A%9F%E8%83%BD)部分，具体的配置使用示例，可以参考如下几个部分：
+关于APN的配置接口说明，可以参考QuecPython官方网站Wiki说明的[APN配置与获取功能](../../../../api_reference/iotlib/dataCall.md#APN配置与获取功能)部分，具体的配置使用示例，可以参考如下几个部分：
 
-* [开机自动激活一路网卡且配置APN](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/application.html#%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%BF%80%E6%B4%BB%E4%B8%80%E8%B7%AF%E7%BD%91%E5%8D%A1%E4%B8%94%E6%B2%A1%E6%9C%89%E9%85%8D%E7%BD%AEAPN)
+* [开机自动激活一路网卡且配置APN](application.md#开机自动激活一路网卡且没有配置APN)
 
-* [开机自动激活多路网卡且配置APN](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/application.html#%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%BF%80%E6%B4%BB%E5%A4%9A%E8%B7%AF%E7%BD%91%E5%8D%A1%E4%B8%94%E9%85%8D%E7%BD%AEAPN)
+* [开机自动激活多路网卡且配置APN](application.md#开机自动激活多路网卡且配置APN)
 
-* [手动激活一路网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/application.html#%E6%89%8B%E5%8A%A8%E6%BF%80%E6%B4%BB%E4%B8%80%E8%B7%AF%E7%BD%91%E5%8D%A1)
+* [手动激活一路网卡](application.md#手动激活一路网卡)
 
-* [手动激活多路网卡](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/application.html#%E6%89%8B%E5%8A%A8%E6%BF%80%E6%B4%BB%E5%A4%9A%E8%B7%AF%E7%BD%91%E5%8D%A1)
+* [手动激活多路网卡](application.md#手动激活多路网卡)
 
 ### 确认用什么APN
 
@@ -28,7 +28,7 @@ APN（Access Point Name，接入点名称）指一种网络接入技术，是终
 
 ## CFUN
 
-CFUN（Cellular Functionality，蜂窝功能）指移动终端的功能模式。我们在提到CFUN时，一般都是指使用`net`模块的相关方法或者`AT+CFUN`这个AT命令，来设置或者查询移动终端的功能模式。关于如何查询和设置CFUN，请参考《蜂窝网络API说明》章节的[设备工作模式]([蜂窝网络API说明 - QuecPython](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/api-instruction.html#设置模组工作模式))部分。移动终端通常有如下几种功能模式：
+CFUN（Cellular Functionality，蜂窝功能）指移动终端的功能模式。我们在提到CFUN时，一般都是指使用`net`模块的相关方法或者`AT+CFUN`这个AT命令，来设置或者查询移动终端的功能模式。关于如何查询和设置CFUN，请参考《蜂窝网络API说明》章节的[设备工作模式](api-instruction.md#设置模组工作模式)部分。移动终端通常有如下几种功能模式：
 
 * 最小功能模式：该模式下，整个射频网络协议栈全部关闭，SIM卡模块停止供电。这种模式下，终端设备功耗是不关机情况下最低的。
 
@@ -68,17 +68,17 @@ MCC（Mobile Country Code）和 MNC（Mobile Network Code）是在移动通信�
 
 在蜂窝移动网络中，信号质量是由不同的测量值来确定的，并不是只看某个参数的测量值。在不同的网络制式中，用来衡量信号质量的参数以及参数范围一般也都不同。下面是一些常见的测量值：
 
-* [RSSI](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [RSSI](../../../../api_reference/iotlib/net.md#获取详细信号强度)
 
-* [CSQ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96CSQ%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [CSQ](../../../../api_reference/iotlib/net.md#获取CSQ信号强度)
 
-* [RSRP](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [RSRP](../../../../api_reference/iotlib/net.md#获取详细信号强度)
 
-* [RSRQ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [RSRQ](../../../../api_reference/iotlib/net.md#获取详细信号强度)
 
-* [RSCP](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [RSCP](../../../../api_reference/iotlib/net.md#获取详细信号强度)
 
-* [SINR](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)
+* [SINR](../../../../api_reference/iotlib/net.md#获取详细信号强度)
 
 ### 影响信号质量的因素
 
@@ -105,7 +105,7 @@ MCC（Mobile Country Code）和 MNC（Mobile Network Code）是在移动通信�
 
 ### RSSI
 
-[RSSI](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)（Received Signal Strength Indicator）指接收的所有信号的总功率（单位dBm），包括导频信号、数据信号、邻区干扰信号和底噪信号等。RSSI的参数范围在不同的网络制式中有所不同，但是值越大，表示信号强度越好。
+[RSSI](../../../../api_reference/iotlib/net.md#获取详细信号强度)（Received Signal Strength Indicator）指接收的所有信号的总功率（单位dBm），包括导频信号、数据信号、邻区干扰信号和底噪信号等。RSSI的参数范围在不同的网络制式中有所不同，但是值越大，表示信号强度越好。
 
 RSSI通常是一个相对值，它的测量和接收设备有很大的关系。因此对于不同设备，其RSSI的衡量标准并不是完全统一的，因此下面我们提供的RSSI衡量标准仅作为一个参考：
 
@@ -125,7 +125,7 @@ RSSI通常是一个相对值，它的测量和接收设备有很大的关系。�
 
 ### CSQ
 
-[CSQ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96CSQ%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)表示信号强度，是用来指示RSSI强度的参数，取值范围是0~31，数值越大表示信号强度越好。若CSQ值小于6，终端基本无法进行网络通信。CSQ和RSSI之间是有对应关系的，其对应关系如下：
+[CSQ](../../../../api_reference/iotlib/net.md#获取CSQ信号强度)表示信号强度，是用来指示RSSI强度的参数，取值范围是0~31，数值越大表示信号强度越好。若CSQ值小于6，终端基本无法进行网络通信。CSQ和RSSI之间是有对应关系的，其对应关系如下：
 $$
 CSQ=(RSSI+113)/2
 $$
@@ -143,7 +143,7 @@ $$
 
 ### RSRP
 
-[RSRP](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)（Reference Signal Received Power）指参考信号接收功率。是在某个符号内承载参考信号的所有RE(资源粒子)上接收到的信号功率的平均值。反应的是当前信道的路径损耗强度，用于小区覆盖的测量和小区的选择以及重选。RSRP的取值范围是-140dBm ~ -44dBm，值越大越好。
+[RSRP](../../../../api_reference/iotlib/net.md#获取详细信号强度)（Reference Signal Received Power）指参考信号接收功率。是在某个符号内承载参考信号的所有RE(资源粒子)上接收到的信号功率的平均值。反应的是当前信道的路径损耗强度，用于小区覆盖的测量和小区的选择以及重选。RSRP的取值范围是-140dBm ~ -44dBm，值越大越好。
 
 需要注意的是，RSRP是在LTE中才引入的概念，也就是说RSRP是用来衡量LTE网络信号强度的参数。相当于WCDMA网络中的RSCP参数。下面提供的RSRP参数衡量标准仅作为一个参考：
 
@@ -162,7 +162,7 @@ $$
 
 ### RSRQ
 
-[RSRQ](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)（Reference Signal Received Quality）指参考信号接收质量。表示当前信道质量的信噪比和干扰水平。其取值范围是-20 dB ~ -3 dB，值越大越好。RSRQ是在LTE中才引入的概念，也就是说RSRQ是用来衡量LTE网络信号强度的参数。
+[RSRQ](../../../../api_reference/iotlib/net.md#获取详细信号强度)（Reference Signal Received Quality）指参考信号接收质量。表示当前信道质量的信噪比和干扰水平。其取值范围是-20 dB ~ -3 dB，值越大越好。RSRQ是在LTE中才引入的概念，也就是说RSRQ是用来衡量LTE网络信号强度的参数。
 
 RSRQ是RSRP和RSSI的比值，但是因为两者测量所基于的带宽可能不同，会用一个系数来调整，即 RSRQ = N*RSRP/RSSI。
 
@@ -181,7 +181,7 @@ RSRQ是RSRP和RSSI的比值，但是因为两者测量所基于的带宽可能�
 
 ### RSCP
 
-[RSCP](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)（Receive Signal CodePower）指接收信号码功率。它是UMTS网络系统中的概念，表示接收器在特定物理信道上测量的功率。它在下行链路功率控制中用作信号强度的指示、切换标准以及计算路径损耗。RSCP的取值范围通常在-120 dBm到-25 dBm之间。
+[RSCP](../../../../api_reference/iotlib/net.md#获取详细信号强度)（Receive Signal CodePower）指接收信号码功率。它是UMTS网络系统中的概念，表示接收器在特定物理信道上测量的功率。它在下行链路功率控制中用作信号强度的指示、切换标准以及计算路径损耗。RSCP的取值范围通常在-120 dBm到-25 dBm之间。
 
 下面提供的RSCP参数衡量标准仅作为一个参考：
 
@@ -197,7 +197,7 @@ RSRQ是RSRP和RSSI的比值，但是因为两者测量所基于的带宽可能�
 
 ### SINR
 
-[SINR](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E8%AF%A6%E7%BB%86%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6)（Signal to Interference plus Noise Ratio）指信号与干扰加噪声比，即接收到的有用信号的强度和接收到的干扰信号强度的比值。它是用来表示移动网络通信中信号质量的重要参数。SINR的单位是dB，范围一般是-10dB到40dB。
+[SINR](../../../../api_reference/iotlib/net.md#获取详细信号强度)（Signal to Interference plus Noise Ratio）指信号与干扰加噪声比，即接收到的有用信号的强度和接收到的干扰信号强度的比值。它是用来表示移动网络通信中信号质量的重要参数。SINR的单位是dB，范围一般是-10dB到40dB。
 
 下面提供的SINR参数衡量标准仅作为一个参考：
 
@@ -215,13 +215,13 @@ RSRQ是RSRP和RSSI的比值，但是因为两者测量所基于的带宽可能�
 
 在移动通信中，BAND表示频段，是指无线电频谱中特定的频率范围，每个频段由一定的频率范围和带宽（频宽）组成。无线电频谱是一种有限的宝贵资源，全球的各种无线电通信服务都必须共享这一资源。为了确保各种服务之间能够和谐共存，避免相互干扰，国际电信联盟（ITU）和各国的电信管理机构会将无线电频谱划分为多个频段，每个频段被指定给一种或多种特定的服务使用。同时为了方便使用和管理，这些通信频段通常会被编号，比如Band1、Band2、Band3等。
 
-不同的频段有着不同的传播特性，例如，低频段的信号能够更好地穿透建筑物，而高频段的信号更适合在开阔地区或直线视距内传播。因此运营商在获取和使用频段时需要做出平衡，决定支持哪些频段，以实现网络覆盖和容量的最优化。QuecPython支持的模组中，部分模组支持band设置和查询，可参考QuecPython官方网站wiki中的[band设置与获取](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#band%E8%AE%BE%E7%BD%AE%E4%B8%8E%E8%8E%B7%E5%8F%96)部分。
+不同的频段有着不同的传播特性，例如，低频段的信号能够更好地穿透建筑物，而高频段的信号更适合在开阔地区或直线视距内传播。因此运营商在获取和使用频段时需要做出平衡，决定支持哪些频段，以实现网络覆盖和容量的最优化。QuecPython支持的模组中，部分模组支持band设置和查询，可参考QuecPython官方网站wiki中的[band设置与获取](../../../../api_reference/iotlib/net.md#band设置与获取)部分。
 
 
 
 ## 网络制式
 
-网络制式（Radio Access Technology，简称RAT），也叫无线接入技术，是指移动设备如何通过无线电信号连接到网络的技术。比如我们通常说的GSM、GPRS、WCDMA、CDMA2000、LTE等都是网络制式。可参考QuecPython官方网站wiki中的[网络制式及漫游配置](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BC%8F%E5%8F%8A%E6%BC%AB%E6%B8%B8%E9%85%8D%E7%BD%AE)部分来设置和获取网络制式。
+网络制式（Radio Access Technology，简称RAT），也叫无线接入技术，是指移动设备如何通过无线电信号连接到网络的技术。比如我们通常说的GSM、GPRS、WCDMA、CDMA2000、LTE等都是网络制式。可参考QuecPython官方网站wiki中的[网络制式及漫游配置](../../../../api_reference/iotlib/net.md#网络制式及漫游配置)部分来设置和获取网络制式。
 
 
 
@@ -233,7 +233,7 @@ RSRQ是RSRP和RSSI的比值，但是因为两者测量所基于的带宽可能�
 
 COMPACT是一种针对GSM网络的优化技术，它通过改变控制通道的处理方式，来提高网络的频谱效率和容量。因此我们也将其归类为GSM网络技术的一种。
 
-EMTC（Enhanced Machine-Type Communication）是指增强型机器类通信。这是一种LTE技术，旨在提高网络对大量低功耗设备的支持。因此我们也将其归类为LTE网络技术的一种。用户可参考QuecPython官方网站wiki中的[获取网络配置模式](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%BC%8F)部分来获取设备当前使用的网络技术。
+EMTC（Enhanced Machine-Type Communication）是指增强型机器类通信。这是一种LTE技术，旨在提高网络对大量低功耗设备的支持。因此我们也将其归类为LTE网络技术的一种。用户可参考QuecPython官方网站wiki中的[获取网络配置模式](../../../../api_reference/iotlib/net.md#获取网络配置模式)部分来获取设备当前使用的网络技术。
 
 
 
@@ -254,5 +254,5 @@ EMTC（Enhanced Machine-Type Communication）是指增强型机器类通信。�
 
 基站时间通常指的是无线基站的内部时钟，这个时钟为移动通信网络提供了一个精确的时间参考。在无线通信系统中，发送和接收数据需要在准确的时间窗口内进行。例如，数据传输需要准确地与基站的时间同步，否则可能会导致数据丢失或错误。因此，基站需要有一个精确的内部时钟，以便控制这些时间敏感的操作。
 
-此外，基站时间还有一个很常见的用处，即一些移动设备可能会通过基站时间来自动校准它们的本地时间，尤其是当移动设备在不同的时区之间移动时。而这个过程就是通过NITZ（Network Identity and Time Zone）来实现的。用户可参考QuecPython官方网站wiki中的[获取当前基站时间](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9F%BA%E7%AB%99%E6%97%B6%E9%97%B4)部分来获取基站时间。
+此外，基站时间还有一个很常见的用处，即一些移动设备可能会通过基站时间来自动校准它们的本地时间，尤其是当移动设备在不同的时区之间移动时。而这个过程就是通过NITZ（Network Identity and Time Zone）来实现的。用户可参考QuecPython官方网站wiki中的[获取当前基站时间](../../../../api_reference/iotlib/net.md#获取当前基站时间)部分来获取基站时间。
 

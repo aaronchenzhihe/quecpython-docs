@@ -16,7 +16,7 @@ The Real-Time Clock (RTC) is an integrated circuit that can be used to establish
 
 The RTC can provide independent timekeeping services that are not dependent on the operating system. It can maintain time accuracy even when the device is powered off.
 
-QuecPython has a built-in RTC, which can be accessed using the `machine` module. For all the usages of the RTC, please refer to the [RTC – Real Time Clock ](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.RTC.html)section. The following mainly introduces common operations and precautions.
+QuecPython has a built-in RTC, which can be accessed using the `machine` module. For all the usages of the RTC, please refer to the [RTC – Real Time Clock ](../../api_reference/peripherals/machine.RTC.md)section. The following mainly introduces common operations and precautions.
 
 > QuecPython supports multiple module models, and the RTC time accuracy may vary depending on the module model. For applications that require high time accuracy, you can choose according to the hardware manual of each chip.
 > Configuring the RTC time and ALARM in QuecPython modules will erase the FLASH, so it is not recommended to call them frequently.
@@ -74,7 +74,7 @@ rtc.enable_alarm(1)
 
 Time is a scale, which is a scalar in physical definition. With time, the sequence of events can be determined in terms of past-present-future (time points/moments), and the duration of events and the intervals between events can be measured (time intervals).
 
-In QuecPython, the utime module provides functions for obtaining the current time and date (UTC time), measuring time intervals, and delays. utime is a software-level time. For all the usages of utime, please refer to the standard library [utime - Time-related functions](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/utime.html) section.
+In QuecPython, the utime module provides functions for obtaining the current time and date (UTC time), measuring time intervals, and delays. utime is a software-level time. For all the usages of utime, please refer to the standard library [utime - Time-related functions](../../api_reference/stdlib/utime.md) section.
 
 #### System Tick
 
@@ -172,7 +172,7 @@ NITZ (Network Identity and Time Zone) is a mechanism used to automatically confi
 
 NTP (Network Time Protocol) is a time synchronization protocol defined by RFC 1305. It is used for time synchronization between distributed time servers and clients. NTP uses UDP packets for transmission and uses UDP port number 123.
 
-The packet format is shown in the following figure. Based on the content of the protocol packet, we can compare the reported time with the server time and calculate the link transmission time to calibrate the current device to keep it consistent with the server time. For all usages of NTP on QuecPython devices, refer to the [ntptime - Network Time Protocol](https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/ntptime.html)section.
+The packet format is shown in the following figure. Based on the content of the protocol packet, we can compare the reported time with the server time and calculate the link transmission time to calibrate the current device to keep it consistent with the server time. For all usages of NTP on QuecPython devices, refer to the [ntptime - Network Time Protocol](../../api_reference/networklib/ntptime.md)section.
 
 ![](../media/system/sys-time/time-ntp-proto.png)
 
@@ -274,7 +274,7 @@ utime.sleep_us(1000*1000)
 
 ### System Timer
 
-The system timer is used to perform a certain task at a scheduled or periodic time. The timer is implemented based on the hardware timer function and can generally create up to 4 timers. For all usages of the system timer on QuecPython devices, refer to the [Timer - Control Hardware Timers](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Timer.html)section.
+The system timer is used to perform a certain task at a scheduled or periodic time. The timer is implemented based on the hardware timer function and can generally create up to 4 timers. For all usages of the system timer on QuecPython devices, refer to the [Timer - Control Hardware Timers](../../api_reference/peripherals/machine.Timer.md)section.
 
 ```python
 from machine import Timer

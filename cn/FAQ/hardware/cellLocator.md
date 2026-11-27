@@ -2,7 +2,7 @@
 
 ### **如何使用基站定位**
 
-需要申请Token，[基站定位Token申请指南](https://mp.weixin.qq.com/s/JZF3vURe61_kZDZGKBzxXw ),然后调用[cellLocation](https://developer.quectel.com/doc/quecpython/API_reference/zh/gnsslib/cellLocator.html)实现基站定位。
+需要申请Token，[基站定位Token申请指南](https://mp.weixin.qq.com/s/JZF3vURe61_kZDZGKBzxXw ),然后调用[cellLocation](../../api_reference/gnsslib/cellLocator.md)实现基站定位。
 
 ### **基站定位原理**
 

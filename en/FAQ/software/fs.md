@@ -1,21 +1,21 @@
 # FAQ on File System
 
 ### **What is the function of ql_fs?**
-- Provide [`path_exists`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_exists%3C/code%3E)  to determine the existence of file.
+- Provide [`path_exists`](../../api_reference/syslib/ql_fs.md#ql_fs.path_exists)  to determine the existence of file.
 
-- Provide [`file_copy`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.file_copy%3C/code%3E) to copy files quickly .
+- Provide [`file_copy`](../../api_reference/syslib/ql_fs.md#ql_fs.file_copy) to copy files quickly .
 
-- Provide [`path_dirname`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_dirname%3C/code%3E)  to obtain the prefix pathname of last level.
+- Provide [`path_dirname`](../../api_reference/syslib/ql_fs.md#ql_fs.path_dirname)  to obtain the prefix pathname of last level.
 
-- Provide [`path_getsize`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.path_getsize%3C/code%3E)  to obtain the file size.
+- Provide [`path_getsize`](../../api_reference/syslib/ql_fs.md#ql_fs.path_getsize)  to obtain the file size.
 
-- Provide [`mkdirs`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.mkdirs%3C/code%3E) to create nested folders .
+- Provide [`mkdirs`](../../api_reference/syslib/ql_fs.md#ql_fs.mkdirs) to create nested folders .
 
-- Provide [`rmdirs`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.rmdirs%3C/code%3E) to delete nested folders .
+- Provide [`rmdirs`](../../api_reference/syslib/ql_fs.md#ql_fs.rmdirs) to delete nested folders .
 
-- Provides [`touch`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.touch%3C/code%3E) to create files quickly.
+- Provides [`touch`](../../api_reference/syslib/ql_fs.md#ql_fs.touch) to create files quickly.
 
-- Provide `write_json` and [`read_json`](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html#%3Ccode%3Eql_fs.read_json%3C/code%3E )  to read and write json files quickly.
+- Provide `write_json` and [`read_json`](../../api_reference/syslib/ql_fs.md#ql_fs.read_json )  to read and write json files quickly.
 
 ### **Why does it fail to delete files using uos.remove()?**
 Please check whether the file is closed. Files that have been opened cannot be deleted and must be closed before they can be deleted.

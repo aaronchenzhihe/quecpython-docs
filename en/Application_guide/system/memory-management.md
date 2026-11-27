@@ -188,7 +188,7 @@ Memory management algorithms can help reduce memory fragmentation, but it cannot
 
 #### Heap Safety Margin
 
-Although heap space is dynamically allocated and deallocated, it is important to ensure that there is enough remaining heap space to meet the memory requirements of complex operations. The total heap space is determined by the underlying system, and this value is fixed after firmware generation. The function `_thread.get_heap_size` can be used to check the current remaining heap space. For more information on how to use this function, refer to the [thread- Multi-threading](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/_thread.html).
+Although heap space is dynamically allocated and deallocated, it is important to ensure that there is enough remaining heap space to meet the memory requirements of complex operations. The total heap space is determined by the underlying system, and this value is fixed after firmware generation. The function `_thread.get_heap_size` can be used to check the current remaining heap space. For more information on how to use this function, refer to the [thread- Multi-threading](../../api_reference/stdlib/_thread.md).
 
 #### Memory Leaks
 
@@ -353,13 +353,13 @@ The GC collection will be triggered in the following situations:
 
 #### How to trigger the GC collection?
 
-Call the `gc.collect()` function. For specific usage of this function, refer to the [gc- Control the Garbage Collector](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/gc.html#%3Ccode%3Egc.collect%3C/code%3E).
+Call the `gc.collect()` function. For specific usage of this function, refer to the [gc- Control the Garbage Collector](../../api_reference/stdlib/gc.md#gc.collect).
 
 ## Python Programming Considerations
 
 ### Stack Overflow, Thread Stack Too Small
 
-If the stack space size is smaller than what is required by the business logic, it may cause data operations during the business process to go beyond the boundaries of other memory spaces, leading to data corruption and system program exceptions. Therefore, it is necessary to allocate an appropriate stack space size based on the complexity of the business logic. This can be done by calling the `_thread.stack_size()` function before creating a thread. For specific usage of this function, refer to the [thread- Multi-threading](https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/_thread.html#%3Ccode%3E_thread.stack_size%3C/code%3E).
+If the stack space size is smaller than what is required by the business logic, it may cause data operations during the business process to go beyond the boundaries of other memory spaces, leading to data corruption and system program exceptions. Therefore, it is necessary to allocate an appropriate stack space size based on the complexity of the business logic. This can be done by calling the `_thread.stack_size()` function before creating a thread. For specific usage of this function, refer to the [thread- Multi-threading](../../api_reference/stdlib/_thread.md#_thread.stack_size).
 
 ### Using Variables After They Have Been Garbage Collected
 

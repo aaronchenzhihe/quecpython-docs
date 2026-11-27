@@ -4,7 +4,7 @@
 
 - Windows电脑一台，建议 `Win10` 系统。
 
-- 一套[BG95-M3 Quecpython 标准开发板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/bg95-evb.html)
+- 一套[BG95-M3 Quecpython 标准开发板](../../../dev_board_guide/bg95-evb.md)
 
 - 一张能够正常使用的SIM卡
 
@@ -63,7 +63,7 @@ Acceleronix 开发的资产管理 SaaS 平台为特定行业提供全面解决�
 
 2.参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件_main.py
 
-3.参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行。
+3.参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行。
 
 ## 业务调试
 

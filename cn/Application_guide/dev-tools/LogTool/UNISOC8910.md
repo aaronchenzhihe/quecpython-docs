@@ -314,7 +314,7 @@ AT+QDBGCFG="DUMPCFG",0
 
 ### Pcap文件导出
 
-coolwatcher工具支持自动保存pcap文件，但是该功能默认没有开启。开启方式在前面[AP日志抓取](./UNISOC8910.html#AP日志抓取)章节的步骤3中其实已经提到，即点击Trace tool窗口工具栏里面的“设置”按钮，弹出如下设置窗口，勾选图中⑤处的“Save Pcap”功能，点击“OK”。
+coolwatcher工具支持自动保存pcap文件，但是该功能默认没有开启。开启方式在前面[AP日志抓取](./UNISOC8910.md#AP日志抓取)章节的步骤3中其实已经提到，即点击Trace tool窗口工具栏里面的“设置”按钮，弹出如下设置窗口，勾选图中⑤处的“Save Pcap”功能，点击“OK”。
 
 ![](../../media/dev-tools/LogTool/UNISOC8910-cooltools-config.png)
 

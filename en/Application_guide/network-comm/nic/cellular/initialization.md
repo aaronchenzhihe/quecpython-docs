@@ -43,7 +43,7 @@ Step 3: Send the AT query command to check the network registration status.
 
 **Method 2: QuecPython API**
 
-You can call `net.getState` to query the network registration status of the UE. Please refer to [Get Network Registration Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Network-Registration-Information) in the "API Reference" on the QuecPython official website for details.
+You can call `net.getState` to query the network registration status of the UE. Please refer to [Get Network Registration Information](../../../../api_reference/iotlib/net.md#Get-Network-Registration-Information) in the "API Reference" on the QuecPython official website for details.
 
 Step 1: Connect the terminal device to the computer's USB port using a USB cable.
 
@@ -64,13 +64,13 @@ When the parameter indicated by the red box in the figure in the return value of
 
 > If the module fails to register on a network, please refer to the following section in the "*Handle Network Exceptions*" chapter for troubleshooting:
 >
-> * [Module Network Registration Failure](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Module-Network-Registration-Failure)
+> * [Module Network Registration Failure](exception-handling.md#Module-Network-Registration-Failure)
 
 ## NIC Activation
 
 The cellular NIC will be activated after the UE successfully registers on the network. Only when the cellular NIC is activated successfully can the UE obtain the IP address and other information allocated by the core network and create a virtual NIC for the TCP/IP protocol stack. Only when the virtual NIC is created and activated successfully can network services such as sockets, HTTP, and MQTT be performed. This step corresponds to the "Activate NIC" step in the above flowchart.
 
-You can call `dataCall.getInfo()` of the `dataCall` feature to check whether the NIC is activated successfully. Please refer to [Cellular Network Channel Establishment Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Cellular-Network-Channel-Establishment-Information) in the "API Reference" on the QuecPython official website for details.
+You can call `dataCall.getInfo()` of the `dataCall` feature to check whether the NIC is activated successfully. Please refer to [Cellular Network Channel Establishment Information](../../../../api_reference/iotlib/dataCall.md#Cellular-Network-Channel-Establishment-Information) in the "API Reference" on the QuecPython official website for details.
 
 Query method:
 
@@ -86,4 +86,4 @@ When the return value of the `dataCall.getInfo()` method indicates that the NIC 
 
 > If the module fails to activate the NIC, please refer to the following section in the "*Handle Network Exceptions*" chapter for troubleshooting:
 >
-> * [Handle Network Exceptions](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Handle-Network-Exceptions)
+> * [Handle Network Exceptions](exception-handling.md#Handle-Network-Exceptions)

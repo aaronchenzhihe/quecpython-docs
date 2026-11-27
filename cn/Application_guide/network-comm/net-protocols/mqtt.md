@@ -41,7 +41,7 @@ MQTT还支持保留消息（Retained Message），即发布者可以发布保留
 
 ![image-20230701163911290](../../media/network-comm/net-protocols/mqtt/mqtt_1.png)
 
-- MQTT客户端：MQTT客户端是连接到MQTT服务端的设备或应用程序，每个客户端都具有唯一的客户端标识符（Client Identifier），用于在服务端中识别和区分不同的客户端。在QuecPython中我们通过`umqtt`实现MQTT客户端，通过传入初始化连接参数创建连接对象，[点击查看详情](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3Eumqtt.MQTTClient%3C/code%3E)。
+- MQTT客户端：MQTT客户端是连接到MQTT服务端的设备或应用程序，每个客户端都具有唯一的客户端标识符（Client Identifier），用于在服务端中识别和区分不同的客户端。在QuecPython中我们通过`umqtt`实现MQTT客户端，通过传入初始化连接参数创建连接对象，[点击查看详情](../../../api_reference/networklib/umqtt.md#umqtt.MQTTClient)。
 
   ```python
   from umqtt import MQTTClient
@@ -65,7 +65,7 @@ MQTT还支持保留消息（Retained Message），即发布者可以发布保留
 
 ### 发布-订阅
 
-- 发布者（Publisher）：发布者是MQTT中的消息发送方，发布者将消息发布到特定的主题（Topic），并通过MQTT服务端将消息传递给订阅该主题的所有订阅者，基于`umqtt`创建客户端对象后可使用[publish](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3EMQTTClient.publish%3C/code%3E)方法进行消息发布：
+- 发布者（Publisher）：发布者是MQTT中的消息发送方，发布者将消息发布到特定的主题（Topic），并通过MQTT服务端将消息传递给订阅该主题的所有订阅者，基于`umqtt`创建客户端对象后可使用[publish](../../../api_reference/networklib/umqtt.md#MQTTClient.publish)方法进行消息发布：
 
   ```python
   MQTTClient.publish(topic, msg, retain=False, qos=0)
@@ -82,7 +82,7 @@ MQTT还支持保留消息（Retained Message），即发布者可以发布保留
 
 - 订阅者（Subscriber）：订阅者是MQTT中的消息接收方，订阅者可以订阅感兴趣的主题，以接收与该主题相关的消息。一旦订阅者订阅了某个主题，它将接收到该主题下的所有发布消息,项目中一般以不同的事件来定义Topic，设备订阅事件主题后即可接收到该主题的推送消息。
 
-  [点击查看示例API详情](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3EMQTTClient.subscribe%3C/code%3E)
+  [点击查看示例API详情](../../../api_reference/networklib/umqtt.md#MQTTClient.subscribe)
 
   ```python
   MQTTClient.subscribe(topic,qos)
@@ -111,7 +111,7 @@ MQTT定义了三个不同的QoS级别，用于控制消息传递的可靠性和�
 - QoS 1（最少一次）：消息发布者发布消息，确保至少传递一次，但可能导致重复传递。使用发布和确认机制实现可靠传递，适用于需要至少一次传递保证的场景。
 - QoS 2（恰好一次）：消息发布者发布消息，确保恰好传递一次，通过两次握手和四次握手确认机制实现。此级别提供了最高的传递可靠性，适用于对传递准确性要求很高的场景。
 
-QuecPython中设置QoS等级，[详情点击查看](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3EMQTTClient.subscribe%3C/code%3E)。
+QuecPython中设置QoS等级，[详情点击查看](../../../api_reference/networklib/umqtt.md#MQTTClient.subscribe)。
 
 ```python
 """
@@ -130,7 +130,7 @@ MQTTClient.publish("Quectel/Python/demo","Hello", qos=1)
 
 MQTT允许客户端在连接时设置遗嘱消息（LWT），在建立连接的过程中，客户端可以设置遗嘱消息的相关参数，包括遗嘱消息的主题（Topic），遗嘱消息的内容和QoS级别。当服务端检测到客户端未在保活时间内上报心跳包，且未发送关闭连接请求，则认为客户端为异常断开，会根据客户端设置的遗嘱消息，将遗嘱消息发布到设置的遗嘱主题，这样其他订阅了该主题的订阅者就可以接收到该遗嘱消息，以得知该客户端的离线状态。
 
-下面`set_last_will`为QuecPython设置遗嘱消息的API介绍，详情请[点击](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3EMQTTClient.set_last_will%3C/code%3E)：
+下面`set_last_will`为QuecPython设置遗嘱消息的API介绍，详情请[点击](../../../api_reference/networklib/umqtt.md#MQTTClient.set_last_will)：
 
 ```python
 MQTTClient.set_last_will(topic,msg,retain=False,qos=0)
@@ -157,7 +157,7 @@ MQTT通过使用长连接（Long Connection）来保持客户端和服务端之�
 
 - 断开连接检测：如果服务端在一段时间内没有收到客户端的心跳请求或其他消息，它会认为客户端断开连接，并终止连接。同样地，客户端也可以检测到服务端的断开连接，并尝试重新连接。
 
-MQTT初始化时配置Keep Alive不为0时默认开启保活机制，QuecPython会主动在心跳间隔时间内发送心跳包，使用的是`umqtt.ping()`方法，[点击查看详情](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html#%3Ccode%3EMQTTClient.ping%3C/code%3E)：
+MQTT初始化时配置Keep Alive不为0时默认开启保活机制，QuecPython会主动在心跳间隔时间内发送心跳包，使用的是`umqtt.ping()`方法，[点击查看详情](../../../api_reference/networklib/umqtt.md#MQTTClient.ping)：
 
 ```python
 MQTTClient.ping()
@@ -165,7 +165,7 @@ MQTTClient.ping()
 
 ## MQTT应用
 
-QuecPython 提供了`umqtt`模块，用于MQTT协议的客户端连接。关于`umqtt`模块接口的用法，[点此查看](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/umqtt.html)。
+QuecPython 提供了`umqtt`模块，用于MQTT协议的客户端连接。关于`umqtt`模块接口的用法，[点此查看](../../../api_reference/networklib/umqtt.md)。
 
 本章节将搭建两个MQTT客户端进行演示，为方便演示效果，客户端A在PC端使用MQTT.fx工具完成搭建并连接到服务端，客户端B使用QuecPython的`umqtt`搭建。当两个客户端连接到同一服务端后，相互向对方推送主题消息，经服务端将消息转发至对方设备。在开始介绍MQTT应用演示之前，我们先通过下图初步了解下基于QuecPython完成MQTT客户端的应用流程：
 
@@ -223,14 +223,14 @@ QuecPython 提供了`umqtt`模块，用于MQTT协议的客户端连接。关于`
 1. **烧录Quecpython 固件**：请根据您的模组型号，将 Quecpython 固件烧录到您的设备上。
 2. **连接到网络**：确保您的设备已正确连接到网络。
 
-完成固件烧录后需要检测当前固件是否包含`umqtt`模块以及找网状态，可使用[Qpycom工具](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/qpycom-repl.html)进行调试，本文演示均使用该工具。在工具交互页面通过导入模块的方式来确认是否包含和使用API检测网络情况，python语法通过`import xxx`或`from xx import xxx`的方式导入API。
+完成固件烧录后需要检测当前固件是否包含`umqtt`模块以及找网状态，可使用[Qpycom工具](../../dev-tools/QPYcom/qpycom-repl.md)进行调试，本文演示均使用该工具。在工具交互页面通过导入模块的方式来确认是否包含和使用API检测网络情况，python语法通过`import xxx`或`from xx import xxx`的方式导入API。
 
 ```python
 # 未抛出异常则包含
 import umqtt
 ```
 
-通过导入API`checkNet`来进行查询设备网络情况，状态值请查看[wiki](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/checkNet.html#%3Ccode%3EcheckNet.waitNetworkReady%3C/code%3E)。
+通过导入API`checkNet`来进行查询设备网络情况，状态值请查看[wiki](../../../api_reference/iotlib/checkNet.md#checkNet.waitNetworkReady)。
 
 ```python
 import checkNet

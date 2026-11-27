@@ -3,7 +3,7 @@
 ## Hardware preparation
 
 - One Windows computer, recommended Win10 system.
-- A set of [EC800GCN Hua series DTU development board](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/ec800g_hua_dtu.html).
+- A set of [EC800GCN Hua series DTU development board](../../../dev_board_guide/ec800g_hua_dtu.md).
 - A usable Nano Sim card.
 - A rubber stick antenna.
 - A Mini USB data cable.
@@ -16,8 +16,8 @@
     - Verify the driver: Connect the development board to the computer using a Mini USB cable, open the "Device Manager", expand "Ports (COM and LPT)", and you should be able to see a port number similar to Quectel USB COM Port (for example, COM3). If it is not displayed, please check if the driver has been installed successfully, or try replacing the USB cable/connector.
 - Download and install [VSCode](https://code.visualstudio.com/).
 - Download and unzip [QPYCom](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V4.1.0.zip) Tool to the appropriate location on the computer.
-- Download and install the firmware package [QPy_OCPU_SETA0002-EC800G_CNLD_SW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EC800G_CNLD_FW.zip). Please refer to [Using QPYcom to Burn Firmware](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/qpycom-dw.html ) for firmware package burning
-- Download the experimental source code of [Development Resource Summary](https://developer.quectel.com/doc/quecpython/Application_guide/en/solutions/DTU/dev_resources.html).
+- Download and install the firmware package [QPy_OCPU_SETA0002-EC800G_CNLD_SW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EC800G_CNLD_FW.zip). Please refer to [Using QPYcom to Burn Firmware](../../dev-tools/QPYcom/qpycom-dw.md ) for firmware package burning
+- Download the experimental source code of [Development Resource Summary](dev_resources.md).
 
 ## Hardware connection
 

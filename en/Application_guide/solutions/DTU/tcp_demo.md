@@ -4,7 +4,7 @@ This document guides you through the process of developing a device that communi
 
 ## Modify configuration file
 
-After obtaining the code from the "Experimental Source Code" section in the [Development Resource Summary](https://developer.quectel.com/doc/quecpython/Application_guide/en/solutions/DTU/dev_resources.html), you can modify the project configuration file **dtu_config.json** under the **code** directory as needed.
+After obtaining the code from the "Experimental Source Code" section in the [Development Resource Summary](dev_resources.md), you can modify the project configuration file **dtu_config.json** under the **code** directory as needed.
 
 Based on TCP private server data transparent transmission, configure as follows:
 

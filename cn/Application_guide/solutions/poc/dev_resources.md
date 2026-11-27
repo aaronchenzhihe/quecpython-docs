@@ -2,13 +2,13 @@
 
 ## 开发板资料
 
-- 型号：[EC600MCNLE QuecPython 标准开发板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec600x-evb.html)
+- 型号：[EC600MCNLE QuecPython 标准开发板](../../../dev_board_guide/ec600x-evb.md)
 - 购买链接：[点此跳转](http://e.tb.cn/h.gAlSKya8NvMC9UY?tk=7APD3KXufyq)
 - 开发板文档
   - [规格书](https://developer.quectel.com/wp-content/uploads/2024/10/EC600X系列开发板产品规格及用户指导.pdf)
   - [原理图](https://developer.quectel.com/wp-content/uploads/2024/09/EC600X_EVB_V3.2-SCH.pdf)
   - [丝印图](https://developer.quectel.com/wp-content/uploads/2024/09/EC600X_EVB_V3.2-丝印.pdf)
-  - [资源介绍与使用指导](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec600x-evb.html)
+  - [资源介绍与使用指导](../../../dev_board_guide/ec600x-evb.md)
 
 ## 模组资料
 

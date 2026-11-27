@@ -128,7 +128,7 @@ lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, 
 ```
 Compared with LCD SPI pins, SPI mode, SPI port, CS, DC, and RST pins are added to the initialization parameters.
 
-For specific examples, please refer to codes in [WIKI-LCD](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html).
+For specific examples, please refer to codes in [WIKI-LCD](../../../api_reference/peripherals/machine.LCD.md).
 
 
 ### MCP2515 CAN Controller

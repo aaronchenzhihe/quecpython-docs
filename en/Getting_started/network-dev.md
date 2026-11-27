@@ -67,7 +67,7 @@ Users can investigate the above situations in sequence to confirm the problem.
 
 If the return value is 1, it means that the SIM card has been detected and the network registration status needs to be checked
 
-Reference for SIM card abnormalities in other states [SIM card abnormality handling](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#SIM-Card-Exception)
+Reference for SIM card abnormalities in other states [SIM card abnormality handling](../Application_guide/network-comm/nic/cellular/exception-handling.md#SIM-Card-Exception)
 
 ### **Get device network registration status**
 
@@ -82,7 +82,7 @@ The API return value is
 
 `([voice_state, voice_lac, voice_cid, voice_rat, voice_reject_cause, voice_psc], [data_state, data_lac, data_cid, data_rat, data_reject_cause, data_psc])`
 
-Among them, data_state represents the network registration status, which can have various situations. When the return value is 1 or 5, it can be considered as a successful network registration. For specific return values, please refer to [Get Network Registration Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Network-Registration-Information), When the network registration status is not 1 or 5, it can be considered as a network abnormality. There may be multiple reasons for network abnormalities, such as SIM card arrears, SIM card only supporting specific network standards or frequency bands, poor RF performance, and no APN configuration. For detailed handling steps of the above abnormal situations, please refer to [Module Network Registration Failure](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Module-Network-Registration-Failure)
+Among them, data_state represents the network registration status, which can have various situations. When the return value is 1 or 5, it can be considered as a successful network registration. For specific return values, please refer to [Get Network Registration Information](../api_reference/iotlib/net.md#Get-Network-Registration-Information), When the network registration status is not 1 or 5, it can be considered as a network abnormality. There may be multiple reasons for network abnormalities, such as SIM card arrears, SIM card only supporting specific network standards or frequency bands, poor RF performance, and no APN configuration. For detailed handling steps of the above abnormal situations, please refer to [Module Network Registration Failure](../Application_guide/network-comm/nic/cellular/exception-handling.md#Module-Network-Registration-Failure)
 
 Under normal circumstances, as long as the module network card can be successfully activated, users do not need to check the network registration status. The main scenarios that require querying the device's network registration status are as follows:
 
@@ -109,7 +109,7 @@ Return a tuple in the following format:`(stage, state)`
 | parameter  |   type | meaning                                                         |
 | ----- | ---- | ------------------------------------------------------------ |
 |    stage | integer | Indicate what state is currently being detected: 1 - Detecting SIM card status; 2 - Detecting network registration status; 3 - Detecting PDP Context activation status. |
-|    state | integer | According to the stage value, different states are represented as follows: When stage=1, state represents the status of the SIM card, range 0-21, detailed description of each state value, please refer to[`sim.getStatus()`](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#%3Ccode%3Esim.getStatus%3C/code%3E)the return value description of the method; When stage = 2, state indicate network registration status, range 0-11, detailed description of each state value, please refer to[`net.getState()`](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#%3Ccode%3Enet.getState%3C/code%3E)the return value description of the method; When stage = 3, state represents the PDP Context activation status, 0 indicates no successful activation, 1 indicates successful activation. |
+|    state | integer | According to the stage value, different states are represented as follows: When stage=1, state represents the status of the SIM card, range 0-21, detailed description of each state value, please refer to[`sim.getStatus()`](../api_reference/iotlib/sim.md#sim.getStatus)the return value description of the method; When stage = 2, state indicate network registration status, range 0-11, detailed description of each state value, please refer to[`net.getState()`](../api_reference/iotlib/net.md#net.getState)the return value description of the method; When stage = 3, state represents the PDP Context activation status, 0 indicates no successful activation, 1 indicates successful activation. |
 
 
 
@@ -172,5 +172,4 @@ It is recommended that users register this callback function to monitor the netw
 > QuecPython has an automatic reconnection function. If a network exception occurs and the device is disconnected from the network, shouldn't it automatically recover after the exception disappears? Why is there still a need to switch between CFUN0/1 in the processing method mentioned above?
 >
 > We need to clarify that QuecPython's automatic reconnection function refers to the module automatically reactivating the wireless network card after a network anomaly is restored, rather than re registering with the network. The network registration behavior of the device is automatically controlled by the RF network protocol stack of the system. In theory, after the network abnormal factors disappear, the RF network protocol stack will automatically initiate network registration again. However, it cannot be ruled out that due to some reasons, the device may not have re registered with the network in a timely manner. At this point, because the device's network registration has not been successful, the wireless network card cannot be reactivated. Therefore, we took the initiative to switch between CFUN0/1. In fact, it's like when we encounter poor network or no signal when using our mobile phones, we choose to turn off the mobile network first and then turn it back on. Of course, users can also choose to restart.
-
 

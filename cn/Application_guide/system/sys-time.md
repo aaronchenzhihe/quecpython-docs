@@ -16,7 +16,7 @@ QuecPython 设备时间功能应用如下图所示：
 
 RTC 可以提供独立于操作系统的时间计时服务，即使设备关机（不断电）也能保持时间的准确性。
 
-在 QuecPython 中内置 RTC 实时时钟，可以使用 `machine` 模块访问 RTC 实时时钟。对于 RTC 的所有用法参见 [class RTC – 实时时钟](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.RTC.html)章节，下面主要介绍常用操作与注意事项。
+在 QuecPython 中内置 RTC 实时时钟，可以使用 `machine` 模块访问 RTC 实时时钟。对于 RTC 的所有用法参见 [class RTC – 实时时钟](../../api_reference/peripherals/machine.RTC.md)章节，下面主要介绍常用操作与注意事项。
 
 > QuecPython 支持多种型号模组，不同模组 RTC 时间精度有所差异，对于时间精度要求较高的，可以根据各芯片硬件手册进行选择。
 > QuecPython 模组 RTC 时间配置以及 ALARM 配置会擦写 FLASH，不宜频繁调用。
@@ -74,7 +74,7 @@ rtc.enable_alarm(1)
 
 时间是一种尺度，在物理定义是标量，借着时间，事件发生之先后可以按过去-现在-未来之序列得以确定（时间点/时刻），也可以衡量事件持续的期间以及事件之间和间隔长短（时间段）。
 
-QuecPython 下 utime 模块提供获取当前时间和日期（UTC 时间）、测量时间间隔和延迟的函数。utime 是软件层面的时间。对于 utime 的所有用法参见标准库 [utime - 时间相关功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/utime.html) 章节。
+QuecPython 下 utime 模块提供获取当前时间和日期（UTC 时间）、测量时间间隔和延迟的函数。utime 是软件层面的时间。对于 utime 的所有用法参见标准库 [utime - 时间相关功能](../../api_reference/stdlib/utime.md) 章节。
 
 #### System Tick
 
@@ -172,7 +172,7 @@ NITZ（Network Identity and Time Zone，网络标识和时区），是一种用�
 
 NTP（Network Time Protocol， 网络时间协议），是由 RFC 1305 定义的时间同步协议，用来在分布式时间服务器和客户端之间进行时间同步，NTP 基于 UDP 报文进行传输，使用 UDP 端口号为 123。
 
-报文格式如下图所示，我们可以根据协议的报文内容，通过上报时间与服务器的时间比较，以及链路传输时间计算，校准当前设备与服务器时间保持一致。QuecPython 设备对于 NTP 的所有用法参见 [ntptime - 网络时间同步](https://developer.quectel.com/doc/quecpython/API_reference/zh/networklib/ntptime.html) 章节。
+报文格式如下图所示，我们可以根据协议的报文内容，通过上报时间与服务器的时间比较，以及链路传输时间计算，校准当前设备与服务器时间保持一致。QuecPython 设备对于 NTP 的所有用法参见 [ntptime - 网络时间同步](../../api_reference/networklib/ntptime.md) 章节。
 
 ![](../media/system/sys-time/time-ntp-proto.png)
 
@@ -274,7 +274,7 @@ utime.sleep_us(1000*1000)
 
 ### 系统定时器(Timer)
 
-系统定时器用于定时或者周期性执行某任务，该定时器基于硬件定时器功能实现，一般最多可以创建4个定时器。QuecPython 设备对于系统定时器的所有用法参见 [class Timer - 硬件定时器](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Timer.html) 章节。
+系统定时器用于定时或者周期性执行某任务，该定时器基于硬件定时器功能实现，一般最多可以创建4个定时器。QuecPython 设备对于系统定时器的所有用法参见 [class Timer - 硬件定时器](../../api_reference/peripherals/machine.Timer.md) 章节。
 
 ```python
 from machine import Timer

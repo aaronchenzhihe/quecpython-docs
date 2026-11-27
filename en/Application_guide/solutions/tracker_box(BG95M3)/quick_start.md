@@ -3,7 +3,7 @@
 ## Hardware preparation
 
 - A Windows computer, recommended for the 'Win10' system
-- A set of [BG95M3 QuecPython standard development board ](https://developer.quectel.com/doc/quecpython/Dev_board_guide/en/bg95-evb.html)
+- A set of [BG95M3 QuecPython standard development board ](../../../dev_board_guide/bg95-evb.md)
 - A functional Nano SIM card
 
 ## Environment construction

@@ -62,7 +62,7 @@ import sif
 sif.init(gpio, cb)
 ```
 
-For mapping between pin number and physical pins, please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E).
+For mapping between pin number and physical pins, please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin).
 
 It is available in multiple modules. As a result, please do import it beforehand. Then you can use the SIF slave function by calling methods below:
 
@@ -102,7 +102,7 @@ class SifProtocol(gpio)
 - Function: Create SifProtocol object.
 - Return: SifProtocal object.
 - SifProtocal: SifProtocal class.
-- gpio: the GPIO number of 1-wire bus. Please refer to [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+- gpio: the GPIO number of 1-wire bus. Please refer to [machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 Software design:
 

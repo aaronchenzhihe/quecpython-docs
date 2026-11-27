@@ -110,7 +110,7 @@ EC800X_DP-DTU-Q600R 系列开发板是一款使用 LTE CAT1 网络的 DTU 开发
 
 使用QuecPython进行开发需要用到专用的开发调试工具——**QPYcom**，包括但不限于调试代码、分析日志、文件传输、烧录固件、合并固件等。
 
-打开[QuecPython工具下载页面](hhttps://www.quectel.com.cn/download-zone)，根据操作系统选择对应的工具进行下载。
+打开[QuecPython工具下载页面](https://www.quectel.com.cn/download-zone)，根据操作系统选择对应的工具进行下载。
 
 *注意:该工具无需安装，解压即用。*
 
@@ -130,7 +130,7 @@ EC800X_DP-DTU-Q600R 系列开发板是一款使用 LTE CAT1 网络的 DTU 开发
 
 模组在出厂时通常烧录有标准 AT 固件或 QuecOpen 固件，如需基于 QuecPython 对模块进行开发，需要手动为其重新烧录专门的 QuecPython 固件。
 
-[官网固件下载地址](hhttps://www.quectel.com.cn/download-zone)
+[官网固件下载地址](https://www.quectel.com.cn/download-zone)
 
 ![](media/readme/Firmware.png)
 

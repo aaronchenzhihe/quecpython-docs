@@ -96,7 +96,7 @@ class Button(gpio,timer_id)
 - 功能：创建Button对象
 - 返回：Button对象
 - Button：Button类
-- gpio：控制LED的GPIO编号。 详细请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)。
+- gpio：控制LED的GPIO编号。 详细请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)。
 
 ```python
 import machine

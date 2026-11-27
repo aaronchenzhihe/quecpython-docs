@@ -1,5 +1,5 @@
 # 常见异常处理 
-SIM卡状态异常以及注网、拨号异常，请参考QuecPython官网wiki蜂窝无线网卡[网络异常处理](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html)部分
+SIM卡状态异常以及注网、拨号异常，请参考QuecPython wiki蜂窝无线网卡[网络异常处理](../nic/cellular/exception-handling.md)部分
 
 ## 无法发短信
 * 检查SIM卡状态是否异常。
@@ -19,9 +19,9 @@ SIM卡状态异常以及注网、拨号异常，请参考QuecPython官网wiki蜂
 
 ## 注网拨号成功URL无法访问
 * SIM卡是否欠费，运营商不转发对端回复数据或不转发请求报文到对端。如欠费请充费。
-* 其他异常情况参考QuecPython官网wiki蜂窝无线网卡[网络异常处理](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html)部分。
+* 其他异常情况参考QuecPython wiki蜂窝无线网卡[网络异常处理](../nic/cellular/exception-handling.md)部分。
 
 ## 某些协议数据不能正常交互
 * 对于此类SIM卡运营商是否对指定的某些协议做了限制，例如NTP协议，某些运营商对NTP协议限制只能发送到指定的NTP服务地址，否则无法交互。和运营商核实，开通此类业务。
-* 其他异常情况参考QuecPython官网wiki蜂窝无线网卡[网络异常处理](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html)部分。
+* 其他异常情况参考QuecPython wiki蜂窝无线网卡[网络异常处理](../nic/cellular/exception-handling.md)部分。
 

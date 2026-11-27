@@ -4,7 +4,7 @@
 
 ## 修改配置文件
 
-在[开发资源汇总](https://developer.quectel.com/doc/quecpython/Application_guide/zh/solutions/DTU/dev_resources.html)中的实验源码处获取代码后，可根据需求修改**code**目录下的工程配置文件**dtu_config.json**。
+在[开发资源汇总](dev_resources.md)中的实验源码处获取代码后，可根据需求修改**code**目录下的工程配置文件**dtu_config.json**。
 
 基于 TCP 私有服务器数据透传做如下配置：
 

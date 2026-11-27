@@ -247,7 +247,7 @@ PDU类型对于SMS-DELIVER，结构图如下:
 
 如下图：
 
-![](../media/network-comm/sms/2-9.png#pic_center)
+![](../media/network-comm/sms/2-9.png)
 
 <center>图2-10</center>
 
@@ -259,7 +259,7 @@ PDU类型对于SMS-DELIVER，结构图如下:
 
 如下图：
 
-![](../media/network-comm/sms/2-8.png#pic_center)
+![](../media/network-comm/sms/2-8.png)
 
 <center>图2-11</center>
 

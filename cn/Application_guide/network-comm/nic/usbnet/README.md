@@ -140,11 +140,11 @@ USBNET.close()
 
 **2. 使用展锐 8910 的 USB 网卡功能，首次以默认 ECM 模式 open 后，电脑连接不上网络？**
 
-> 展锐 8910 的 USB 网卡功能需要NAT功能支持，默认开机不启动NAT，需要启动NAT后才能正常使用 USB 网卡功能。请参考 Wiki 上对应 [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USBNET.html) 章节。展锐8910具体模块型号，可参考[模组型号与平台的对应关系](https://developer.quectel.com/doc/quecpython/Application_guide/zh/background/hardware-platform.html#展锐平台)。
+> 展锐 8910 的 USB 网卡功能需要NAT功能支持，默认开机不启动NAT，需要启动NAT后才能正常使用 USB 网卡功能。请参考 Wiki 上对应 [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) 章节。展锐8910具体模块型号，可参考[模组型号与平台的对应关系](../../../background/hardware-platform.md#展锐平台)。
 
 **3. 展锐8850使用 USB 网卡设置 RNDIS 后打开正常，关闭后再打开返回 -1。**
 
-> 需要进行 NAT 模式的设置，具体用法请参考 Wiki 上对应 [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.USBNET.html) 章节。展锐8850具体模块型号，可参考[模组型号与平台的对应关系](https://developer.quectel.com/doc/quecpython/Application_guide/zh/background/hardware-platform.html#展锐平台)。
+> 需要进行 NAT 模式的设置，具体用法请参考 Wiki 上对应 [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) 章节。展锐8850具体模块型号，可参考[模组型号与平台的对应关系](../../../background/hardware-platform.md#展锐平台)。
 
 **4. 为什么我的手机状态栏没有`<···>`样图标，但网络可以使用？**
 

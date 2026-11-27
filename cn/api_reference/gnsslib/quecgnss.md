@@ -18,7 +18,7 @@
 
 ```python
 import quecgnss
-
+import utime 
 
 def main():
     quecgnss.configSet(0,1)#设置定位星系为GPS+Beidou
@@ -30,8 +30,10 @@ def main():
     else:
         print('GNSS init failed.')
         return -1
-    data = quecgnss.read(4096)
-    print(data[1].decode())
+    for i in range(1000):
+        data = quecgnss.read(4096)
+        print(data[1].decode())
+        utime.sleep(3)
 
     quecgnss.gnssEnable(0)
 
@@ -429,7 +431,7 @@ quecgnss.configSet(config_type, config_value)
 EG800AKXX_11LG/LN EG800ZCN_LG系列卫星系统(EG800AKCN_11LG只支持BeiDou,其他星系不支持)（config_type = 0）：
 
 注意：卫星系统的选择与GNSS硬件相关，不同的模组内的GNSS硬件来自不同的厂商，不同厂商的GNSS硬件所具备的卫星系统也就不同
- 
+
 | 参数 | 含义                               |
 | ---- | ----------------------------------|
 | 0    | GPS                               |
@@ -526,7 +528,7 @@ int，含义如下（-1为失败）
 EG800AKXX_11LG/LN EG800ZCN_LG系列卫星系统(EG800AKCN_11LG只支持BeiDou,其他星系不支持)（config_type = 0）：
 
 注意：卫星系统的选择与GNSS硬件相关，不同的模组内的GNSS硬件来自不同的厂商，不同厂商的GNSS硬件所具备的卫星系统也就不同
- 
+
 | 参数 | 含义                               |
 | ---- | ----------------------------------|
 | 0    | GPS                               |

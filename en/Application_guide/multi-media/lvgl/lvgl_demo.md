@@ -38,7 +38,7 @@ Click [here]() to download the application code.
 
 ### Initialize LCD
 
-For the initialization of LCD, see [machine LCD](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html).
+For the initialization of LCD, see [machine LCD](../../../api_reference/peripherals/machine.LCD.md).
 
 Here takes an ST7789 LCD with a resolution of 240*320 as an example. The following is the code for LCD initialization:
 

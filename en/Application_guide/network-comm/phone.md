@@ -208,7 +208,7 @@ voiceCall is the voice call feature of QuecPython, which refers to the ability t
 >* EC600M series module support voice call only when the firmware supports VOLTE.
 >* Only customized versions of other series modules support voice call features.
 
-Please note that the above information may change with module updates and new releases. It is recommended to carefully read [wiki-Cellular communication-voiceCall](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/voiceCall.html) and confirm with FAEs before using these features.
+Please note that the above information may change with module updates and new releases. It is recommended to carefully read [wiki-Cellular communication-voiceCall](../../api_reference/iotlib/voiceCall.md) and confirm with FAEs before using these features.
 
 ## Voice Call Application
 
@@ -707,7 +707,7 @@ In the callback messages for VoLTE calls, the number of callback function parame
 | 15        | 8                    | Call outgoing, no answer (VoLTE)            | `args[1] – args[7]`: Same explanations as above              |
 | 16        | 8                    | Waiting (VoLTE)                             | `args[1] – args[7]`: Same explanations as above              |
 
-For args[0] with values of 10-16, args[1]-args[8] are described in [WiKl](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/voiceCall.html#%3Ccode%3EvoiceCall.setCallback%3C/code%3E):
+For args[0] with values of 10-16, args[1]-args[8] are described in [WiKl](../../api_reference/iotlib/voiceCall.md#voiceCall.setCallback):
 
 ## Frequently Asked Questions
 

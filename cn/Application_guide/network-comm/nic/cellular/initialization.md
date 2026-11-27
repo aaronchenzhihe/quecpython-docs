@@ -47,7 +47,7 @@ OK
 
 **方法2：使用QuecPython的API查询**
 
-用户可以使用QuecPython的`net.getState`方法来查询UE的网络注册状态。有关该方法的详细说明，请参考QuecPython官方网站API参考手册内[获取网络注册信息](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF)部分。
+用户可以使用QuecPython的`net.getState`方法来查询UE的网络注册状态。有关该方法的详细说明，请参考QuecPython官方网站API参考手册内[获取网络注册信息](../../../../api_reference/iotlib/net.md#获取网络注册信息)部分。
 
 步骤1：将终端设备通过USB数据线连接到电脑的USB端口上。
 
@@ -68,7 +68,7 @@ net.getState()
 
 > 如果模组网络注册失败，请参考《网络异常处理》章节中如下部分进行排查：
 >
-> * [模组网络注册失败](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#%E6%A8%A1%E7%BB%84%E7%BD%91%E7%BB%9C%E6%B3%A8%E5%86%8C%E5%A4%B1%E8%B4%A5)
+> * [模组网络注册失败](exception-handling.md#模组网络注册失败)
 
 
 
@@ -76,7 +76,7 @@ net.getState()
 
 当UE网络注册成功后，就会进行蜂窝无线网卡的激活操作。只有蜂窝无线网卡激活成功，UE才能获取到由核心网分配的IP地址等信息，并为系统的TCP/IP协议栈创建一路虚拟网卡。只有网卡创建并激活成功才能进行socket、http、mqtt等网络业务。该步骤对应上述流程图中的`Activate NIC`。
 
-用户可以通过`dataCall`模块的`dataCall.getInfo`方法来确定网卡是否激活成功，有关该方法的详细说明，请参考QuecPython官方网站API参考手册内[获取拨号信息功能](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html#%E8%8E%B7%E5%8F%96%E6%8B%A8%E5%8F%B7%E4%BF%A1%E6%81%AF%E5%8A%9F%E8%83%BD)部分。
+用户可以通过`dataCall`模块的`dataCall.getInfo`方法来确定网卡是否激活成功，有关该方法的详细说明，请参考QuecPython官方网站API参考手册内[获取拨号信息功能](../../../../api_reference/iotlib/dataCall.md#获取拨号信息功能)部分。
 
 查询方法：
 
@@ -94,5 +94,5 @@ dataCall.getInfo(profileID, ipType)
 
 > 如果模组无线网卡激活失败，请先请参考《网络异常处理》章节中如下部分进行排查：
 >
-> * [网络异常处理](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86)
+> * [网络异常处理](exception-handling.md#网络异常处理)
 

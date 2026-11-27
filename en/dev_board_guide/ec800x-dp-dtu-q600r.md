@@ -110,7 +110,7 @@ The following are the hardware preparation steps after you receive the developme
 
 Developing with QuecPython requires a dedicated development and debugging tool — **QPYcom** — which supports debugging code, analyzing logs, file transfer, flashing firmware, merging firmware, and more.
 
-Open the [QuecPython tool download page](hhttps://www.quectel.com.cn/download-zone) and download the tool for your operating system.
+Open the [QuecPython tool download page](https://www.quectel.com.cn/download-zone) and download the tool for your operating system.
 
 *Note: This tool requires no installation; it runs after extraction.*
 
@@ -130,7 +130,7 @@ In VSCode, click the extension marketplace in the sidebar, search for "QuecPytho
 
 Modules are usually shipped with standard AT firmware or QuecOpen firmware. To develop the module based on QuecPython, you need to manually flash dedicated QuecPython firmware.
 
-[Official firmware download address](hhttps://www.quectel.com.cn/download-zone)
+[Official firmware download address](https://www.quectel.com.cn/download-zone)
 
 ![](media/readme/Firmware.png)
 

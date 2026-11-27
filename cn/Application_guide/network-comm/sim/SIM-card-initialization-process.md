@@ -22,7 +22,7 @@ SIM卡的复位分为冷复位（Cold Reset）和热复位（Warm Reset）。
 
 ### 激活和冷复位
 
-激活和冷复位的时许如下：
+激活和冷复位的时序如下：
 
 ![](../../media/network-comm/sim/SIM卡激活和冷复位时序.png)
 

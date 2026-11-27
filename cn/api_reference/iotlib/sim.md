@@ -405,7 +405,7 @@ sim.writePhonebook(storage, index, username, number)
 
 **参数描述：**
 
-- `storage` - 电话号码存储位置，整型值，具体可选参数同上[`sim.readPhonebook`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.readPhonebook%3C/code%3E)中的`storage` ：
+- `storage` - 电话号码存储位置，整型值，具体可选参数同上[`sim.readPhonebook`](sim.md#sim.readPhonebook)中的`storage` ：
 
 - `index` - 需要写入电话号码记录的在电话簿中的编号，整型值，范围`1 ~ 500`。
 - `username` - 电话号码的用户名，字符串类型，长度范围不超过30字节，暂不支持中文名。
@@ -589,7 +589,7 @@ sim.switchCard(simId)
 >
 >EC200U/EC600U/EG912U/EG915U部分模组支持双卡单持功能，但是sim卡2的引脚存在复用情况，使用前请参考GPIO相关说明。
 >
->注意当目标卡是当前卡时，[`sim.switchCard`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.switchCard%3C/code%3E)直接返回-1，不触发此接口设置的回调函数。
+>注意当目标卡是当前卡时，[`sim.switchCard`](sim.md#sim.switchCard)直接返回-1，不触发此接口设置的回调函数。
 >
 >部分模组（如EC800GCN_LD系列）无法检测sim卡2是否已经插入，当sim卡2不存在时，允许切卡到sim卡2。
 
@@ -701,7 +701,7 @@ def usrFun(args):
 >
 > EC200U/EC600U/EG912U/EG915U部分模组支持双卡单持功能，但是sim卡2的引脚存在复用情况，使用前请参考GPIO相关说明。
 >
-> 注意当目标卡是当前卡时切卡方法[`sim.switchCard`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.switchCard%3C/code%3E)直接返回-1，不触发此接口设置的回调函数。
+> 注意当目标卡是当前卡时切卡方法[`sim.switchCard`](sim.md#sim.switchCard)直接返回-1，不触发此接口设置的回调函数。
 
 
 

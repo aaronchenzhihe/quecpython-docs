@@ -82,7 +82,7 @@ lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, 
 | lcd_init_data      | bytearray | Write command for LCD initialization.                        |
 | lcd_width          | int       | Width of LCD screen. The width cannot exceed 500 pixels.     |
 | lcd_hight          | int       | Height of LCD screen. The height cannot exceed 500 pixels.   |
-| lcd_clk            | int       | See [machine.SPI](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.SPI.html#%3Ccode%3Emachine.SPI%3C/code%3E)for creating SPI objects parameter descriptions. |
+| lcd_clk            | int       | See [machine.SPI](machine.SPI.md#machine.SPI)for creating SPI objects parameter descriptions. |
 | data_line          | int       | Number of data lines. Parameter values are 1 and 2.          |
 | line_num           | int       | Number of lines. Parameter values are 3 and 4.               |
 | lcd_type           | int       | Screen type. 0-rgb; 1-fstn.                                  |
@@ -91,11 +91,11 @@ lcd.lcd_init(lcd_init_data, lcd_width, lcd_hight, lcd_clk, data_line, line_num, 
 | lcd_display_off    | bytearray | Write command for turning off LCD screen.                    |
 | lcd_set_brightness | bytearray | Write command for LCD screen brightness:<br />None indicates that LCD_BL_K controls the brightness. |
 | lcd_interface      | int       | LCD interface type. 0 - LCM; 1 - SPI                         |
-| spi_port           | int       | Channel selection [0,1]. See [machine.SPI](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.SPI.html#%3Ccode%3Emachine.SPI%3C/code%3E)for port description. |
+| spi_port           | int       | Channel selection [0,1]. See [machine.SPI](machine.SPI.md#machine.SPI)for port description. |
 | spi_mode           | int       | SPI work mode (Work mode 0 is commonly used):<br />CPOL: The level of clock signal of SCLK when SPI is idle (0: low level; 1: high level)<br />0 : CPOL=0, CPHA=0<br />1 : CPOL=0, CPHA=1<br />2 : CPOL=1, CPHA=0<br />3 : CPOL=1, CPHA=1 |
-| cs_pin             | int       | CS pin. See [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for descriptions of GPIO pin number. |
-| dc_pin             | int       | DC pin. See [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for descriptions of GPIO pin number. |
-| rst_pin            | int       | RST pin. See [machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E) for descriptions of GPIO pin number. |
+| cs_pin             | int       | CS pin. See [machine.Pin](machine.Pin.md#machine.Pin) for descriptions of GPIO pin number. |
+| dc_pin             | int       | DC pin. See [machine.Pin](machine.Pin.md#machine.Pin) for descriptions of GPIO pin number. |
+| rst_pin            | int       | RST pin. See [machine.Pin](machine.Pin.md#machine.Pin) for descriptions of GPIO pin number. |
 
 **Return Value:**
 

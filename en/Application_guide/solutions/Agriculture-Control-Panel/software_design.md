@@ -257,7 +257,7 @@ In summary`Agri_ui.py` performs all initialization work for the smart agricultur
 
 ## Graphic interface design
 
-As mentioned earlier, QuecPython uses NXP's [GUI Guider](https://www.nxp.com/design/software/development-software/gui-guider:GUI-GUIDER) as a graphical interface design tool, GUIDER not only enables interface layout design, but also automatically generates QuecPython code. [Click here](https://developer.quectel.com/doc/quecpython/Application_guide/en/multi-media/lvgl/lvgl_ui_tool.html) to view the tutorial on using the GUI Guider tool.
+As mentioned earlier, QuecPython uses NXP's [GUI Guider](https://www.nxp.com/design/software/development-software/gui-guider:GUI-GUIDER) as a graphical interface design tool, GUIDER not only enables interface layout design, but also automatically generates QuecPython code. [Click here](../../multi-media/lvgl/lvgl_ui_tool.md) to view the tutorial on using the GUI Guider tool.
 
 ### Layout and background settings
 

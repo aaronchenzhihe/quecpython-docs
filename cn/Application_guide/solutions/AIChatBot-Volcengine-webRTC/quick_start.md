@@ -58,7 +58,7 @@
 <img src="../../media/solutions/AIChatBot-Volcengine-webRTC/code_ai_audio.png" style="zoom:80%;" />
 
 2. 参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件 `ai_main.py`。
-3. 参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行。
+3. 参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行。
 
 ## 业务调试
 

@@ -4,7 +4,7 @@ This document introduces APIs that are required in various user scenarios and pr
 
 ## Get/Set Module Work Mode
 
-Device work modes refer to the functionality modes of mobile terminals, also known as CFUN states. QuecPython supports setting and getting the work mode of the module. Please refer to [Work Mode Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Work-Mode-Configuration) in the wiki on the QuecPython official website for details.
+Device work modes refer to the functionality modes of mobile terminals, also known as CFUN states. QuecPython supports setting and getting the work mode of the module. Please refer to [Work Mode Configuration](../../../../api_reference/iotlib/net.md#Work-Mode-Configuration) in the wiki on the QuecPython official website for details.
 
 ### Get the Module Work Mode
 
@@ -12,7 +12,7 @@ Device work modes refer to the functionality modes of mobile terminals, also kno
 net.getModemFun()
 ```
 
-Referring to the [CFUN](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/common-concepts.html#CFUN) section in the introduction to cellular network basics, the module has three work modes. Only when the module is in mode 1 (full functionality), can it communicate with the cellular network.
+Referring to the [CFUN](common-concepts.md#CFUN) section in the introduction to cellular network basics, the module has three work modes. Only when the module is in mode 1 (full functionality), can it communicate with the cellular network.
 
 ### Set the Module Work Mode
 
@@ -38,7 +38,7 @@ You can call the above functions to get and set the module's work mode in the fo
 
 ## Get/Set Network Interface Card (NIC) Parameters
 
-NIC parameters include IP protocol type, APN, username, password, and APN authentication method. QuecPython supports setting and getting the parameters of the cellular NIC. Please refer to [APN Configuration and Retrieval](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#APN-Configuration-and-Retrieval) in the wiki on the QuecPython official website for details.
+NIC parameters include IP protocol type, APN, username, password, and APN authentication method. QuecPython supports setting and getting the parameters of the cellular NIC. Please refer to [APN Configuration and Retrieval](../../../../api_reference/iotlib/dataCall.md#APN-Configuration-and-Retrieval) in the wiki on the QuecPython official website for details.
 
 ### Get NIC Parameters
 
@@ -64,19 +64,19 @@ You can call the above functions to get and set the parameters of the NIC in the
 
 For how to configure APN, please refer to the following sections in the *Scenario Instructions* chapter, which provide detailed APN configuration examples:
 
-* [Automatically Activate One NIC at Startup and Configure APN](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Automatically-Activate-One-NIC-at-Startup-and-Configure-APN)
+* [Automatically Activate One NIC at Startup and Configure APN](application.md#Automatically-Activate-One-NIC-at-Startup-and-Configure-APN)
 
-* [Automatically Activate Multiple NICs at Startup and Configure APN](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Automatically-Activate-Multiple-NICs-at-Startup-and-Configure-APN)
+* [Automatically Activate Multiple NICs at Startup and Configure APN](application.md#Automatically-Activate-Multiple-NICs-at-Startup-and-Configure-APN)
 
-* [Manually Activate One NIC](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-One-NIC)
+* [Manually Activate One NIC](application.md#Manually-Activate-One-NIC)
 
-* [Manually Activate Multiple NICs](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-Multiple-NICs)
+* [Manually Activate Multiple NICs](application.md#Manually-Activate-Multiple-NICs)
 
 
 
 ## Activate/Deactivate NICs
 
-QuecPython supports manual activation and deactivation of cellular NICs. Please refer to [Activation and Deactivation](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Activation-and-Deactivation) in the wiki on the QuecPython official website for details.
+QuecPython supports manual activation and deactivation of cellular NICs. Please refer to [Activation and Deactivation](../../../../api_reference/iotlib/dataCall.md#Activation-and-Deactivation) in the wiki on the QuecPython official website for details.
 
 ### Activate NIC
 
@@ -98,14 +98,14 @@ If you disable the automatic activation of cellular NICs at startup and set a pr
 
 For how to manually activate NICs, please refer to the following sections in the *Scenario Instructions* chapter, which provide detailed APN configuration examples:
 
-* [Manually Activate One NIC](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-One-NIC)
-* [Manually Activate Multiple NICs](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/application.html#Manually-Activate-Multiple-NICs)
+* [Manually Activate One NIC](application.md#Manually-Activate-One-NIC)
+* [Manually Activate Multiple NICs](application.md#Manually-Activate-Multiple-NICs)
 
 
 
 ## Configure DNS
 
-When the module activates the cellular NIC, if the activation is successful, the core network will automatically assign DNS server addresses to the module. In other words, under normal circumstances, you do not need to manually configure DNS server addresses. However, sometimes the DNS server addresses assigned by the core network may be unavailable, and in this case, you have to manually configure DNS server addresses. QuecPython supports manual DNS configuration. Please refer to [DNS Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#DNS-Configuration) in the wiki on the QuecPython official website for details.
+When the module activates the cellular NIC, if the activation is successful, the core network will automatically assign DNS server addresses to the module. In other words, under normal circumstances, you do not need to manually configure DNS server addresses. However, sometimes the DNS server addresses assigned by the core network may be unavailable, and in this case, you have to manually configure DNS server addresses. QuecPython supports manual DNS configuration. Please refer to [DNS Configuration](../../../../api_reference/iotlib/dataCall.md#DNS-Configuration) in the wiki on the QuecPython official website for details.
 
 ### Configure DNS
 
@@ -121,7 +121,7 @@ Sometimes the DNS server addresses assigned by the core network may be unavailab
 
 ## Get NIC Status Information
 
-QuecPython supports getting NIC status information, such as NIC activation status, IP address, and DNS server address. Please refer to [Cellular Network Channel Establishment Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Cellular-Network-Channel-Establishment-Information) in the wiki on the QuecPython official website for details.
+QuecPython supports getting NIC status information, such as NIC activation status, IP address, and DNS server address. Please refer to [Cellular Network Channel Establishment Information](../../../../api_reference/iotlib/dataCall.md#Cellular-Network-Channel-Establishment-Information) in the wiki on the QuecPython official website for details.
 
 ### Get NIC Status Information
 
@@ -145,7 +145,7 @@ It is necessary for you to get NIC status information. Regardless of the applica
 
 ## Automatically Activate NIC at Startup
 
-By default, QuecPython modules automatically activate the first cellular NIC at startup, and the IP protocol type used is IPv4 with APN address, username and password empty. You can configure the automatic activation of any one or multiple cellular NICs at startup by calling *dataCall.setAutoActivate()*. Please refer to [Establish the Cellular Network Channel Automatically at Startup](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Establish-the-Cellular-Network-Channel-Automatically-at-Startup) in the wiki on the QuecPython official website for details.
+By default, QuecPython modules automatically activate the first cellular NIC at startup, and the IP protocol type used is IPv4 with APN address, username and password empty. You can configure the automatic activation of any one or multiple cellular NICs at startup by calling *dataCall.setAutoActivate()*. Please refer to [Establish the Cellular Network Channel Automatically at Startup](../../../../api_reference/iotlib/dataCall.md#Establish-the-Cellular-Network-Channel-Automatically-at-Startup) in the wiki on the QuecPython official website for details.
 
 ### Set Whether to Automatically Activate NIC at Startup
 
@@ -172,7 +172,7 @@ You can call the above function to set whether to automatically activate an NIC 
 
 ## Set Automatic Reconnection of NIC
 
-By default, QuecPython modules will enable the automatic reconnection for the first cellular NIC at startup. You can configure the automatic reconnection for any one or multiple cellular NICs by calling *dataCall.setAutoConnect()*. Please refer to [Automatic Reconnection](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Automatic-Reconnection) in the wiki on the QuecPython official website for details.
+By default, QuecPython modules will enable the automatic reconnection for the first cellular NIC at startup. You can configure the automatic reconnection for any one or multiple cellular NICs by calling *dataCall.setAutoConnect()*. Please refer to [Automatic Reconnection](../../../../api_reference/iotlib/dataCall.md#Automatic-Reconnection) in the wiki on the QuecPython official website for details.
 
 It is recommended not to disable the automatic reconnection of the NIC unless there are special requirements.
 
@@ -196,7 +196,7 @@ You can call the above function to set whether the NIC automatically reconnects 
 
 ## Network Event Listening
 
-QuecPython provides APIs for users to listen to network state change events. The specific approach is to allow users to register callback functions. When the connection status to the network changes, the system will notify the current network connection status through the user's registered callback function. Please refer to [Register Callback Function](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html#Register-Callback-Function) in the wiki on the QuecPython official website for details.
+QuecPython provides APIs for users to listen to network state change events. The specific approach is to allow users to register callback functions. When the connection status to the network changes, the system will notify the current network connection status through the user's registered callback function. Please refer to [Register Callback Function](../../../../api_reference/iotlib/dataCall.md#Register-Callback-Function) in the wiki on the QuecPython official website for details.
 
 ### Register Callback Function
 
@@ -210,13 +210,13 @@ In practical use, due to various reasons (such as network exception, environment
 
 For how to use network event listening to handle network exceptions, please refer to the following section in the *Handle Network Exceptions* chapter:
 
-* [Example of Handling Network Exception Events](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/exception-handling.html#Example-of-Handling-Network-Exception-Events)
+* [Example of Handling Network Exception Events](exception-handling.md#Example-of-Handling-Network-Exception-Events)
 
 
 
 ## Get Signal Strength
 
-QuecPython provides APIs to obtain parameters such as signal strength and signal quality. These parameters can help you determine the signal strength and signal quality of the current device's environment. The commonly used parameters include CSQ, RSSI, SINR, RSRP, and RSRQ. It is recommended to read the [Signal Quality](https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/nic/cellular/common-concepts.html#Signal-Quality) section in the *Basic Concepts of Cellular Network* chapter together. Please refer to [Get Signal Strength](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Signal-Strength) and [Get Detailed Signal Strength](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Detailed-Signal-Strength) in the wiki on the QuecPython official website for details.
+QuecPython provides APIs to obtain parameters such as signal strength and signal quality. These parameters can help you determine the signal strength and signal quality of the current device's environment. The commonly used parameters include CSQ, RSSI, SINR, RSRP, and RSRQ. It is recommended to read the [Signal Quality](common-concepts.md#Signal-Quality) section in the *Basic Concepts of Cellular Network* chapter together. Please refer to [Get Signal Strength](../../../../api_reference/iotlib/net.md#Get-Signal-Strength) and [Get Detailed Signal Strength](../../../../api_reference/iotlib/net.md#Get-Detailed-Signal-Strength) in the wiki on the QuecPython official website for details.
 
 ### Query Signal Strength and Quality
 
@@ -254,7 +254,7 @@ You may need to query signal strength and quality in the following scenarios:
 
 ## Get Cell Information
 
-QuecPython provides APIs to get information about the current serving cell and neighboring cells. Cell information includes cell type (serving cell or neighboring cell), CID, MCC/MNC, ARFCN and physical cell identity. Please refer to [Get Cell Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Cell-Information) in the wiki on the QuecPython official website for details.
+QuecPython provides APIs to get information about the current serving cell and neighboring cells. Cell information includes cell type (serving cell or neighboring cell), CID, MCC/MNC, ARFCN and physical cell identity. Please refer to [Get Cell Information](../../../../api_reference/iotlib/net.md#Get-Cell-Information) in the wiki on the QuecPython official website for details.
 
 ### Get Cell Information
 
@@ -276,7 +276,7 @@ You may need to get the cell information in the following scenarios:
 
 ## Get/Set Cellular Network Mode
 
-QuecPython supports various module models, some of which only support LTE, some support GSM and LTE, and some support GSM, WCDMA, and LTE. You can get and set the network modes of the module by calling corresponding APIs. Please refer to [Network Mode and Roaming Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Network-Mode-and-Roaming-Configuration) in the wiki on the QuecPython official website for details.
+QuecPython supports various module models, some of which only support LTE, some support GSM and LTE, and some support GSM, WCDMA, and LTE. You can get and set the network modes of the module by calling corresponding APIs. Please refer to [Network Mode and Roaming Configuration](../../../../api_reference/iotlib/net.md#Network-Mode-and-Roaming-Configuration) in the wiki on the QuecPython official website for details.
 
 ### Get Network Mode
 
@@ -292,7 +292,7 @@ net.setConfig(mode [, roaming])
 
 The first parameter of this function is the network mode you want to set. The second parameter is whether to enable roaming, which is an optional parameter that generally does not need to be set.
 
-From the return value of `net.getConfig()` in [Network Mode and Roaming Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Network-Mode-and-Roaming-Configuration), you can see that there are many configurable network modes, either single mode or a combination of multiple modes. The following points need to be clarified:
+From the return value of `net.getConfig()` in [Network Mode and Roaming Configuration](../../../../api_reference/iotlib/net.md#Network-Mode-and-Roaming-Configuration), you can see that there are many configurable network modes, either single mode or a combination of multiple modes. The following points need to be clarified:
 
 * Although many modes are listed in the return value of `net.getConfig()`, not all modules support these modes. For the specific network modes supported by each module model, please refer to the corresponding module specification.
 
@@ -313,7 +313,7 @@ You may need to set the network modes of the module in the following scenarios:
 
 ## Cellular Network Technology
 
-As mentioned earlier, some modules support multiple network modes. When the default network mode of a module is set to a combination of multiple network modes, it is important to determine which network the module will register on. By getting the current network technology of the module, you can determine which network mode is currently used. QuecPython provides relevant APIs to get the current network technology of the module. Please refer to [Get Network Configuration Mode](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Network-Configuration-Mode) in the wiki on the QuecPython official website for details.
+As mentioned earlier, some modules support multiple network modes. When the default network mode of a module is set to a combination of multiple network modes, it is important to determine which network the module will register on. By getting the current network technology of the module, you can determine which network mode is currently used. QuecPython provides relevant APIs to get the current network technology of the module. Please refer to [Get Network Configuration Mode](../../../../api_reference/iotlib/net.md#Get-Network-Configuration-Mode) in the wiki on the QuecPython official website for details.
 
 ### Get Network Technology
 
@@ -329,7 +329,7 @@ The main application scenario is to determine the specific network that the modu
 
 ## Get Operator Information
 
-Operator information refers to the information of the operator to which the currently connected cell belongs, including the operator name, MCC, and MNC. QuecPython provides an API to get the operator information. Please refer to [Get Operator Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Operator-Information) in the wiki on the QuecPython official website for details.
+Operator information refers to the information of the operator to which the currently connected cell belongs, including the operator name, MCC, and MNC. QuecPython provides an API to get the operator information. Please refer to [Get Operator Information](../../../../api_reference/iotlib/net.md#Get-Operator-Information) in the wiki on the QuecPython official website for details.
 
 ### Get Operator Information
 
@@ -347,7 +347,7 @@ As mentioned above, this function is used to get the operator information of the
 
 ## Get Device Network Registration Status
 
-The cellular network registration status of a device is a very important parameter because a successful network registration is required for the activation of a cellular NIC. QuecPython provides an API to query the network registration status of the device. Please refer to [Get Network Registration Information](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Get-Network-Registration-Information) in the wiki on the QuecPython official website for details.
+The cellular network registration status of a device is a very important parameter because a successful network registration is required for the activation of a cellular NIC. QuecPython provides an API to query the network registration status of the device. Please refer to [Get Network Registration Information](../../../../api_reference/iotlib/net.md#Get-Network-Registration-Information) in the wiki on the QuecPython official website for details.
 
 ### Get Device Registration Status
 
@@ -365,7 +365,7 @@ Under normal circumstances, you do not need to get the registration status of th
 
 ## Set and Get Band
 
-QuecPython modules generally support multiple bands, and by default, all supported bands are enabled. QuecPython provides APIs to get and set the bands currently supported by the module. Please refer to [Set and Get Band](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html#Set-and-Get-Band) in the wiki on the QuecPython official website for details.
+QuecPython modules generally support multiple bands, and by default, all supported bands are enabled. QuecPython provides APIs to get and set the bands currently supported by the module. Please refer to [Set and Get Band](../../../../api_reference/iotlib/net.md#Set-and-Get-Band) in the wiki on the QuecPython official website for details.
 
 > Currently, only the BG95 series module and EG912N-ENAA module support the following APIs.
 

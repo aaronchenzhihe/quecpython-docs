@@ -6,7 +6,7 @@
 
 ### 1.1 安装QPYcom工具
 
-如下图所示，进入[官方下载页面](https://developer.quectel.com/resource-download)，根据电脑操作系统，下载相应的 QPYcom。
+如下图所示，进入[官方下载页面](https://www.quectel.com.cn/download-zone)，根据电脑操作系统，下载相应的 QPYcom。
 
 > `QPYcom` 适用于 Windows 系统；`QPYcom_linux` 适用于 Ubuntu 系统。
 

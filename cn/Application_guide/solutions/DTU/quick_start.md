@@ -3,7 +3,7 @@
 ## 硬件准备
 
 - Windows 电脑一台，建议 Win10 系统。
-- 一套 [EC800GCN 华系列 DTU 开发板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec800g_hua_dtu.html)。
+- 一套 [EC800GCN 华系列 DTU 开发板](../../../dev_board_guide/ec800g_hua_dtu.md)。
 - 一张可用的 Nano Sim 卡。
 - 一根胶棒天线。
 - 一根 Mini USB 数据线。
@@ -16,8 +16,8 @@
     - 验证驱动：将开发板用 Mini USB 线连接到电脑，打开“设备管理器”，展开“端口（COM 和 LPT）”，你应该能看到类似 Quectel USB COM Port 的端口号（例如 COM3）。如果没有出现，请检查驱动是否安装成功，或尝试更换 USB 线/接口。
 - 下载并安装 [VSCode](https://code.visualstudio.com/)。
 - 下载并解压 [QPYCom](https://developer.quectel.com/wp-content/uploads/2024/09/QPYcom_V4.1.0.zip) 工具到电脑的合适位置。
-- 下载并安装固件包[QPY_OCPU_BETA0002_EC800G_CNLD_FW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EC800G_CNLD_FW.zip)。（固件包烧录请参阅 [使用 QPYcom 烧录固件](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/qpycom-dw.html)）
-- 下载[开发资源汇总](https://developer.quectel.com/doc/quecpython/Application_guide/zh/solutions/DTU/dev_resources.html)的实验源码。
+- 下载并安装固件包[QPY_OCPU_BETA0002_EC800G_CNLD_FW](https://developer.quectel.com/wp-content/uploads/2024/09/QPY_OCPU_BETA0002_EC800G_CNLD_FW.zip)。（固件包烧录请参阅 [使用 QPYcom 烧录固件](../../dev-tools/QPYcom/qpycom-dw.md)）
+- 下载[开发资源汇总](dev_resources.md)的实验源码。
 
 ## 硬件连接
 
@@ -37,5 +37,4 @@
 - [基于 MQTT 协议的设备开发](./mqtt_demo.md)
 
 每个文档都提供了详细的示例代码和说明，帮助您快速实现与云平台的通信。
-
 

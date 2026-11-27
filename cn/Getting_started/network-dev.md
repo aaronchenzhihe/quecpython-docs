@@ -67,7 +67,7 @@ sim.getStatus()
 
 如果返回值为1，说明已经检测到SIM卡，则需要检测注网状态
 
-其他状态的SIM卡异常参考[SIM卡异常处理](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#SIM%E5%8D%A1%E5%BC%82%E5%B8%B8)
+其他状态的SIM卡异常参考[SIM卡异常处理](../Application_guide/network-comm/nic/cellular/exception-handling.md#SIM卡异常)
 
 ### **获取设备网络注册状态**
 
@@ -82,7 +82,7 @@ API返回值为
 
 `([voice_state, voice_lac, voice_cid, voice_rat, voice_reject_cause, voice_psc], [data_state, data_lac, data_cid, data_rat, data_reject_cause, data_psc])`
 
-其中data_state为网络注册状态，网络注册状态有多种情况，当返回值为1或者5时可视为网络注册成功，具体返回值参考[获取网络注册信息](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF)，当网络注册状态不为1或5的情况，可视为网络异常，导致网络异常的原因可能有多种，比方说SIM卡欠费、SIM卡只支持特定网络制式或者特定频段等、射频性能不好、没有配置APN等，以上异常的情况的详细处理步骤参考[模块网络注册失败](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html#%E6%A8%A1%E7%BB%84%E7%BD%91%E7%BB%9C%E6%B3%A8%E5%86%8C%E5%A4%B1%E8%B4%A5)
+其中data_state为网络注册状态，网络注册状态有多种情况，当返回值为1或者5时可视为网络注册成功，具体返回值参考[获取网络注册信息](../api_reference/iotlib/net.md#获取网络注册信息)，当网络注册状态不为1或5的情况，可视为网络异常，导致网络异常的原因可能有多种，比方说SIM卡欠费、SIM卡只支持特定网络制式或者特定频段等、射频性能不好、没有配置APN等，以上异常的情况的详细处理步骤参考[模块网络注册失败](../Application_guide/network-comm/nic/cellular/exception-handling.md#模组网络注册失败)
 
 正常情况下，只要模组网卡能激活成功，用户是不需要查询注网状态的。需要查询设备注网状态的场景主要如下：
 
@@ -109,7 +109,7 @@ checkNet.waitNetworkReady(timeout)
 | 参数  | 类型 | 含义                                                         |
 | ----- | ---- | ------------------------------------------------------------ |
 | stage | 整型 | 表示当前正在检测什么状态： 1 - 正在检测SIM卡状态； 2 - 正在检测网络注册状态； 3 - 正在检测PDP Context激活状态。 |
-| state | 整型 | 根据stage值，来表示不同的状态，具体如下： stage = 1时，state表示 SIM卡的状态，范围0-21，每个状态值的详细说明，请参考[`sim.getStatus()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/sim.html#%3Ccode%3Esim.getStatus%3C/code%3E)方法的返回值说明； stage = 2时，state表示网络注册状态，范围0-11，每个状态值的详细说明，请参考[`net.getState()`](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/net.html#%3Ccode%3Enet.getState%3C/code%3E)方法的返回值说明； stage = 3时，state表示PDP Context激活状态，0表示没有激活成功，1表示激活成功。 |
+| state | 整型 | 根据stage值，来表示不同的状态，具体如下： stage = 1时，state表示 SIM卡的状态，范围0-21，每个状态值的详细说明，请参考[`sim.getStatus()`](../api_reference/iotlib/sim.md#sim.getStatus)方法的返回值说明； stage = 2时，state表示网络注册状态，范围0-11，每个状态值的详细说明，请参考[`net.getState()`](../api_reference/iotlib/net.md#net.getState)方法的返回值说明； stage = 3时，state表示PDP Context激活状态，0表示没有激活成功，1表示激活成功。 |
 
 
 

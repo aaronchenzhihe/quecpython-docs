@@ -123,14 +123,14 @@ To build an FTP client with `ftplib` on the module and establish a connection wi
 2. Connect to network: Ensure your device can connect to the network.
 3. QuecPython firmware includes ftplib module.
 
-After downloading the firmware, you need to check whether the current firmware includes the `ftplib` module and check the network status. You can use [QPYcom](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/index.html) for debugging. The demonstrations in this document are performed with this tool. On the interactive page of QPYcom, you can confirm whether the module contains and uses APIs to check the network status by importing the feature. In Python syntax, you can import APIs with `import xxx` or `from xx import xxx`.
+After downloading the firmware, you need to check whether the current firmware includes the `ftplib` module and check the network status. You can use [QPYcom](../../dev-tools/QPYcom/README.md) for debugging. The demonstrations in this document are performed with this tool. On the interactive page of QPYcom, you can confirm whether the module contains and uses APIs to check the network status by importing the feature. In Python syntax, you can import APIs with `import xxx` or `from xx import xxx`.
 
 ```python
 # Inclueded if no exception occurs
 from ftplib import FTP
 ```
 
-You can import the `checkNet` API to query the network status of the device. The status values are available in the [wiki](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/checkNet.html#%3Ccode%3EcheckNet.waitNetworkReady%3C/code%3E).
+You can import the `checkNet` API to query the network status of the device. The status values are available in the [wiki](../../../api_reference/iotlib/checkNet.md#checkNet.waitNetworkReady).
 
 ```python
 import checkNet

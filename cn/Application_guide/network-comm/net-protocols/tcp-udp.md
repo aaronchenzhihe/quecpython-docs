@@ -98,7 +98,7 @@ TCP 协议具有以下特点：
 
 ## socket 编程
 
-QuecPython 提供了`usocket`模块，用于网络通信的 socket 编程。关于`usocket`模块接口的用法，[点此查看](https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/usocket.html)。
+QuecPython 提供了`usocket`模块，用于网络通信的 socket 编程。关于`usocket`模块接口的用法，[点此查看](../../../api_reference/stdlib/usocket.md)。
 
 本节分为 TCP 网络编程、UDP 网络编程和多网卡网络编程三部分。
 
@@ -484,7 +484,7 @@ if __name__ == '__main__':
 代码中的`server_addr = dataCall.getInfo(1, 0)[2][2]`表示获取第 1 路连接的 IPv4 协议的 IP 地址，将其作为本地服务器的 IP 地址。
 
 > - 支持了 QuecPython 的蜂窝通信模组在上电后会自动进行第一路的蜂窝数据连接。
-> - [点此查看](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/dataCall.html)更多与蜂窝数据连接相关的接口用法。
+> - [点此查看](../../../api_reference/iotlib/dataCall.md)更多与蜂窝数据连接相关的接口用法。
 > - [点此在 github 中下载上述完整代码。](https://github.com/QuecPython/examples/blob/main/network-comm/net-protocols/tcp-udp/example_tcp_server_and_client.py)
 
 该实验代码的运行结果如下：
@@ -725,7 +725,7 @@ eth.set_up()
 print('Ethernet nic enabled.')
 ```
 
-> - [点此查看](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/ethernet.html)以太网相关的接口用法。
+> - [点此查看](../../../api_reference/peripherals/ethernet.md)以太网相关的接口用法。
 > - 关于以太网卡更多的编程应用指导，请查看相关文档。
 
 

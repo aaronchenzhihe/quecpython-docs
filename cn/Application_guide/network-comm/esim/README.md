@@ -544,5 +544,5 @@ if __name__ == '__main__':
 
 ### 提示eSIM卡未插卡
 
-请参考QuecPtyhon官网wik蜂窝无线网卡[网络异常处理](.[网络异常处理 - QuecPython](https://developer.quectel.com/doc/quecpython/Application_guide/zh/network-comm/nic/cellular/exception-handling.html))。
+请参考QuecPython官网wik蜂窝无线网卡[网络异常处理](../nic/cellular/exception-handling.md)。
 

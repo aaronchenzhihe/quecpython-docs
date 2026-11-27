@@ -24,7 +24,7 @@ The EC800X_pico series development board is a low-cost yet flexible development 
 
 ## Development Board Renderings
 
-![](./media/ec800x-pico-evb/渲染图.png)
+![](./media/ec800x-pico-evb/1.png)
 
 ## Document Downloads
 

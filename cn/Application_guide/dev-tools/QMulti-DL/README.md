@@ -5,9 +5,9 @@
 
 ## 工具获取
 
-[官网下载](https://developer.quectel.com/resource-download?cid=9)
+[官网下载](https://www.quectel.com.cn/download-zone)
 
-![](../../media/dev-tools/QMulti-DL/1.png)
+![](../../media/dev-tools/QMulti-DL/2.png)
 
 ## 用户指导
 

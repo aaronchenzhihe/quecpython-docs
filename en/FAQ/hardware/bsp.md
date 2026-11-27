@@ -18,15 +18,15 @@ GPIO output current capability: 4mA
 
 For specific pins that can be used as GPIO, please refer to the Section machine.Pin on the wiki.
 
-> Specific link: [GPIO pin description](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html)
+> Specific link: [GPIO pin description](../../api_reference/peripherals/machine.Pin.md)
 
 ###  **Which pins can be used as external interrupts?**
 
 The external interrupt number will go along with the number of GPIO pins.  For details, please refer to machine.Pin and machine.Extlnt on the GPIO pin wiki.
 
-> Specific link: [GPIO pin description](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html);
+> Specific link: [GPIO pin description](../../api_reference/peripherals/machine.Pin.md);
 >
-> [Extlnt-External Interrupt Description](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html)
+> [Extlnt-External Interrupt Description](../../api_reference/peripherals/machine.ExtInt.md)
 
 ###  **Which pins can be used as wake-up interrupts?**
 

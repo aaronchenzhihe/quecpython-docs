@@ -105,7 +105,7 @@ Download and install the **QPYCom** tool and use it to download scripts to the Q
 
 > 💡 **Tips**
 >
-> [QPYCom installation and use tutorial](https://developer.quectel.com/doc/quecpython/Application_guide/en/dev-tools/QPYcom/index.html)
+> [QPYCom installation and use tutorial](../../dev-tools/QPYcom/README.md)
 
 ## Service debugging
 

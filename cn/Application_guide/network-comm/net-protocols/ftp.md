@@ -115,14 +115,14 @@ QuecPython 提供了`ftplib`模块，用于FTP客户端连接使用，本节分�
 2. 连接到网络：确保您的设备能连接到网络。
 3. QuecPython固件中包含ftplib模块。
 
-完成固件烧录后需要检测当前固件是否包含`ftplib`模块以及找网状态，可使用[Qpycom工具](https://developer.quectel.com/doc/quecpython/Application_guide/zh/dev-tools/QPYcom/index.html)进行调试，本文演示均使用该工具。在工具交互页面通过导入模块的方式来确认是否包含和使用API检测网络情况，python语法通过`import xxx`或`from xx import xxx`的方式导入API。
+完成固件烧录后需要检测当前固件是否包含`ftplib`模块以及找网状态，可使用[Qpycom工具](../../dev-tools/QPYcom/README.md)进行调试，本文演示均使用该工具。在工具交互页面通过导入模块的方式来确认是否包含和使用API检测网络情况，python语法通过`import xxx`或`from xx import xxx`的方式导入API。
 
 ```python
 # 未抛出异常则包含
 from ftplib import FTP
 ```
 
-通过导入API`checkNet`来进行查询设备网络情况，状态值请查看[wiki](https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/checkNet.html#%3Ccode%3EcheckNet.waitNetworkReady%3C/code%3E)。
+通过导入API`checkNet`来进行查询设备网络情况，状态值请查看[wiki](../../../api_reference/iotlib/checkNet.md#checkNet.waitNetworkReady)。
 
 ```python
 import checkNet

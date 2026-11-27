@@ -106,11 +106,11 @@ Audio playback refers to the process of using an audio codec to convert audio fi
 - To perform audio playback, an audio object needs to be created, specifying the output channel. For example, *`aud = audio.Audio(0)`* means using the earpieces for output.
 - Audio playback can be done through the *`aud.play(priority, breakin, filename)`* method, specifying the playback priority, interrupt mode, and file name. It supports playing files in mp3, amr, and wav formats.
 - The *`aud.playStream(format, buf)`* method can be used to play audio stream, specifying the audio stream format and content. It supports playing audio streams in mp3, amr, and wav formats.
-For more interfaces and detailed usage of audio playback, please refer to [audio - Audio Playback](https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/audio.Audio.html).
+For more interfaces and detailed usage of audio playback, please refer to [audio - Audio Playback](../../api_reference/medialib/audio.Audio.md).
 
 ## Voice Call
 Voice call refers to the process of converting voice signals into digital signals using a voice codec, transmitting them over the network to the other party, and then restoring them to voice signals using the other party's voice codec.
-For more interfaces and detailed usage of voice call, please refer to [voiceCall - Voice Call](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/voiceCall.html).
+For more interfaces and detailed usage of voice call, please refer to [voiceCall - Voice Call](../../api_reference/iotlib/voiceCall.md).
 
 ## Recording
 External sound is converted into electrical signals through the microphone input device, and then converted into digital signals through the codec and transmitted to the module. The module converts the digital signals into audio files of different formats (such as AMR and WAV) and stores them into flash.
@@ -118,7 +118,7 @@ The principle of recording is to convert sound signals into electrical signals o
 
 - To perform recording, a record object needs to be created, specifying the input channel. For example, *`record = audio.Record(0)`* means using the earpieces for input.
 - The *`record.start(file_name, seconds)`* method can be used to start recording, specifying the recording file name and duration.
-For more interfaces and detailed usage of recording, please refer to [Record - Audio Record](https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/audio.Record.html).
+For more interfaces and detailed usage of recording, please refer to [Record - Audio Record](../../api_reference/medialib/audio.Record.md).
 
 # Audio Parameter Calibration
 

@@ -3,11 +3,11 @@
 This section takes QuecPython EC200UEU_AB EVB as an example to demonstrate how to use a USB network adapter on an Android phone.
 
 > The ECM mode can be directly loaded and used in Linux, Android, or IOS without a driver. 
-> In ECM mode,  the MAC address of some module models may not be recognized by the phone. In such cases, you can refer to the corresponding [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html) section on the Wiki and update the available MAC address with MAC configuration interface .
+> In ECM mode,  the MAC address of some module models may not be recognized by the phone. In such cases, you can refer to the corresponding [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) section on the Wiki and update the available MAC address with MAC configuration interface .
 
 1. Prepare the development environment  
 
-   Please refer to the [Getting Started](https://developer.quectel.com/doc/quecpython/Getting_started/en/) section (skip if you are already familiar) to set up the development environment. 
+   Please refer to the [Getting Started](../../../../Getting_started/README.md) section (skip if you are already familiar) to set up the development environment. 
    You will also need a mobile phone and a cable that can be converted into a mobile phone interface.
 
 2. Open the QPYCOM tool and connect the device
@@ -17,7 +17,7 @@ This section takes QuecPython EC200UEU_AB EVB as an example to demonstrate how t
 
 3. Write a startup script for the USB network adapter
 
-   Please refer to the corresponding [USBNET](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html) section on the Wiki for specific USB network adapter interface.  
+   Please refer to the corresponding [USBNET](../../../../api_reference/peripherals/misc.USBNET.md) section on the Wiki for specific USB network adapter interface.  
    Create a new file named `main.py` and enter the following content:
 
    ```python

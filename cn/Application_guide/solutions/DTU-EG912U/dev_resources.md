@@ -4,7 +4,7 @@
 
 ## 开发板和模组型号的介绍
 
-型号：[EG912U 核心板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/bg-eg-core-evb.html)
+型号：[EG912U 核心板](../../../dev_board_guide/bg-eg-core-evb.md)
 
 - 开发板文档： [EG912U core board product specifications and user guide](https://developer.quectel.com/wp-content/uploads/2024/11/EG912U%E6%A0%B8%E5%BF%83%E6%9D%BF%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E5%8F%8A%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC.pdf) 
 

@@ -42,7 +42,7 @@ Initialize the **USB CDC PORT** as a serial port through the `UART` interface.
 >>> uart1 = UART(UART.UART3, 115200, 8, 0, 1, 0)
 ```
 
-After initialization, any data input through the **USB CDC PORT** will no longer be interpreted by the REPL. This method can be used to disable the interactive port. The data input through the interactive port will be interpreted as serial port data. For more information, refer to [UART - Duplex Serial Communication Bus](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html).
+After initialization, any data input through the **USB CDC PORT** will no longer be interpreted by the REPL. This method can be used to disable the interactive port. The data input through the interactive port will be interpreted as serial port data. For more information, refer to [UART - Duplex Serial Communication Bus](../../../api_reference/peripherals/machine.UART.md).
 
 If there is a need to disable and re-enable the REPL debugging, call *uart.close()* to disable the UART object created above to restore the REPL debugging through the serial port. This method is usually used in the production testing process, where specific data formats need to be parsed in the serial port data interpretation to meet the requirement of re-enabling REPL debugging through a specific method.
 
@@ -56,4 +56,4 @@ system.replSetEnable(flag, **kw_args)
 
 Once enabled, you can use the password set during startup to disable interaction protection.
 
-For more information, refer to [system - System Configuration](https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/system.html).
+For more information, refer to [system - System Configuration](../../../api_reference/syslib/system.md).

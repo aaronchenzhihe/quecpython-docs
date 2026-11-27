@@ -407,7 +407,7 @@ class lis2dh12(object):
 >
 > - The parameter of `int_enable` needs to be determined according to the datasheet and specific application scenarios. For example, if you want to avoid frequent false triggering of the interrupt, the parameters `int_ths` and `duration` must be set greater, and the values depend on the test results.
 > - When the three-axis sensor is placed vertically with the z-axis upwards and there is no external force, the acceleration of the `x`, `y`, and `z` axes is basically (0,0,1), in units of `G`. This can be used to determine whether the sensor reading and acceleration calculation are normal.
-> - It is recommended to use [external interrupt](https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html) to handle interrupts, rather than polling the interrupt register of the sensor. The latter method will prevent entering low-power mode.
+> - It is recommended to use [external interrupt](../../../../api_reference/peripherals/machine.ExtInt.md) to handle interrupts, rather than polling the interrupt register of the sensor. The latter method will prevent entering low-power mode.
 
 The main program code is designed as follows:
 

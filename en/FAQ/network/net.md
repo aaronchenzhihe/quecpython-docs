@@ -51,7 +51,7 @@ The logic of cell reselection is as follows:
 
 ### **Investigation on failed or slow network registration and network attachment. **
 
-- Call the [`sim.getStatus()`](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#%3Ccode%3Esim.getStatus%3C/code%3E) to check whether the SIM card is identified.
+- Call the [`sim.getStatus()`](../../api_reference/iotlib/sim.md#sim.getStatus) to check whether the SIM card is identified.
 - Check whether the SIM card is in debt and whether the flow runs out [The 4G module will be registered to 2G network instead of 4G network]. [For other situations, please consult the SIM card operator]
 - Confirm that the antenna is matched.
 - Check whether the antenna is connected, whether the interface of the antenna socket is correct, and whether the antenna is damaged [confirm by replacing the antenna].

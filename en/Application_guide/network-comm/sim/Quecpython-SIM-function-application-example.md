@@ -392,11 +392,11 @@ sim.unblockPin("12345678", "0000")
 
 ## Phone Book
 
-In the actual project application process, if users need to save the phone number of the other party, they need to use the phonebook function. This interface provides the function of saving phone number information. Please refer to the QuecPython official website wiki [Phone Book](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#Phone-Book) for the support of this function interface.
+In the actual project application process, if users need to save the phone number of the other party, they need to use the phonebook function. This interface provides the function of saving phone number information. Please refer to the QuecPython official website wiki [Phone Book](../../../api_reference/iotlib/sim.md#Phone-Book) for the support of this function interface.
 
 ### Read Phone Book
 
-Users can use the following interface to read the phone book. The storage location of the phone number is described in the QuecPython official website wiki `sim.readPhonebook()` [Parameter](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#Phone-Book). Note that the difference between start and end needs to be less than or equal to 20.
+Users can use the following interface to read the phone book. The storage location of the phone number is described in the QuecPython official website wiki `sim.readPhonebook()` [Parameter](../../../api_reference/iotlib/sim.md#Phone-Book). Note that the difference between start and end needs to be less than or equal to 20.
 
 The interface is as follows:
 
@@ -483,7 +483,7 @@ if __name__ == '__main__':
 
 ## SIM Card Hot Swap
 
-In the project, if the user needs to monitor the SIM card insertion and removal, they can register a callback function through the following interface. When the SIM card is inserted or removed, the system will call the registered callback function and pass the SIM card insertion or removal event to the application layer. Users can determine whether the SIM card is inserted or removed based on the notification event. For the support of this interface by QuecPython modules, please refer to the QuecPython official website wiki [Hot Swap](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#Hot-Swap).
+In the project, if the user needs to monitor the SIM card insertion and removal, they can register a callback function through the following interface. When the SIM card is inserted or removed, the system will call the registered callback function and pass the SIM card insertion or removal event to the application layer. Users can determine whether the SIM card is inserted or removed based on the notification event. For the support of this interface by QuecPython modules, please refer to the QuecPython official website wiki [Hot Swap](../../../api_reference/iotlib/sim.md#Hot-Swap).
 
 ### Register Hot Swap Callback
 
@@ -613,7 +613,7 @@ if __name__ == '__main__':
 
 ## Switch SIM Card 
 
-In the process of project application, in order to ensure network stability and meet various network scenarios, it is necessary to have the ability to switch between two different SIM cards at any time to cope with various network abnormal situations. For the support of this function by QuecPython module, please refer to the [Switch SIM Card](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html#Switch-SIM-Card) in the QuecPython official website wiki.
+In the process of project application, in order to ensure network stability and meet various network scenarios, it is necessary to have the ability to switch between two different SIM cards at any time to cope with various network abnormal situations. For the support of this function by QuecPython module, please refer to the [Switch SIM Card](../../../api_reference/iotlib/sim.md#Switch-SIM-Card) in the QuecPython official website wiki.
 
 ### Register Switch Card Callback Function
 

@@ -3,7 +3,7 @@
 ## 硬件准备
 
 - Windows 电脑一台，建议 `Win10` 系统。
-- 两套 [EC600MCNLE QuecPython 标准开发板](https://developer.quectel.com/doc/quecpython/Dev_board_guide/zh/ec600x-evb.html) （每一套均含天线、Type-C 数据线等）。
+- 两套 [EC600MCNLE QuecPython 标准开发板](../../../dev_board_guide/ec600x-evb.md) （每一套均含天线、Type-C 数据线等）。
 
   > 💡 **Tips**
   > 一套用于主叫设备演示，一套用于被叫设备演示。
@@ -65,7 +65,7 @@
 <img src="../../media/solutions/poc/files.png" style="zoom:80%;" />
 
 2. 参考[此章节](../../../Getting_started/first_python.md#执行脚本文件)，执行主程序文件 `poc_main.py`。
-3. 参考[此章节](../../../Getting_started/first_python.md##停止程序运行)，停止程序运行。
+3. 参考[此章节](../../../Getting_started/first_python.md#停止程序运行)，停止程序运行。
 
 ## 业务调试
 
@@ -81,7 +81,7 @@
 
 ### 主界面
 
-主界面包含多个选项列表（用户可参考 [软件设计讲解 - 界面模块](./software_design.html#界面模块) 自行添加、修改），每个选项对应一个新的界面。
+主界面包含多个选项列表（用户可参考 [软件设计讲解 - 界面模块](./software_design.md#界面模块) 自行添加、修改），每个选项对应一个新的界面。
 
 - 单击 `key2` 键，选中框往下滚动。
 - 双击 `key2` 键，进入所选中的界面。

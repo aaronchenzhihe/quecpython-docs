@@ -81,7 +81,7 @@
 
 ## 功能概述
 
-在QuecPython系列模组中，目前 EC200U/EC600U/EG912U/EG915U 支持该功能。具体单总线相关API使用介绍：[machine.OneWire](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.OneWire.html)
+在QuecPython系列模组中，目前 EC200U/EC600U/EG912U/EG915U 支持该功能。具体单总线相关API使用介绍：[machine.OneWire](../../../api_reference/peripherals/machine.OneWire.md)
 
 ### 对象创建
 
@@ -89,7 +89,7 @@
 class machine.OneWire(GPIOn)
 ```
 
-GPIO引脚编号与物理映射关系请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+GPIO引脚编号与物理映射关系请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 在通信模组系列中可用，因此请确保先导入它。然后您可以使用以下方法创建一个one-wire：
 
@@ -170,7 +170,7 @@ class DS18B20Sensor(onewire_pin)
 - 功能：创建DS18B20对象
 - 返回：DS18B20对象
 - DS18B20Sensor：DS18B20Sensor类
-- onewire_pin：单总线的GPIO编号。 详细请参考[machine.Pin](https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.Pin.html#%3Ccode%3Emachine.Pin%3C/code%3E)
+- onewire_pin：单总线的GPIO编号。 详细请参考[machine.Pin](../../../api_reference/peripherals/machine.Pin.md#machine.Pin)
 
 
 

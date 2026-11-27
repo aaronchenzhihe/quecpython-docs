@@ -7,7 +7,7 @@ Two methods are available to query:
 - CSQ signal strength: net.csqQueryPoll()
 - RSRP signal strength: net.getSignal()
 
-> For specific, see the link: [CSQ](https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html?highlight=signal)
+> For specific, see the link: [CSQ](../../api_reference/iotlib/net.md)
 
 ### **The relationship between signal strength and the stability of network data services **
 
